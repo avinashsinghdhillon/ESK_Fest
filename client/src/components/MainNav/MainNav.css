@@ -1,0 +1,42 @@
+.nav {
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+img {
+    height: 30px;
+}
+
+.right {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #184097;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #137ad6;
+  }
+  
+  .active {
+    background-color: #137ad6;
+  }
