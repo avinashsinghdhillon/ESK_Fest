@@ -1,14 +1,23 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Books collection and inserts the books below
+// This file empties the Events collection and inserts the events below
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactreadinglist"
+  "mongodb://localhost/reacteventlist"
 );
 
-const bookSeed = [
+const artistSeed = [
+  {
+    artistID: 1,
+    artistName: ""
+  }
+
+
+]
+
+const eventSeed = [
   {
     title: "The Dead Zone",
     author: "Stephen King",
@@ -123,9 +132,57 @@ const bookSeed = [
   }
 ];
 
-db.Book
+db.Artist
   .remove({})
-  .then(() => db.Book.collection.insertMany(bookSeed))
+  .then(() => db.Artist.collection.insertMany(artistSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+  db.Location
+  .remove({})
+  .then(() => db.Book.collection.insertMany(artistSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+  db.Event
+  .remove({})
+  .then(() => db.Book.collection.insertMany(eventSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+  db.User
+  .remove({})
+  .then(() => db.Book.collection.insertMany(artistSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+  db.Itinerary
+  .remove({})
+  .then(() => db.Book.collection.insertMany(artistSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
