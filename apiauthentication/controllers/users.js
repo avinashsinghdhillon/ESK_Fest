@@ -38,7 +38,8 @@ module.exports = {
 
     signIn: async (req, res, next) => {
         //generate a token
-        console.log('usersController.signIn() called!')
+        const token = signToken(req.user);
+        res.status(200).json({ token });
     },
 
     itinerary: async (req, res, next) => {
