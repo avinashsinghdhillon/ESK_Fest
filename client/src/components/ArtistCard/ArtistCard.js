@@ -9,8 +9,8 @@ function ArtistCard(props) {
         </div>
         <div className="container">
             <h4>Artist Name HERE</h4>
-            <button href="#artistBio" className="button" onClick={() => props.handlePageChange("ArtistBio")}>About</button>
-            <button href="#eventPage" className="button" onClick={() => props.handlePageChange("EventPage")}>Event Info</button>
+            <button href="/artistbio" className="button" onClick={() => props.handlePageChange("ArtistBio")}>About</button>
+            <button href="/eventpage" className="button" onClick={() => props.handlePageChange("EventPage")}>Event Info</button>
         </div>
     </div>
     )
