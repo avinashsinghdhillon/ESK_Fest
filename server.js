@@ -2,6 +2,7 @@
 const express = require("express");
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+mongoose.set('useNewUrlParser', true);
 // var passport = require("passport");
 // var session = require("express-session");
 const bodyParser = require("body-parser");
