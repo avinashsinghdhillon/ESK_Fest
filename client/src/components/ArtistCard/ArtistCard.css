@@ -1,0 +1,50 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 20%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    float: left;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+  }
+
+  .image {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+  }
+
+  img:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+  }
+
+  .button {
+    background-color: #00a9e7;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 48%;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .button:hover {
+      background-color: #137ad6;
+      transition: 0.5s;
+  }

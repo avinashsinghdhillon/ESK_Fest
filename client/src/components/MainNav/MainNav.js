@@ -8,6 +8,7 @@ function MainNav(props) {
                 <a href="#">EASTSIDE KINGS FESTIVAL</a>
             </li>
             <li>
+                {/* All = About = Home? */}
                 <a href="#all" onClick={() => props.handlePageChange("All")}>About</a>
             </li>
             <li>
@@ -15,6 +16,9 @@ function MainNav(props) {
             </li>
             <li>
                 <a href="#sponsors" onClick={() => props.handlePageChange("Sponsors")}>Sponsors</a>
+            </li>
+            <li>
+                <a href="#privacy" onClick={() => props.handlePageChange("Privacy")}>Privacy</a>
             </li>
             <li>
                 <a href="#faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
