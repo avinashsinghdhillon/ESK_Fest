@@ -14,12 +14,12 @@ function MainNav(props) {
             <li>
                 <a href="#schedule" onClick={() => props.handlePageChange("Schedule")}>Schedule</a>
             </li>
-            <li>
+            {/* <li>
                 <a href="#sponsors" onClick={() => props.handlePageChange("Sponsors")}>Sponsors</a>
             </li>
             <li>
                 <a href="#privacy" onClick={() => props.handlePageChange("Privacy")}>Privacy</a>
-            </li>
+            </li> */}
             <li>
                 <a href="#faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
             </li>
