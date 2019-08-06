@@ -32,6 +32,9 @@ app.use(bodyParser.json());
 // Routes
 app.use('/users', require('./apiauthentication/routes/users'));
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 var syncOptions = { force: false };
 
