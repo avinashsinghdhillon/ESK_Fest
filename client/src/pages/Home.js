@@ -9,18 +9,21 @@ import './Home.css';
 class Home extends Component {
     state = { show: false }
 
-    showModal = () => {
-        this.setState({ show: true });
-    }
+    // showModal = () => {
+    //     this.setState({ show: true });
+    // }
 
-    hideModal = () => {
-        this.setState({ show: false });
-    }
+    // hideModal = () => {
+    //     this.setState({ show: false });
+    // }
     render() {
         return (
             <Container fluid>
                 <h1>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL, LOCATED IN AUSTIN, TX.</h1>
-                <Modal show={this.state.show} handleClose={this.hideModal} >
+                <div id="eventDetails">
+                    <h4>Event Details Here</h4>
+                </div>
+                {/* <Modal show={this.state.show} handleClose={this.hideModal} >
                 <div className="signup">
                     <div class="google">
                         <a href="#"><img src="../../images/btn_google_signin_dark_normal_web.png" alt="google sign in"/></a>
@@ -39,7 +42,7 @@ class Home extends Component {
                         <input type="submit" value="Submit"/>
                     </div>
                 </div>
-                </Modal>
+                </Modal> */}
             </Container>
         )
     }
