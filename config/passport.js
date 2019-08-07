@@ -5,11 +5,12 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const { ExtractJwt } = require('passport-jwt');
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/user');
+const keys = process.env;
 
 //JSON Web Tokens Strategy
 passport.use(new JwtStrategy({
     jwtFromRequest: ExtractJwt.fromHeader('authorization'),
-    secretOrKey: process.env.JWT_SECRET,
+    secretOrKey: keys.JWT_SECRET,
     passReqToCallback: true
 }, async (req, payload, done) => {
     try{
@@ -67,8 +68,8 @@ passport.deserializeUser((id, done) => {
 passport.use(
     new GoogleStrategy({
         // options for google strategy
-        clientID: keys.google.clientID,
-        clientSecret: keys.google.clientSecret,
+        clientID: keys.GOOGLE_CLIENT_ID,
+        clientSecret: keys.GOOGLE_CLIENT_SECRET,
         callbackURL: '/auth/google/redirect'
     }, (accessToken, refreshToken, profile, done) => {
         // check if user already exists in our own db

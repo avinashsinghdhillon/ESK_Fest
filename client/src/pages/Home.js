@@ -10,9 +10,9 @@ class Home extends Component {
         return (
             <Container fluid>
                 <Row>
-                    <Col>
-                    {/* <Jumbotron></Jumbotron> */}
-                    </Col>
+                    {/* <Col>
+                    <Jumbotron></Jumbotron>
+                    </Col> */}
                 </Row>
             </Container>
         )
