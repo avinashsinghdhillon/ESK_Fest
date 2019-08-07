@@ -9,14 +9,12 @@ class Schedule extends component {
     render() {
         return (
             <Container fluid>
-                <Row>
-                <ScheduleNav />
-                    <ArtistCard />
-                    <ArtistCard />
-                    <ArtistCard />
-                    <ArtistCard />
-                    <ArtistCard />
-                </Row>
+            <ScheduleNav />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
             </Container>
         );
     }

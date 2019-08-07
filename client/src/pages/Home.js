@@ -9,17 +9,20 @@ import './Home.css';
 class Home extends Component {
     state = { show: false }
 
-    showModal = () => {
-        this.setState({ show: true });
-    }
+    // showModal = () => {
+    //     this.setState({ show: true });
+    // }
 
-    hideModal = () => {
-        this.setState({ show: false });
-    }
+    // hideModal = () => {
+    //     this.setState({ show: false });
+    // }
     render() {
         return (
             <Container fluid>
                 <h1>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL, LOCATED IN AUSTIN, TX.</h1>
+                <div id="eventDetails">
+                    <h4>Event Details Here</h4>
+                </div>
                 {/* <Modal show={this.state.show} handleClose={this.hideModal} >
                 <div className="signup">
                     <div class="google">
@@ -40,16 +43,6 @@ class Home extends Component {
                     </div>
                 </div>
                 </Modal> */}
-                    <div>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname"/>
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname"/>
-                        <label for="email">E-Mail</label>
-                        <input type="text" id="email" name="email"/>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Must include a capital letter, number, and at least 6 characters"/>
-                    </div>
             </Container>
         )
     }

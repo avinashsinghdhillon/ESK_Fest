@@ -1,4 +1,4 @@
-.signup {
+.signup, .signin {
     width: 40%;
     font-family: 'Oswald', sans-serif;
     display: inline-block;
@@ -37,4 +37,24 @@ input[type=submit]:hover {
 
 .google {
   text-align: center;
+}
+
+.button {
+  background-color: #00a9e7;
+  font-family: 'Oswald', sans-serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 48%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.button:hover {
+    background-color: #137ad6;
+    transition: 0.5s;
 }
