@@ -25,7 +25,7 @@ function MainNav(props) {
                 <a href="/faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
             </li>
             <li className="right" onClick={() => props.handlePageChange("SignIn")}>
-                <a href="/signin">Sign In</a>
+                <a href="/signup">Sign In</a>
             </li>
             <li className="right" onClick={() => props.handlePageChange("SignUp")}>
                 <a href="/signup">Sign Up</a>
