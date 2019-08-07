@@ -3,9 +3,15 @@ const express = require("express");
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 mongoose.set('useNewUrlParser', true);
-// var passport = require("passport");
+const cookieSession = require('cookie-session');
+const passport = require("passport");
+//this will need to be modified later if needed. connected to routes/auth-routes///////////////
+const authRoutes = require('./apiauthentication/routes/users');
+const passportSetup = require('./config/passport');
 // var session = require("express-session");
 const bodyParser = require("body-parser");
+const keys = process.env;
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -23,13 +29,17 @@ app.use(bodyParser.json());
 // // For Passport
 // app.use(session({ secret: "keyboard cat",resave: true, saveUninitialized:true})); // session secret
  
-// app.use(passport.initialize());
+app.use(passport.initialize());
  
-// app.use(passport.session()); // persistent login sessions
+app.use(passport.session()); // persistent login sessions
 
+// set up session cookies
+app.use(cookieSession({
+  maxAge: 24 * 60 * 60 * 1000,
+  keys: [keys.COOKIE_KEY]
+}));
 
-
-// Routes
+// Routes///////////////////////////does it need any more routes listed?
 app.use('/users', require('./apiauthentication/routes/users'));
 
 
