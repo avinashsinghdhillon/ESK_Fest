@@ -1,8 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald&display=swap);
+
 .nav {
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     width: 100%;
+    background-color: #184097;
 }
 
 img {
@@ -18,7 +21,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #184097;
   }
   
   li {

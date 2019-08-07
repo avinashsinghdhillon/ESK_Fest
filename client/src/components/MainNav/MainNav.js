@@ -5,7 +5,7 @@ function MainNav(props) {
     return (
         <ul className="nav">
             <li>
-                <a href="#">EASTSIDE KINGS FESTIVAL</a>
+                <a href="/">EASTSIDE KINGS FESTIVAL</a>
             </li>
             <li>
                 {/* All = About = Home? */}
