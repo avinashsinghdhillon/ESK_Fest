@@ -1,0 +1,60 @@
+.signup, .signin {
+    width: 40%;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+input {
+    border: 2px solid #137ad6;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+input[type=submit] {
+    background-color: #137ad6;
+    text-align: center;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 20px 2px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    background-color: #00a9e7;
+    transition: 0.3s;
+}
+
+.submit {
+    width: 26%;
+    float: right;
+}
+
+.google {
+  text-align: center;
+}
+
+.button {
+  background-color: #00a9e7;
+  font-family: 'Oswald', sans-serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 48%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.button:hover {
+    background-color: #137ad6;
+    transition: 0.5s;
+}

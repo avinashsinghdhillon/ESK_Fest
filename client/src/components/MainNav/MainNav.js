@@ -8,22 +8,27 @@ function MainNav(props) {
                 <a href="#">EASTSIDE KINGS FESTIVAL</a>
             </li>
             <li>
-                <a href="#all" onClick={() => props.handlePageChange("All")}>About</a>
+                {/* All = About = Home? */}
+                <a href="/all" onClick={() => props.handlePageChange("All")}>About</a>
             </li>
             <li>
-                <a href="#schedule" onClick={() => props.handlePageChange("Schedule")}>Schedule</a>
+                <a href="/schedule" onClick={() => props.handlePageChange("Schedule")}>Schedule</a>
             </li>
-            <li>
+                {/* Moved to Footer for now 8/6/19 */}
+            {/* <li>
                 <a href="#sponsors" onClick={() => props.handlePageChange("Sponsors")}>Sponsors</a>
             </li>
             <li>
-                <a href="#faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
+                <a href="#privacy" onClick={() => props.handlePageChange("Privacy")}>Privacy</a>
+            </li> */}
+            <li>
+                <a href="/faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
             </li>
             <li className="right" onClick={() => props.handlePageChange("SignIn")}>
-                <a href="#">Sign In</a>
+                <a href="/signin">Sign In</a>
             </li>
             <li className="right" onClick={() => props.handlePageChange("SignUp")}>
-                <a href="#">Sign Up</a>
+                <a href="/signup">Sign Up</a>
             </li>
         </ul>
     )
