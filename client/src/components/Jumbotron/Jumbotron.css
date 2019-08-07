@@ -1,0 +1,33 @@
+.jumbotron {
+    background-color: white;
+    max-height: 30%
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.container {
+    padding-left: 10%;
+}
+
+h1 {
+    font-family: Oswald;
+    font-size: 3rem;
+    color: #184097;
+}
+
+p  {
+    font-family: Oswald;
+    font-size: 1rem;
+    color: #137ad6; 
+}
