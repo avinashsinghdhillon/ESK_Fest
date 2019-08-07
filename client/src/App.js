@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import MainNav from './components/MainNav';
 import SignUp from './components/SignUp';
 import Footer from './components/Footer';
+import SignUpPage from './pages/SignUp';
+import Schedule from './pages/Schedule'
 // import logo from './logo.svg';
 // import './App.css';
 
