@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 // import Jumbotron from '../components/Jumbotron';
 // import API from '../utils/API';
 // import { Link } from 'react-router-dom';
-import { Col, Row, Container } from '../components/Grid';
+// import { Col, Row, Container } from '../components/Grid';
+import { Container } from '../components/Grid';
 // import { Input, FormBtn } from '../components/Form';
 import './Home.css';
 
@@ -54,19 +55,19 @@ class Home extends Component {
     }
 }
 
-const Modal = ({ handleClose, show, children }) => {
-    const showHideClassName = show ? 'modal display-block' : 'modal display-none';
+// const Modal = ({ handleClose, show, children }) => {
+//     const showHideClassName = show ? 'modal display-block' : 'modal display-none';
 
-    return (
-        <div className={showHideClassName}>
-            <section className='modal-main'>
-                {children}
-                <button onClick={handleClose}>
-                    Close
-                </button>
-            </section>
-        </div>
-    );
-};
+//     return (
+//         <div className={showHideClassName}>
+//             <section className='modal-main'>
+//                 {children}
+//                 <button onClick={handleClose}>
+//                     Close
+//                 </button>
+//             </section>
+//         </div>
+//     );
+// };
 
 export default Home;
