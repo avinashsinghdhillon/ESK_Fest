@@ -2,11 +2,11 @@ import React from 'react';
 // import "bootstrap/dist/css/bootstrap.css";
 // import "/Carousel.css";
 import imgCrystal from "./images/crystal-thomas-pano.jpg";
-import imgHarold from "./images/harold-mcmillan-pano.jpg";
+import imgBarbara from "./images/barbara-lynn-pano.jpg";
 import imgJewel from "./images/jewel-brown-pano.jpg";
 import imgLadyTee from "./images/lady-tee-liljay-pano.jpg";
-import imgRay from "./images/ray-reed-pano.jpg";
-import "./carousel.css"
+import imgLavelle from "./images/lavelle-barbara-pano.jpg";
+import "./Carousel.css"
 import { Carousel } from 'react-bootstrap';
 
 function EskCarousel(props) {
@@ -26,11 +26,11 @@ function EskCarousel(props) {
         <Carousel.Item>
             <img
             className="d-block w-100 bigImg"
-            src={imgHarold}
-            alt="Harold McMillan"
+            src={imgBarbara}
+            alt="Barbara Lynn"
             />
             <Carousel.Caption>
-            <h3>Harold McMillan</h3>
+            <h3>Barbara Lynn</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
         </Carousel.Item>
@@ -59,11 +59,11 @@ function EskCarousel(props) {
         <Carousel.Item>
             <img
             className="d-block w-100 bigImg"
-            src={imgRay}
-            alt="Ray Reed"
+            src={imgLavelle}
+            alt="Lavelle White and Barbara Lynn"
             />
             <Carousel.Caption>
-            <h3>Ray Reed</h3>
+            <h3>Lavelle White and Barbara Lynn</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
         </Carousel.Item>
