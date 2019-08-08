@@ -4,7 +4,9 @@
     display: inline-block;
     margin: 0 auto;
 }
-
+.big{
+  height:500px;
+}
 input {
     border: 2px solid #137ad6;
     border-radius: 4px;

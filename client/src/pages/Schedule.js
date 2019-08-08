@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ScheduleNav from '../components/ScheduleNav';
 import ArtistCard from '../components/ArtistCard';
-import { Col, Row, Container } from '../components/Grid';
+import { Container } from '../components/Grid';
+import Footer from '../components/Footer';
 
-class Schedule extends component {
+class Schedule extends Component {
 
 
     render() {
         return (
-            <Container fluid>
+            <div>
             <ScheduleNav />
+            <Container className="under-nav">
+                {/* <h1>ARTISTS SCHEDULE HERE</h1> */}
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
                 <ArtistCard />
                 <ArtistCard />
                 <ArtistCard />
                 <ArtistCard />
                 <ArtistCard />
             </Container>
+            </div>
         );
     }
 }

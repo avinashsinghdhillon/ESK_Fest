@@ -2,10 +2,14 @@
     background-color: #333;
     display: block;
     margin: 0 auto;
+    margin-top: 80px;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    height: 120px;
     width: 100%;
     text-align: center;
+    /* bottom: 0; */
+    position: relative;
 }
 
 ul {
@@ -39,7 +43,7 @@ li a {
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
-    margin: 0px 35px;
+    /* margin: 0px 35px; */
 }
 
 p {
