@@ -21,7 +21,9 @@ class SignUpCompo extends Component {
     event.preventDefault();
     //1. check to see if user profile already exists in our DB using the email input
     //Select * from users where email = emailInput
+    API.getUserByEmail()
 
+    }.then
 
   }
 
