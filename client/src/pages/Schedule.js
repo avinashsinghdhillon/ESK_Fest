@@ -2,17 +2,29 @@ import React, { Component } from 'react';
 import ScheduleNav from '../components/ScheduleNav';
 import ArtistCard from '../components/ArtistCard';
 import { Container } from '../components/Grid';
+import Footer from '../components/Footer';
 
 class Schedule extends Component {
 
 
     render() {
         return (
-            <Container>
+            <div>
             <ScheduleNav />
-            <h1>ARTISTS SCHEDULE HERE</h1>
-            <ArtistCard />
+            <Container className="under-nav">
+                {/* <h1>ARTISTS SCHEDULE HERE</h1> */}
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
+                <ArtistCard />
             </Container>
+            </div>
         );
     }
 }

@@ -5,7 +5,7 @@ function ArtistCard(props) {
     return (
     <div className="card">
         <div className="image">
-            <img src="https://www.placehold.it/150x150" alt="artist"/>
+            <img className="artistImage" src="https://www.placehold.it/150x150" alt="artist"/>
         </div>
         <div className="container">
             <h4>Artist Name HERE</h4>

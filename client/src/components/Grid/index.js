@@ -1,7 +1,7 @@
 import React from "react";
 
-export function Container({ fluid, children }) {
-  return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;
+export function Container({ fluid, children, className }) {
+  return <div style={{flex:"1 0 auto"}} className={`container${fluid ? "-fluid" : ""}${className ? " " + className : "" }`}>{children}</div>;
 }
 
 export function Row({ fluid, children }) {
