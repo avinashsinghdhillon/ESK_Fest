@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 import { Container } from '../components/Grid';
 // import { Input, FormBtn } from '../components/Form';
 import './Home.css';
+import Carousel from "../components/Carousel"
 
 class Home extends Component {
     state = { show: false }
@@ -21,6 +22,9 @@ class Home extends Component {
         return (
             <Container fluid>
                 <h1>JUMBOTRON</h1>
+                <div  className="big" >
+                <Carousel/>
+                </div>
                 <hr/>
                 <h1>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL, LOCATED IN AUSTIN, TX.</h1>
                 <div id="eventDetails">
