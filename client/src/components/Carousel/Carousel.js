@@ -1,90 +1,74 @@
 import React from 'react';
-import "bootstrap/dist/css/bootstrap.css";
-import "/Carousel.css";
+// import "bootstrap/dist/css/bootstrap.css";
+// import "/Carousel.css";
+import imgCrystal from "./images/crystal-thomas-pano.jpg";
+import imgHarold from "./images/harold-mcmillan-pano.jpg";
+import imgJewel from "./images/jewel-brown-pano.jpg";
+import imgLadyTee from "./images/lady-tee-liljay-pano.jpg";
+import imgRay from "./images/ray-reed-pano.jpg";
+import "./carousel.css"
+import { Carousel } from 'react-bootstrap';
 
-function Carousel(props) {
+function EskCarousel(props) {
     return (
-        <div className="carousel">
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-12" style="padding-top: 20px;">
-                        <div className="carousel slide">
-                            <ol className="carousel-indicators">
-                                <li className style="margin-left: 10px;">
-                                    ::before
-                                    ::after
-                        </li>
-                                <li className style="margin-left: 10px;">
-                                    ::before
-                                    ::after
-                        </li>
-                                <li className style="margin-left: 10px;">
-                                    ::before
-                                    ::after
-                        </li>
-                                <li className="active" style="margin-left: 10px;">
-                                    ::before
-                                    ::after
-                        </li>
-                                <li className style="margin-left: 10px;">
-                                    ::before
-                                    ::after
-                        </li>
-                            </ol>
-                            <div className="carousel-inner" role="listbox">
-                                <div className="carousel-item carousel-item-prev carousel-item-left">
-                                    <div style="height: 400px;">
-                                        <img src="../../images/crystal-thomas-pano.jpg" style="width: 100%; height: 100%;" />
-                                        <div className="carousel-caption">Crystal Thomas</div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item carousel-item-prev carousel-item-left">
-                                    <div style="height: 400px;">
-                                        <img src="../../images/harold-mcmillan-pano.jpg" style="width: 100%; height: 100%;" />
-                                        <div className="carousel-caption">Harold McMillan</div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item carousel-item-prev carousel-item-left">
-                                    <div style="height: 400px;">
-                                        <img src="../../images/jewel-brown-pano.jpg" style="width: 100%; height: 100%;" />
-                                        <div className="carousel-caption">Jewel Brown</div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item active">
-                                    <div style="height: 400px;">
-                                        <img src="../../images/lady-tee-liljay-pano.jpg" style="width: 100%; height: 100%;" />
-                                        <div className="carousel-caption">Lady Tee and Lil Jay</div>
-                                    </div>
-                                </div>
-                                <div className="carousel-item carousel-item-next carousel-item-right">
-                                    <div style="height: 400px;">
-                                        <img src="../../images/ray-reed-pano.jpg" style="width: 100%; height: 100%;" />
-                                        <div className="carousel-caption">Ray Reed</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <a className="left carousel-control-prev">
-                                    <span className="leftControl">
-                                        <i className="icon icon-chevron-left">
-                                            ::before
-                                        </i>
-                                    </span>
-                                </a>
-                                <a className="right carousel-control-next">
-                                    <span className="rightControl">
-                                        <i className="icon icon-chevron-right">
-                                            ::before
-                                        </i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <Carousel style={{height:"100%"}}>
+        <Carousel.Item>
+            <img
+            className="d-block w-100 bigImg"
+            src={imgCrystal}
+            alt="Crystal Thomas"
+            />
+            <Carousel.Caption>
+            <h3>Crystal Thomas</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100 bigImg"
+            src={imgHarold}
+            alt="Harold McMillan"
+            />
+            <Carousel.Caption>
+            <h3>Harold McMillan</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100 bigImg"
+            src={imgJewel}
+            alt="Jewel Brown"
+            />
+            <Carousel.Caption>
+            <h3>Jewel Brown</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100 bigImg"
+            src={imgLadyTee}
+            alt="Lady Tee and Lil Jay"
+            />
+            <Carousel.Caption>
+            <h3>Lady Tee and Lil Jay</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block w-100 bigImg"
+            src={imgRay}
+            alt="Ray Reed"
+            />
+            <Carousel.Caption>
+            <h3>Ray Reed</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+        </Carousel.Item>
+    </Carousel>   
     )
 }
 
-export default Carousel;
+export default EskCarousel;
