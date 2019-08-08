@@ -11,6 +11,7 @@ class Schedule extends Component {
             <Container>
             <ScheduleNav />
             <h1>ARTISTS SCHEDULE HERE</h1>
+            <ArtistCard />
             </Container>
         );
     }
