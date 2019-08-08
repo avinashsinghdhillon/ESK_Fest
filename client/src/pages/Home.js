@@ -14,8 +14,8 @@ class Home extends Component {
     render() {
         return (
             <Container fluid>
-                <h1>JUMBOTRON</h1>
-                <div  className="big" >
+                {/* <h1>JUMBOTRON</h1> */}
+                <div className="big" >
                 <Carousel/>
                 </div>
                 <hr/>

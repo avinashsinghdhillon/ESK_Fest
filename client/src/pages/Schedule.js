@@ -3,7 +3,7 @@ import ScheduleNav from '../components/ScheduleNav';
 import ArtistCard from '../components/ArtistCard';
 import { Container } from '../components/Grid';
 import API from '../utils/API';
-import Footer from '../components/Footer';
+
 
 class Schedule extends Component {
     state = {
