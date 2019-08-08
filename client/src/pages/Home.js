@@ -24,6 +24,7 @@ class Home extends Component {
                 <hr/>
                 <h1>CONTACT</h1>
             </Container>
+            
         )
     }
 }
