@@ -26,8 +26,8 @@ class Schedule extends Component {
     render() {
         return (
             <div>
-            <Container>
             <ScheduleNav />
+            <Container>
             {this.state.events.map((events, index) => {
                 return(<ArtistCard
                     key={index}
