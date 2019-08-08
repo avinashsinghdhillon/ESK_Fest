@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ScheduleNav from '../components/ScheduleNav';
 import ArtistCard from '../components/ArtistCard';
 import { Container } from '../components/Grid';
-import Footer from '../components/Footer';
 
 class Schedule extends Component {
 
