@@ -27,7 +27,7 @@ class Schedule extends Component {
         return (
             <div>
             <ScheduleNav />
-            <Container>
+            <Container className="under-nav">
             {this.state.events.map((events, index) => {
                 return(<ArtistCard
                     key={index}
