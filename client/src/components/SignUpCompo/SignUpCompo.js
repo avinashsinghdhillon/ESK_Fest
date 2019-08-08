@@ -26,15 +26,19 @@ class SignUpCompo extends Component {
       [name]: value
     });
   };
-
+//////////////////////// this section handles the sign up page//////////////////////
+  ///////////////////////////////////////////////////////////////////////////////
   //this is the non-google signup onClick button event
   signupUser = event => {
     event.preventDefault();
     console.log("in button. state.email: " + this.state.email);
-        //1. check to see if user profile already exists in our DB using the email input
-    //Select * from users where email = emailInput
+    //1. check to see if user profile already exists in our DB using the email input
     API.getUserByEmail(this.state.email)
-      .then(res => console.log("Get user by email route: ", res))
+      .then(function (res){ 
+        console.log("Get user by email route: ", res);
+        //if the user email exists redirect to login page////////////////////Modal or alert?
+        
+      })
       .catch(err => console.log(err));
     }
 

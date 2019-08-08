@@ -6,7 +6,7 @@ import imgHarold from "./images/harold-mcmillan-pano.jpg";
 import imgJewel from "./images/jewel-brown-pano.jpg";
 import imgLadyTee from "./images/lady-tee-liljay-pano.jpg";
 import imgRay from "./images/ray-reed-pano.jpg";
-import "./carousel.css"
+import "./Carousel.css"
 import { Carousel } from 'react-bootstrap';
 
 function EskCarousel(props) {

@@ -44,6 +44,14 @@ module.exports = {
 
     itinerary: async (req, res, next) => {
         console.log('I managed to get here');
-        res.json({ secret: "resource"})
+        res.json({ secret: "resource" })
+    },
+
+    findByEmail: function (req, res) {
+        console.log("In users controller");
+        User
+            .findOne({ userEmail: req.body.email })
+            .then(dbModel => res.json(dbModel))
+            .catch(err => res.status(422).json(err));
     }
 }

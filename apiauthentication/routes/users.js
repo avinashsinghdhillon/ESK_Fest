@@ -17,4 +17,7 @@ router.route('/signin')
 router.route('/itinerary')
  .get(passportJWT, UsersController.itinerary);
 
+ router.route('/checkEmail')
+ .post(UsersController.findByEmail)
+
 module.exports = router;
