@@ -29,7 +29,7 @@ function MainNav(props) {
             </li>
             <li className="right" onClick={() => props.handlePageChange("SignUp")}>
                 <a href="/signup">Sign Up</a>
-            </li> */}
+            </li>
         </ul>
     )
 }
