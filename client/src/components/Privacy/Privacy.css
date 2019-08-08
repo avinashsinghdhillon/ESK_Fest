@@ -12,3 +12,11 @@ h6 {
     text-align: left;
     
 }
+
+li {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }

@@ -68,7 +68,7 @@ function Privacy() {
                             </p>
                         </div>
                         <div className='privacy'>
-                            <h6>Surveys &amp; Contests </h6>
+                            <h6>Surveys & Contests </h6>
                             <p>
                             From time-to-time our site requests information via surveys or contests. Participation in these surveys or contests is completely voluntary and you may choose whether or not to participate and therefore disclose this information. Information requested may include contact information (such as name and shipping address), and demographic information (such as zip code, age level). Contact information will be used to notify the winners and award prizes.
                             Survey information will be used to help our grantors understand the scope of our audience which in turn will help us with future grant applications.
