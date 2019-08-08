@@ -7,6 +7,9 @@
     padding: 0;
     overflow: hidden;
     background-color: #00a9e7;
+    top: 50px;
+    position: fixed;
+    z-index: 1;
 }
 
 ul {
@@ -32,4 +35,10 @@ ul {
   
   .active {
     background-color: #137ad6;
+  }
+
+  /* this is used one the Schedule.js container */
+  .under-nav {
+    margin-top: 107px;
+    z-index: -1;
   }
