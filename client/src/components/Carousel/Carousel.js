@@ -1,10 +1,8 @@
 import React from 'react';
-// import "bootstrap/dist/css/bootstrap.css";
-// import "/Carousel.css";
 import imgCrystal from "./images/crystal-thomas-pano.jpg";
 import imgBarbara from "./images/barbara-lynn-pano.jpg";
 import imgJewel from "./images/jewel-brown-pano.jpg";
-import imgLadyTee from "./images/lady-tee-liljay-pano.jpg";
+import imgCLC from "./images/crystal-lucky-chuck-pano.jpg";
 import imgLavelle from "./images/lavelle-barbara-pano.jpg";
 import "./Carousel.css"
 import { Carousel } from 'react-bootstrap';
@@ -19,8 +17,8 @@ function EskCarousel(props) {
             alt="Crystal Thomas"
             />
             <Carousel.Caption>
-            <h3>Crystal Thomas</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 className="artist-name">Crystal Thomas</h3>
+            <p className="artist-caption">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -30,8 +28,8 @@ function EskCarousel(props) {
             alt="Barbara Lynn"
             />
             <Carousel.Caption>
-            <h3>Barbara Lynn</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 className="artist-name">Barbara Lynn</h3>
+            <p className="artist-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -41,19 +39,19 @@ function EskCarousel(props) {
             alt="Jewel Brown"
             />
             <Carousel.Caption>
-            <h3>Jewel Brown</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3 className="artist-name">Jewel Brown</h3>
+            <p className="artist-caption">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
             <img
             className="d-block w-100 bigImg"
-            src={imgLadyTee}
-            alt="Lady Tee and Lil Jay"
+            src={imgCLC}
+            alt="Crystal, Lucky and Chuck"
             />
             <Carousel.Caption>
-            <h3>Lady Tee and Lil Jay</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 className="artist-name">Crystal, Lucky, and Chuck</h3>
+            <p className="artist-caption">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -63,8 +61,8 @@ function EskCarousel(props) {
             alt="Lavelle White and Barbara Lynn"
             />
             <Carousel.Caption>
-            <h3>Lavelle White and Barbara Lynn</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 className="artist-name">Lavelle White and Barbara Lynn</h3>
+            <p className="artist-caption">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
         </Carousel.Item>
     </Carousel>   
