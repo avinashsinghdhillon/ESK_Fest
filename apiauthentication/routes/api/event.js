@@ -1,8 +1,7 @@
-const router = require("express").Router;
+const eventsRouter = require("express").Router();
 const eventsController = require("../../controllers/eventsController");
 
-router.route("/api/events")
+eventsRouter.route("/api/events")
     .get(eventsController.findAll);
 
-
-module.exports = router;
+module.exports = eventsRouter;

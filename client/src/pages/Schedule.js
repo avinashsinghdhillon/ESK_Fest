@@ -10,11 +10,11 @@ class Schedule extends Component {
     };
 
     componentDidMount(){
-        this.loadArtists();
+        this.loadEvents();
     }
 
     //function to load artists and make call to API
-    loadArtists = () => {
+    loadEvents = () => {
         API.getEvents()
         .then(res => {
             console.log(res.data)
