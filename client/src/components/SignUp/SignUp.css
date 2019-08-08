@@ -1,8 +1,8 @@
 .signup, .signin {
-    width: 40%;
+    width: 50%;
     font-family: 'Oswald', sans-serif;
     display: block;
-    margin: 5% auto;
+    margin: 8% auto;
 }
 
 input {
