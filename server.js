@@ -31,6 +31,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/users', require('./apiauthentication/routes/users'));
+app.use(require('./apiauthentication/routes/api/event'));
 
 
 var syncOptions = { force: false };

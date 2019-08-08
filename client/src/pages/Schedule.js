@@ -2,27 +2,40 @@ import React, { Component } from 'react';
 import ScheduleNav from '../components/ScheduleNav';
 import ArtistCard from '../components/ArtistCard';
 import { Container } from '../components/Grid';
+import API from '../utils/API';
 import Footer from '../components/Footer';
 
 class Schedule extends Component {
+    state = {
+        events: []
+    };
 
+    componentDidMount(){
+        this.loadEvents();
+    }
+
+    //function to load artists and make call to API
+    loadEvents = () => {
+        API.getEvents()
+        .then(res => {
+            console.log(res.data)
+            this.setState({ events: res.data})
+        })
+    }
 
     render() {
         return (
             <div>
+            <Container>
             <ScheduleNav />
-            <Container className="under-nav">
-                {/* <h1>ARTISTS SCHEDULE HERE</h1> */}
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
+            {this.state.events.map((events, index) => {
+                return(<ArtistCard
+                    key={index}
+                    id={events.id}
+                    src={events.artistPicture}
+                    name={events.artistName}
+                    />)
+            })}
             </Container>
             </div>
         );
