@@ -1,19 +1,19 @@
-.nav {
+.nav-tabs {
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     width: 100%;
-}
-
-ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #00a9e7;
+}
+
+ul {
+    list-style-type: none;
   }
   
-  li {
+  li.tab {
     float: left;
     width: 33.3%
   }

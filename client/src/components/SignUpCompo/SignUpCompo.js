@@ -23,9 +23,7 @@ class SignUpCompo extends Component {
     //Select * from users where email = emailInput
     API.getUserByEmail()
 
-    }.then
-
-  }
+    }
 
   render() {
     return (

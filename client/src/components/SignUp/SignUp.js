@@ -1,9 +1,10 @@
 import React from 'react';
+import { Container } from '../Grid';
 import './SignUp.css';
 
 function SignUp(props) {
     return (
-        <div>
+        <Container>
             <div className="signup">
                 <div class="google">
                     <img src="../../images/btn_google_signin_dark_normal_web.png" alt=""/>
@@ -21,10 +22,9 @@ function SignUp(props) {
                     <input type="password" id="password" name="password" placeholder="Must include a capital letter, number, and at least 6 characters"/>
                 </div>
                 <div className="submit">
-                    <button class="button" id="signupSubmit" type="submit" text="Submit">Submit</button>
+                    <input class="button" id="signupSubmit" type="submit" text="Submit"/>
                 </div>
             </div>
-                <hr/>
             <div className="signin">
                 <div>
                     <h4>Sign In</h4>
@@ -34,10 +34,10 @@ function SignUp(props) {
                     <input type="password" id="userPassword" name="userPassword" placeholder="Enter your password"/>
                 </div>
                 <div className="submit">
-                    <button class="button" id="signinSubmit" type="submit" text="Submit">Submit</button>
+                    <input class="button" id="signinSubmit" type="submit" text="Submit"/>
                 </div>
             </div>
-        </div>
+        </Container>
     )
 }
 

@@ -19,10 +19,16 @@ class Home extends Component {
     render() {
         return (
             <Container fluid>
+                <h1>JUMBOTRON</h1>
+                <hr/>
                 <h1>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL, LOCATED IN AUSTIN, TX.</h1>
                 <div id="eventDetails">
                     <h4>Event Details Here</h4>
                 </div>
+                <hr/>
+                <h1>SPONSORS</h1>
+                <hr/>
+                <h1>CONTACT</h1>
                 {/* <Modal show={this.state.show} handleClose={this.hideModal} >
                 <div className="signup">
                     <div class="google">
