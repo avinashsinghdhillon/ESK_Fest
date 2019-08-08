@@ -6,6 +6,7 @@ import SignUp from './components/SignUp';
 import Schedule from './pages/Schedule';
 import Faq from './pages/FAQ';
 import Footer from './components/Footer';
+import Privacy from './components/Privacy';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/schedule" component={Schedule} />
           <Route exact path="/faq" component={Faq} />
+          <Route exact path="/privacy" component={Privacy} />
         </Switch>
         <Footer />
       </div>
