@@ -3,36 +3,29 @@ import './MainNav.css';
 
 function MainNav(props) {
     return (
-        <ul className="nav">
+        <ul className="nav" id="mainNav">
             <li>
-                <a href="/">EASTSIDE KINGS FESTIVAL</a>
+                <a href="/">Eastside Kings Festival</a>
             </li>
             <li>
                 {/* All = About = Home? */}
-                <a href="/all" onClick={() => props.handlePageChange("All")}>About</a>
+                <a href="/about" onClick={() => props.handlePageChange("About")}>About</a>
             </li>
             <li>
                 <a href="/schedule" onClick={() => props.handlePageChange("Schedule")}>Schedule</a>
             </li>
-                {/* Moved to Footer for now 8/6/19 */}
-            {/* <li>
-                <a href="#sponsors" onClick={() => props.handlePageChange("Sponsors")}>Sponsors</a>
-            </li>
-            <li>
-                <a href="#privacy" onClick={() => props.handlePageChange("Privacy")}>Privacy</a>
-            </li> */}
             <li>
                 <a href="/faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
             </li>
-            <ul className="right">
-                <li onClick={() => props.handlePageChange("SignIn")}>
-                    <a href="/signup">Sign In</a>
-                </li>
-                <li onClick={() => props.handlePageChange("SignUp")}>
-                    <a href="/signup">Sign Up</a>
-                </li>
-            </ul>
-
+            <li>
+                <a href="/signup" onClick={() => props.handlePageChange("SignIn")}>Sign In</a>
+            </li>
+            <li>
+                <a href="/signup" onClick={() => props.handlePageChange("SignUp")}>Sign Up</a>
+            </li>
+            <li>
+                <a href="/itinerary" onClick={() => props.handlePageChange("Itinerary")}>Itinerary</a>
+            </li>
         </ul>
     )
 }
