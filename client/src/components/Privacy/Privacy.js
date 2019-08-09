@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container } from '../Grid';
 import '../Privacy/Privacy.css';
+import Eskf from '../../images/ESK-FOUNDATION-LOGO.png';
 
 function Privacy() {
         return (
             <Container>
+            <img src={Eskf} alt="Eastside Kings Foundation Logo" style={{marginTop:"20px", marginLeft:"auto", marginRight:"auto", display:"block"}}/>
             <div id="privacy-div">
                         <h1>Privacy Notice</h1> 
                             <h5>
@@ -69,8 +71,8 @@ function Privacy() {
                             <p>
                             We use "cookies" on this site in order to provide you with a personalized service. A cookie is a piece of data stored on a site visitor's hard drive to help us improve your access to our site and identify repeat visitors to our site. For instance, when we use a cookie to identify you, you would not have to log in a password more than once, thereby saving time while on our site.
                             Cookies can also enable us to track and target the interests of our users to enhance the experience on our site. Usage of a cookie is in no way linked to any personally identifiable information on our site.
-                            Want more information on cookies? <a href="https://www.cookiesandyou.com/" rel="noopener noreferrer" target="_blank">Learn More</a>
-                            </p>
+                            Want more information on cookies?</p>
+                            <p><a href="https://www.cookiesandyou.com/" rel="noopener noreferrer" target="_blank">Learn More</a></p>
                         </div>
 
                         <div className='privacy'>
