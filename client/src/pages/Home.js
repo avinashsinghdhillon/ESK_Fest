@@ -13,10 +13,11 @@ class Home extends Component {
 
     render() {
         return (
+            <div>
+            <div className="big" >
+            <Carousel/>
+            </div>
             <Container fluid>
-                <div className="big" >
-                <Carousel/>
-                </div>
                 <div>
                 <hr/>
                 <h1>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL, LOCATED IN AUSTIN, TX.</h1>
@@ -29,7 +30,7 @@ class Home extends Component {
                 <h1>CONTACT</h1>
                 </div>
             </Container>
-            
+            </div>
         )
     }
 }
