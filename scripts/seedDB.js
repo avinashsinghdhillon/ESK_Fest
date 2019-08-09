@@ -722,7 +722,6 @@ const locationSeed = [
 
 const userSeed = [
   {
-    userID: 1,
     userType: "local",
     email: "email@email.com",
     userPassword: "Password1",
@@ -731,7 +730,6 @@ const userSeed = [
     lastName: "User1"
   },
   {
-    userID: 2,
     userType: "local",
     email: "1@email.com",
     userPassword: "Password1",
@@ -740,7 +738,6 @@ const userSeed = [
     lastName: "User2"
   },
   {
-    userID: 3,
     userType: "local",
     email: "3@email.com",
     userPassword: "Password1",
@@ -1214,7 +1211,6 @@ db.Location
   .catch(err => {
     console.error(err);
   });
-
 
 
 db.User

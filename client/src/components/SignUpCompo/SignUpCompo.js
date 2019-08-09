@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import { Container } from '../Grid';
-import './SignUp.css';
-import API from "../../utils/API";
-import googleSignInButton from "../../images/btn_google_signin_dark_normal_web.png";
+import React, {Component} from 'react';
+import '../SignUp/SignUp.css';
+import googleSignup from '../../images/btn_google_signin_dark_normal_web.png';
+import API from "../../utils/API"; //add all the API. routes here.
+//import User from '../../../models';//this is not being allowed
 
-class SignUp extends Component {
+class SignUpCompo extends Component {
+
   state = {
     //the state will hold the user object if the user logs in or creates a new account
     user: {},
@@ -80,11 +81,11 @@ class SignUp extends Component {
   }
   render() {
     return (
-      <Container>
+      <div>
         <div className="signup">
           <div className="google">
-            <img src={googleSignInButton} alt="" />
-            <button href="#">SIGN IN WITH GOOGLE</button>
+            {/* add the google login ROUTE to this button /////////////////////////////////////*/}
+            <img href="#" src={googleSignup} alt="" />
           </div>
           <div>
             <h4>Sign Up</h4>
@@ -95,12 +96,13 @@ class SignUp extends Component {
             <label htmlFor="email">E-Mail</label>
             <input type="text" id="email" name="email" onChange={this.handleInputChange} value = {this.state.email}/>
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" name="password"  onChange={this.handleInputChange} value = {this.state.password} placeholder="Needs a capital letter, a number, and minimun 6 characters" />
+            <input type="password" id="password" name="password" onChange={this.handleInputChange} value = {this.state.password} placeholder="Must include a capital letter, number, and at least 6 characters" />
           </div>
           <div className="submit">
-            <input className="button" id="signupSubmit" type="submit" text="Submit"  onClick={(event)=>{this.signupUser(event)}}/>
+            <button className="button" id="signupSubmit" type="submit" onClick={(event)=>{this.signupUser(event)}}>Submit</button>
           </div>
         </div>
+        <hr />
         <div className="signin">
           <div>
             <h4>Sign In</h4>
@@ -110,12 +112,12 @@ class SignUp extends Component {
             <input type="password" id="userPassword" name="userPassword" placeholder="Enter your password" />
           </div>
           <div className="submit">
-            <input className="button" id="signinSubmit" type="submit" text="Submit" />
+            <button className="button" id="signinSubmit" type="submit" text="Submit">Submit</button>
           </div>
         </div>
-      </Container>
+      </div>
     )
   }
 }
 
-export default SignUp;
+export default SignUpCompo;
