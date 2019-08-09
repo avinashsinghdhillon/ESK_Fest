@@ -224,7 +224,7 @@ const artistSeed = [
   {
     artistID: 24,
     artistName: "James Fenner",
-    artistPicture: "",
+    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/67782054_10156486062302514_4794770810579451904_n.jpg?_nc_cat=109&_nc_oc=AQlqZrV0fM_RuL9-IhKNwWZ4Mixx5mOevun5jTXXcqpHgrNW8z8DMVf1hPNmObHI_MX7Jbu2Aqkj8MvPDzG3YvfS&_nc_ht=scontent.faus1-1.fna&oh=d506b95c15acc13a623d281bfe229f7c&oe=5DE6A3BE",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -394,8 +394,8 @@ const artistSeed = [
   },
   {
     artistID: 43,
-    artistName: "Nico Leophonte",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/28795107_1494265750696510_189629665181171712_n.jpg?_nc_cat=101&_nc_oc=AQnxeUIPQmlKAOYK4SvxpPIR8EZ9oikOnYxHxhpE1sRKvJbGfvruLab-6jTl-IrYZ04&_nc_ht=scontent.fftw1-1.fna&oh=97ffcc0720ea57c23feeb25c03c777c3&oe=5DECBA4A",
+    artistName: "Mike Stone",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -458,7 +458,7 @@ const artistSeed = [
   {
     artistID: 50,
     artistName: "Scott Bock, MC",
-    artistPicture: "../../client/images/Scott M. Bock Headshot 2.jpg",
+    artistPicture: "../../client/images/scottbock.jpg",
     artistAbout: "Scott Bock is a writer for Living Blues magazine. His support of the Eastside Kings Festival is greatly appreciated, and we are grateful to him for being an MC year after year.",
     artistSite: "",
     artistSpotify: "",
@@ -616,15 +616,6 @@ const artistSeed = [
     artistSite: "",
     artistSpotify: "",
     artistYoutube: ""
-  },
-  {
-    artistID: 68,
-    artistName: "Mike Stone",
-    artistPicture: "",
-    artistAbout: "",
-    artistSite: "",
-    artistSpotify: "",
-    artistYoutube: ""
   }
 ]
 
@@ -733,7 +724,7 @@ const userSeed = [
   {
     userType: "local",
     email: "email@email.com",
-    password: "Password1",
+    userPassword: "Password1",
     googleID: "",
     firstName: "Test",
     lastName: "User1"
@@ -741,7 +732,7 @@ const userSeed = [
   {
     userType: "local",
     email: "1@email.com",
-    password: "Password1",
+    userPassword: "Password1",
     googleID: "",
     firstName: "Test",
     lastName: "User2"
@@ -749,7 +740,7 @@ const userSeed = [
   {
     userType: "local",
     email: "3@email.com",
-    password: "Password1",
+    userPassword: "Password1",
     googleID: "",
     firstName: "Test",
     lastName: "User3"
@@ -763,11 +754,7 @@ const eventSeed = [
     startDate: "09/13/2019",
     endDate: "09/13/2019",
     locationID: 1,
-    artists: [
-      {
-        artistID: 8
-      }
-    ],
+    artistIdArr: [8],
     startTime: "20:00",
     endTime: "21:30",
   },
@@ -777,11 +764,7 @@ const eventSeed = [
     startDate: "09/13/2019",
     endDate: "09/13/2019",
     locationID: 1,
-    artists: [
-      {
-        artistID: [34, 14, 25, 28, 24, 61]
-      }
-    ],
+    artistIdArr: [34, 14, 25, 28, 24, 61],
     startTime: "21:45",
     endTime: "23:00",
   },
@@ -791,11 +774,7 @@ const eventSeed = [
     startDate: "09/13/2019",
     endDate: "09/14/2019",
     locationID: 1,
-    artists: [
-      {
-        artistID: 60
-      }
-    ],
+    artistIdArr: [60],
     startTime: "23:15",
     endTime: "1:00",
   },
@@ -805,11 +784,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 2,
-    artists: [
-      {
-        artistID: [50, 14, 15, 61, 13, 54, 53]
-      }
-    ],
+    artistIdArr: [50, 14, 15, 61, 13, 54, 53],
     startTime: "13:00",
     endTime: "14:00",
   },
@@ -819,11 +794,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: 49
-      }
-    ],
+    artistIdArr: [49],
     startTime: "17:20",
     endTime: "20:00",
   },
@@ -833,11 +804,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: 60
-      }
-    ],
+    artistIdArr: [60],
     startTime: "17:20",
     endTime: "18:30",
   },
@@ -847,7 +814,9 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 8,
-    artists: [34, 14, 28, 25, 24, 17, 29],
+    artistIdArr: [
+       34, 14, 28, 25, 24, 17, 29
+    ],
     startTime: "19:00",
     endTime: "20:00",
   },
@@ -857,11 +826,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 27
-      }
-    ],
+    artistIdArr: [27],
     startTime: "16:30",
     endTime: "21:30",
   },
@@ -871,11 +836,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 36
-      }
-    ],
+    artistIdArr: [36],
     startTime: "16:30",
     endTime: "17:30",
   },
@@ -885,11 +846,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 7
-      }
-    ],
+    artistIdArr: [7],
     startTime: "17:30",
     endTime: "18:00",
   },
@@ -899,11 +856,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 32
-      }
-    ],
+    artistIdArr: [32],
     startTime: "18:00",
     endTime: "18:30",
   },
@@ -913,11 +866,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 55
-      }
-    ],
+    artistIdArr: [55],
     startTime: "19:00",
     endTime: "20:00",
   },
@@ -927,11 +876,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 10
-      }
-    ],
+    artistIdArr: [10],
     startTime: "20:30",
     endTime: "21:00",
   },
@@ -941,11 +886,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 3
-      }
-    ],
+    artistIdArr: [3],
     startTime: "21:00",
     endTime: "21:30",
   },
@@ -955,11 +896,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: [19, 37]
-      }
-    ],
+    artistIdArr: [19, 37],
     startTime: "16:00",
     endTime: "17:00",
   },
@@ -969,11 +906,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: 56
-      }
-    ],
+    artistIdArr: [56],
     startTime: "17:30",
     endTime: "19:00",
   },
@@ -983,11 +916,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: [35, 8]
-      }
-    ],
+    artistIdArr: [35, 8],
     startTime: "19:30",
     endTime: "20:30",
   },
@@ -997,11 +926,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: [17, 8, 29]
-      }
-    ],
+    artistIdArr: [17, 8, 29],
     startTime: "21:00",
     endTime: "22:00",
   },
@@ -1011,11 +936,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 63
-      }
-    ],
+    artistIdArr: [63],
     startTime: "16:30",
     endTime: "18:00",
   },
@@ -1025,11 +946,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 13
-      }
-    ],
+    artistIdArr: [13],
     startTime: "17:20",
     endTime: "18:00",
   },
@@ -1039,11 +956,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 15
-      }
-    ],
+    artistIdArr: [15],
     startTime: "18:20",
     endTime: "19:20",
   },
@@ -1053,11 +966,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 54
-      }
-    ],
+    artistIdArr: [54],
     startTime: "19:50",
     endTime: "20:50",
   },
@@ -1067,11 +976,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 30
-      }
-    ],
+    artistIdArr: [30],
     startTime: "21:20",
     endTime: "22:20",
   },
@@ -1081,11 +986,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: [18, 2]
-      }
-    ],
+    artistIdArr: [18, 2],
     startTime: "17:00",
     endTime: "18:00",
   },
@@ -1095,11 +996,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: 26
-      }
-    ],
+    artistIdArr: [26],
     startTime: "18:20",
     endTime: "19:05",
   },
@@ -1109,11 +1006,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: 9
-      }
-    ],
+    artistIdArr: [9],
     startTime: "19:25",
     endTime: "20:20",
   },
@@ -1123,11 +1016,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: 21
-      }
-    ],
+    artistIdArr: [21],
     startTime: "17:20",
     endTime: "18:20",
   },
@@ -1137,11 +1026,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: [48, 5, 33]
-      }
-    ],
+    artistIdArr: [48, 5, 33],
     startTime: "18:40",
     endTime: "20:00",
   },
@@ -1151,11 +1036,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 47
-      }
-    ],
+    artistIdArr: [47],
     startTime: "16:30",
     endTime: "17:00",
   },
@@ -1165,11 +1046,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 23
-      }
-    ],
+    artistIdArr: [23],
     startTime: "17:00",
     endTime: "17:30",
   },
@@ -1179,11 +1056,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 30
-      }
-    ],
+    artistIdArr: [30],
     startTime: "18:00",
     endTime: "19:00",
   },
@@ -1193,11 +1066,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 44
-      }
-    ],
+    artistIdArr: [44],
     startTime: "19:30",
     endTime: "20:00",
   },
@@ -1207,11 +1076,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 7
-      }
-    ],
+    artistIdArr: [7],
     startTime: "20:00",
     endTime: "20:30",
   },
@@ -1221,11 +1086,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: [38, 57]
-      }
-    ],
+    artistIdArr: [38, 57],
     startTime: "17:00",
     endTime: "18:00",
   },
@@ -1235,11 +1096,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: 58
-      }
-    ],
+    artistIdArr: [58],
     startTime: "18:30",
     endTime: "21:00",
   },
@@ -1249,11 +1106,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 31
-      }
-    ],
+    artistIdArr: [31],
     startTime: "16:00",
     endTime: "16:45",
   },
@@ -1263,11 +1116,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 12
-      }
-    ],
+    artistIdArr: [12],
     startTime: "17:00",
     endTime: "18:00",
   },
@@ -1277,11 +1126,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 4
-      }
-    ],
+    artistIdArr: [4],
     startTime: "18:30",
     endTime: "19:30",
   },
@@ -1291,11 +1136,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: [51, 14]
-      }
-    ],
+    artistIdArr: [51, 14],
     startTime: "20:00",
     endTime: "21:00",
   },
@@ -1305,11 +1146,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: 1
-      }
-    ],
+    artistIdArr: [1],
     startTime: "17:15",
     endTime: "18:15",
   },
@@ -1319,11 +1156,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: [8, 17]
-      }
-    ],
+    artistIdArr: [8, 17],
     startTime: "18:45",
     endTime: "20:00",
   },
@@ -1333,11 +1166,7 @@ const eventSeed = [
     startDate: "09/17/2019",
     endDate: "09/18/2019",
     locationID: 6,
-    artists: [
-      {
-        artistID: [8, 7, 17]
-      }
-    ],
+    artistIdArr: [8, 7, 17],
     startTime: "21:30",
     endTime: "1:00",
   }
@@ -1347,17 +1176,34 @@ const eventSeed = [
 
 
 db.Artist
-  .remove({})
+  .deleteMany()
   .then(() => db.Artist.collection.insertMany(artistSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
+    const updatedEventSeed = eventSeed.map(event => {
+      event.artists = event.artistIdArr.map(artistIndex => {
+        return data.insertedIds[artistIndex]
+      })
+      return event;
+    });
+
+    db.Event
+      .deleteMany()
+      .then(() => db.Event.collection.insertMany(updatedEventSeed))
+      .then(data => {
+        console.log(data.result.n + " records inserted!");
+      })
+      .catch(err => {
+        console.error(err);
+      });
+    
   })
   .catch(err => {
     console.error(err);
   });
 
 db.Location
-  .remove({})
+  .deleteMany()
   .then(() => db.Location.collection.insertMany(locationSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
@@ -1366,18 +1212,9 @@ db.Location
     console.error(err);
   });
 
-db.Event
-  .remove({})
-  .then(() => db.Event.collection.insertMany(eventSeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-  })
-  .catch(err => {
-    console.error(err);
-  });
 
 db.User
-  .remove({})
+  .deleteMany()
   .then(() => db.User.collection.insertMany(userSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");

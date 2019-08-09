@@ -7,9 +7,12 @@ import API from '../utils/API';
 class Schedule extends Component {
     state = {
         events: []
+        //add additional states to hold the day/artist/venue
+    
     };
 
     componentDidMount(){
+        //default to day
         this.loadEvents();
     }
 
@@ -23,10 +26,11 @@ class Schedule extends Component {
     }
 
     render() {
+        
         return (
             <div>
             <ScheduleNav />
-            <Container className="under-nav">
+            <Container>
             {this.state.events.map((events, index) => {
                 return(<ArtistCard
                     key={index}
