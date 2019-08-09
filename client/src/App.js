@@ -8,6 +8,7 @@ import Sponsors from './pages/Sponsors';
 import Faq from './pages/FAQ';
 // import Footer from './components/Footer';
 import Privacy from './components/Privacy';
+import About from './pages/About';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/sponsors" component={Sponsors} />
           <Route exact path="/faq" component={Faq} />
           <Route exact path="/privacy" component={Privacy} />
+          <Route exact path="/about" component={About} />
         </Switch>
         {/* <Footer /> */}
       </div>

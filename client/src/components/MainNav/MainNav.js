@@ -9,7 +9,7 @@ function MainNav(props) {
             </li>
             <li>
                 {/* All = About = Home? */}
-                <a href="/all" onClick={() => props.handlePageChange("All")}>About</a>
+                <a href="/about" onClick={() => props.handlePageChange("About")}>About</a>
             </li>
             <li>
                 <a href="/schedule" onClick={() => props.handlePageChange("Schedule")}>Schedule</a>
