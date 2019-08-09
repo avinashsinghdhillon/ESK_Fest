@@ -6,16 +6,16 @@ import API from '../utils/API';
 
 class Schedule extends Component {
     state = {
-        events: []
+        artists: []
     };
 
     componentDidMount(){
-        this.loadEvents();
+        this.loadArtists();
     }
 
     //function to load artists and make call to API
     loadEvents = () => {
-        API.getEvents()
+        API.getArtists()
         .then(res => {
             console.log(res.data)
             this.setState({ events: res.data})
@@ -27,12 +27,12 @@ class Schedule extends Component {
             <div>
             <ScheduleNav />
             <Container className="under-nav">
-            {this.state.events.map((events, index) => {
+            {this.state.artists.map((artists, index) => {
                 return(<ArtistCard
                     key={index}
-                    id={events.id}
-                    src={events.artistPicture}
-                    name={events.artistName}
+                    id={artists.id}
+                    src={artists.artistPicture}
+                    name={artists.artistName}
                     />)
             })}
             </Container>
