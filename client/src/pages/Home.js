@@ -13,15 +13,18 @@ class Home extends Component {
 
     render() {
         return (
+            <div>
+            <div className="big" >
+            <Carousel/>
+            </div>
             <Container fluid>
-                <div className="big" >
-                <Carousel/>
-                </div>
                 <div>
                 <hr/>
-                <h1>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL, LOCATED IN AUSTIN, TX.</h1>
+                <h1 style={{textAlign:"center"}}>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL</h1><br/>
                 <div id="eventDetails">
-                    <h4>Event Details Here</h4>
+                    <h5>Eastside Kings Fest is a celebration for the great living musicians who have given us some of the best years of music.</h5>
+                    <h5>The Eastside Kings Fest takes place the first week of September putting together great Blues/Gospel/Jazz acts every year for two amazing evenings.</h5>
+                    <h5>This year's show is in East Austin, TX September 14th & 15th, 2019.</h5>
                 </div>
                 <hr/>
                 <h1>SPONSORS</h1>
@@ -29,7 +32,7 @@ class Home extends Component {
                 <h1>CONTACT</h1>
                 </div>
             </Container>
-            
+            </div>
         )
     }
 }
