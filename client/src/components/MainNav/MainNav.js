@@ -1,15 +1,6 @@
 import React from 'react';
 import './MainNav.css';
 
-// function dropNav() {
-//     var x = document.getElementById("mainNav");
-//     if (x.className === "nav") {
-//       x.className += " responsive";
-//     } else {
-//       x.className = "nav";
-//     }
-//   }
-
 function MainNav(props) {
     return (
         <ul className="nav" id="mainNav">
@@ -26,17 +17,19 @@ function MainNav(props) {
             <li>
                 <a href="/faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
             </li>
-            <ul className="right">
-                <li onClick={() => props.handlePageChange("SignIn")}>
-                    <a href="/signup">Sign In</a>
-                </li>
-                <li onClick={() => props.handlePageChange("SignUp")}>
-                    <a href="/signup">Sign Up</a>
-                </li>
-            </ul>
-            {/* <a href="javascript:void(0);" className="icon" onclick={dropNav()}>
-                <i className="fa fa-bars"></i>
-            </a> */}
+            <li><a href="#">Account</a>
+                <ul className="dropdown">
+                    <li onClick={() => props.handlePageChange("SignIn")}>
+                        <a href="/signup">Sign In</a>
+                    </li>
+                    <li onClick={() => props.handlePageChange("SignUp")}>
+                        <a href="/signup">Sign Up</a>
+                    </li>
+                    <li onClick={() => props.handlePageChange("Itinerary")}>
+                        <a href="/itinerary">Itinerary</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     )
 }
