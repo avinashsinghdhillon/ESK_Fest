@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from '../components/Grid';
 import ArtistCard from '../components/ArtistCard';
-// import SignUp from '../components/SignUp';
 
 class Itinerary extends Component {
     render() {
