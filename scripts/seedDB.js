@@ -10,23 +10,15 @@ mongoose.connect(
 
 const artistSeed = [
   {
-    artistID: 0,
-    artistName: "",
-    artistPicture: "",
-    artistAbout: "",
-    artistSite: "",
-    artistSpotify: "",
-    artistYoutube: ""
-  },
-  {
     artistID: 1,
     artistName: "Adrian Reed Gospel Mass",
+    artistPicture: "https://i.imgur.com/ek1y02a.png",
     artistYoutube: "https://www.youtube.com/watch?time_continue=55&v=IrcSmpOs-EA"
   },
   {
     artistID: 2,
     artistName: "Andre Hayward",
-    artistPicture: "https://eastsidemusic.com/wp-content/uploads/2017/01/528798_4073025378524_1688142703_n.jpg",
+    artistPicture: "https://i.imgur.com/FAOP6fb.jpg",
     artistAbout: "",
     artistSite: "https://eastsidemusic.com/meet-the-teachers/andre-hayward/",
     artistSpotify: "https://open.spotify.com/track/1XEOnfdtuJRmvdG1jvpGuW",
@@ -35,7 +27,7 @@ const artistSeed = [
   {
     artistID: 3,
     artistName: "Andrea Dawson",
-    artistPicture: "http://andrea-dawson.com/img/thumbs/promo1.jpg",
+    artistPicture: "https://i.imgur.com/CsPSt9k.jpg",
     artistAbout: "",
     artistSite: "http://andrea-dawson.com/",
     artistSpotify: "",
@@ -44,7 +36,7 @@ const artistSeed = [
   {
     artistID: 4,
     artistName: "Barbara Lynn",
-    artistPicture: "http://blog.ponderosastomp.com/wp-content/uploads/2015/06/BarbaraLynn63.jpg",
+    artistPicture: "https://i.imgur.com/7kVMtuZ.jpg",
     artistAbout: "",
     artistSite: "https://www.chron.com/entertainment/music/article/Barbara-Lynn-receives-NEA-honor-13010469.php",
     artistSpotify: "https://open.spotify.com/track/5CEREcGR5WaLt40YzTQ62e",
@@ -53,7 +45,7 @@ const artistSeed = [
   {
     artistID: 5,
     artistName: "Big Jack Williams",
-    artistPicture: "https://media.licdn.com/dms/image/C4E03AQGwVU7Ffw7zTw/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=OeRR8kBQbV7bpY_avz6zSSCd_HduvrhKEst12oB7lYg",
+    artistPicture: "https://i.imgur.com/1rh3ZFX.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -62,7 +54,7 @@ const artistSeed = [
   {
     artistID: 6,
     artistName: "Bill Campbell",
-    artistPicture: "https://i.ytimg.com/vi/WSicdduH0ds/hqdefault.jpg",
+    artistPicture: "https://i.imgur.com/3bGnfOG.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -71,7 +63,7 @@ const artistSeed = [
   {
     artistID: 7,
     artistName: "Birdlegg",
-    artistPicture: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/12079084_1070606249650755_6408743538498699032_n.jpg?_nc_cat=108&_nc_oc=AQkEzUvJVNIhnVEvLIh1QyPhloebqRw4BvLKLHANZQVITKedCJ6yAlc2Sgy3HMJvvXo&_nc_ht=scontent-ort2-1.xx&oh=0ed7d899fd35c5f57bc3a797fb3d4b44&oe=5DE67C60",
+    artistPicture: "https://i.imgur.com/k0XmE6O.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/69CuiaKEedGZ91mvdzysZq",
@@ -80,7 +72,7 @@ const artistSeed = [
   {
     artistID: 8,
     artistName: "Bloodest Saxophone",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/29597822_1700496680039606_9109238817085062677_n.jpg?_nc_cat=111&_nc_oc=AQkVvwPXFZD_WQelg_SHz8hnCJ98Ji-LGHKmZdefLMiy7USyF9RmWbo4oOrJyZZtyDPbahCGvWKCwLW9WfAxPH5S&_nc_ht=scontent.faus1-1.fna&oh=1930b359963f9f155f1c7d3d8782b8b1&oe=5DD5250E",
+    artistPicture: "https://i.imgur.com/fQzVI6S.jpg",
     artistAbout: "",
     artistSite: "http://bloodsax.main.jp/?fbclid=IwAR1ptCsXR-CEAtyKj6qGp70J1X__tI76dOSxdQw3bpGr9OCSnwQuiRycD1s",
     artistSpotify: "https://open.spotify.com/track/1wSL3lQHdSoGwtFbOis0Zm",
@@ -89,16 +81,16 @@ const artistSeed = [
   {
     artistID: 9,
     artistName: "Blues Jazz Plus",
-    artistPicture: "",
-    artistAbout: "The New School of Music is a 501(c)(3) nonprofit community music school founded in 2013. We provide world-class jazz & blues masterclasses, workshops, and concerts in the Austin area. Previous clinicians/ performers include Don Braden, Andre Hayward, Tom Brechtlein, Eddie Gomez Trio, Alex Coke, Murali Coryell, Ernie Durawa, Mike Flanigin, Sue Foley, Chris Layton, and Denny Freeman.",
-    artistSite: "https://www.newschoolofmusic.net/",
+    artistPicture: "https://i.imgur.com/mm1PNsG.png",
+    artistAbout: "",
+    artistSite: "https://www.newschoolofmusic.org/",
     artistSpotify: "",
     artistYoutube: ""
   },
   {
     artistID: 10,
     artistName: "Brown Sugar",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/41788147_1679291582179809_6125589121852243968_n.jpg?_nc_cat=101&_nc_oc=AQlh9DN2fRZSb4K9a6jnla5lNXpFHM1CLCo9YmE3Wp8UY-esaZPWiUuPSHJCk3q-jMrmnkHrfowX2iaZBpGoC7_0&_nc_ht=scontent.faus1-1.fna&oh=0f366e338a3134f8739bb11426608c54&oe=5DE0509F",
+    artistPicture: "https://i.imgur.com/4o6Wtbj.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -107,7 +99,7 @@ const artistSeed = [
   {
     artistID: 11,
     artistName: "Burley Manor Jr",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/uFaS0Bi.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -116,7 +108,7 @@ const artistSeed = [
   {
     artistID: 12,
     artistName: "Carl Weathersby",
-    artistPicture: "https://photos.bandsintown.com/thumb/8319855.jpeg",
+    artistPicture: "https://i.imgur.com/so4I3WP.png",
     artistAbout: "",
     artistSite: "http://www.carlweathersby.org/",
     artistSpotify: "https://open.spotify.com/track/7Jxp79DHtduKJ7YPo4lDaC",
@@ -134,7 +126,7 @@ const artistSeed = [
   {
     artistID: 14,
     artistName: "Chuck Rainey",
-    artistPicture: "http://chuckrainey.com/wp-content/uploads/2015/03/3675748_orig.jpg",
+    artistPicture: "https://i.imgur.com/OoNZM4y.jpg",
     artistAbout: "",
     artistSite: "https://chuckrainey.com/",
     artistSpotify: "https://open.spotify.com/track/2uqr9arJdbS5Huef2eFJol",
@@ -143,7 +135,7 @@ const artistSeed = [
   {
     artistID: 15,
     artistName: "Classie Ballou",
-    artistPicture: "http://www.absmag.fr/wp-content/uploads/2017/08/classieballou-bis.jpg",
+    artistPicture: "https://i.imgur.com/Tu4gi8U.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/4Q0oqa1l7WJXmtGaZbzPS0",
@@ -152,7 +144,7 @@ const artistSeed = [
   {
     artistID: 16,
     artistName: "Corey Keller",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t31.0-8/12194736_794810897294553_7856540980212221690_o.jpg?_nc_cat=111&_nc_oc=AQlb3hmwlcihFpIY4VqjvXKr-kQbwprniD3cOjq087gBa4ynWdFt5k_jsuhPw_q369k&_nc_ht=scontent.fftw1-1.fna&oh=62cb60eae155bd641b20aa19556dcd60&oe=5DA4D33C",
+    artistPicture: "https://i.imgur.com/eda2s9g.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -161,7 +153,7 @@ const artistSeed = [
   {
     artistID: 17,
     artistName: "Crystal Thomas",
-    artistPicture: "https://cdbaby.name/artist/c/r/crystalthomas3.jpg",
+    artistPicture: "https://i.imgur.com/oQNm7t4.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/4r17N5j0GXjbHFgUY5Dd1o",
@@ -170,7 +162,7 @@ const artistSeed = [
   {
     artistID: 18,
     artistName: "Don Braden",
-    artistPicture: "http://www.donbraden.com/images/DB%20by%20Will%20Hauser_6499%20E1cm.jpg",
+    artistPicture: "https://i.imgur.com/VS4YOia.jpg",
     artistAbout: "",
     artistSite: "http://www.donbraden.com/",
     artistSpotify: "https://open.spotify.com/track/7Gq3gnDaQK8pfP8pnPjoG4",
@@ -179,7 +171,7 @@ const artistSeed = [
   {
     artistID: 19,
     artistName: "Eastside Syndicate",
-    artistPicture: "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/3084710/original/resize:248x186/crop:x142y44w724h542/hash:1467395310/1362527457_488414221199879_1214049152_n.jpg?1467395310",
+    artistPicture: "https://i.imgur.com/3mxteG9.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -188,7 +180,7 @@ const artistSeed = [
   {
     artistID: 20,
     artistName: "Ernie Durawa",
-    artistPicture: "https://www.txstate.edu/cachee80a581ae26788da9181af1af4f44a23/imagehandler/scaler/gato-docs.its.txstate.edu/jcr:2fe47598-306e-4309-bc20-2c751e64f590/1965_or_1966sm.jpg?mode=fit&width=432",
+    artistPicture: "https://i.imgur.com/PiogG3j.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -197,7 +189,7 @@ const artistSeed = [
   {
     artistID: 21,
     artistName: "Gregg Smith",
-    artistPicture: "https://imagery.zoogletools.com/u/261759/e8756c09497185f526d97eb42060b0d7107eedbb/photo/grsmith-143.jpg",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "https://greggasmithmusic.com/home",
     artistSpotify: "",
@@ -206,7 +198,7 @@ const artistSeed = [
   {
     artistID: 22,
     artistName: "Hash Brown",
-    artistPicture: "https://s.hdnux.com/photos/66/76/45/14412124/3/920x920.jpg",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -215,7 +207,7 @@ const artistSeed = [
   {
     artistID: 23,
     artistName: "James 'Killer Bug' Morris",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/54515484_10156174120792514_4866167022603468800_n.jpg?_nc_cat=100&_nc_oc=AQk8cKMN8RpmC3TA-y6VrJSnxKK04eXL2xkKcuGmjR7ULMn-LVlfKZS8X_5ym93UmkaQFTpt2dan4QRYabhk_7qs&_nc_ht=scontent.faus1-1.fna&oh=44ce78f1b14f0fd702815b9bcaabab44&oe=5DE7A1B5",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -233,7 +225,7 @@ const artistSeed = [
   {
     artistID: 25,
     artistName: "Jason Moeller",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t31.0-8/13112801_1082616131801639_761232208215079285_o.jpg?_nc_cat=107&_nc_oc=AQnCb1TmJKj4K8cqLnPpmj8eq1E1acla-hy4HZqHDw1HO_70j0BWssciz27eVwC3KOyhNWyVoSGJY_1Y-5HzK2cD&_nc_ht=scontent.faus1-1.fna&oh=f6a03153ebb893941d3e24d55bbf0dae&oe=5DEAD0D4",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -242,7 +234,7 @@ const artistSeed = [
   {
     artistID: 26,
     artistName: "Jewel Brown",
-    artistPicture: "http://bluesjunctionproductions.com/yahoo_site_admin/assets/images/10943844_564746530327408_5582291932400111792_n.190130132_std.jpg",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/1ZZ4xYTORrkU9gY0isK6OR",
@@ -251,7 +243,7 @@ const artistSeed = [
   {
     artistID: 27,
     artistName: "Johnny LaTouf, MC",
-    artistPicture: "https://i1.sndcdn.com/artworks-000239007989-hz6zfb-t500x500.jpg",
+    artistPicture: "",
     artistAbout: "Johnny LaTouf is the owner of Skylark Lounge, a generous supporter of the Eastside Kings Festival and blues musicians.",
     artistSite: "",
     artistSpotify: "",
@@ -260,7 +252,7 @@ const artistSeed = [
   {
     artistID: 28,
     artistName: "Johnny Moeller",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t31.0-8/13112801_1082616131801639_761232208215079285_o.jpg?_nc_cat=107&_nc_oc=AQnCb1TmJKj4K8cqLnPpmj8eq1E1acla-hy4HZqHDw1HO_70j0BWssciz27eVwC3KOyhNWyVoSGJY_1Y-5HzK2cD&_nc_ht=scontent.faus1-1.fna&oh=f6a03153ebb893941d3e24d55bbf0dae&oe=5DEAD0D4",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -269,7 +261,7 @@ const artistSeed = [
   {
     artistID: 29,
     artistName: "Kaz Kazanoff",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/49739111_10157198870228463_5685837152810696704_n.jpg?_nc_cat=107&_nc_oc=AQnNhb5bFIKlh3ncO0LxRpi6RhOPZQ4Vj74wd3kar1xnFu9Yrne4c5M3c16GgQastDMomdMUp4nu9r5xbQMTd29r&_nc_ht=scontent.faus1-1.fna&oh=c84509fd73c3bf93f4cb59f5224030d3&oe=5DE3F6F9",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -278,7 +270,7 @@ const artistSeed = [
   {
     artistID: 30,
     artistName: "Keith Dunn",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/43023513_1699379583504342_446324020623704064_n.jpg?_nc_cat=108&_nc_oc=AQla9B_S1HD-S0v0PSOklhMFM98OoXcf8okMXB45E-S0vaEtQL3Wxmn0IoP3lCMWQTeGFOdc9Jx0_p5i-MxWVtqN&_nc_ht=scontent.faus1-1.fna&oh=54fc3b5978b0ab4f4f9656dc0e052384&oe=5DD814B1",
+    artistPicture: "git",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/6BIpLmms6hIdSFI3GNTw8J",
@@ -394,8 +386,8 @@ const artistSeed = [
   },
   {
     artistID: 43,
-    artistName: "Nico Leophonte",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/28795107_1494265750696510_189629665181171712_n.jpg?_nc_cat=101&_nc_oc=AQnxeUIPQmlKAOYK4SvxpPIR8EZ9oikOnYxHxhpE1sRKvJbGfvruLab-6jTl-IrYZ04&_nc_ht=scontent.fftw1-1.fna&oh=97ffcc0720ea57c23feeb25c03c777c3&oe=5DECBA4A",
+    artistName: "Mike Stone",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -458,7 +450,7 @@ const artistSeed = [
   {
     artistID: 50,
     artistName: "Scott Bock, MC",
-    artistPicture: "../../client/images/Scott M. Bock Headshot 2.jpg",
+    artistPicture: "../../client/images/scottbock.jpg",
     artistAbout: "Scott Bock is a writer for Living Blues magazine. His support of the Eastside Kings Festival is greatly appreciated, and we are grateful to him for being an MC year after year.",
     artistSite: "",
     artistSpotify: "",
@@ -616,15 +608,6 @@ const artistSeed = [
     artistSite: "",
     artistSpotify: "",
     artistYoutube: ""
-  },
-  {
-    artistID: 68,
-    artistName: "Mike Stone",
-    artistPicture: "",
-    artistAbout: "",
-    artistSite: "",
-    artistSpotify: "",
-    artistYoutube: ""
   }
 ]
 
@@ -731,27 +714,24 @@ const locationSeed = [
 
 const userSeed = [
   {
-    userID: 1,
     userType: "local",
-    userEmail: "email@email.com",
+    email: "email@email.com",
     userPassword: "Password1",
     googleID: "",
     firstName: "Test",
     lastName: "User1"
   },
   {
-    userID: 2,
     userType: "local",
-    userEmail: "1@email.com",
+    email: "1@email.com",
     userPassword: "Password1",
     googleID: "",
     firstName: "Test",
     lastName: "User2"
   },
   {
-    userID: 3,
     userType: "local",
-    userEmail: "3@email.com",
+    email: "3@email.com",
     userPassword: "Password1",
     googleID: "",
     firstName: "Test",
@@ -766,11 +746,7 @@ const eventSeed = [
     startDate: "09/13/2019",
     endDate: "09/13/2019",
     locationID: 1,
-    artists: [
-      {
-        artistID: 8
-      }
-    ],
+    artistIdArr: [8],
     startTime: "20:00",
     endTime: "21:30",
   },
@@ -780,11 +756,7 @@ const eventSeed = [
     startDate: "09/13/2019",
     endDate: "09/13/2019",
     locationID: 1,
-    artists: [
-      {
-        artistID: [34, 14, 25, 28, 24, 61]
-      }
-    ],
+    artistIdArr: [34, 14, 25, 28, 24, 61],
     startTime: "21:45",
     endTime: "23:00",
   },
@@ -794,11 +766,7 @@ const eventSeed = [
     startDate: "09/13/2019",
     endDate: "09/14/2019",
     locationID: 1,
-    artists: [
-      {
-        artistID: 60
-      }
-    ],
+    artistIdArr: [60],
     startTime: "23:15",
     endTime: "1:00",
   },
@@ -808,11 +776,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 2,
-    artists: [
-      {
-        artistID: [50, 14, 15, 61, 13, 54, 53]
-      }
-    ],
+    artistIdArr: [50, 14, 15, 61, 13, 54, 53],
     startTime: "13:00",
     endTime: "14:00",
   },
@@ -822,11 +786,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: 49
-      }
-    ],
+    artistIdArr: [49],
     startTime: "17:20",
     endTime: "20:00",
   },
@@ -836,11 +796,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: 60
-      }
-    ],
+    artistIdArr: [60],
     startTime: "17:20",
     endTime: "18:30",
   },
@@ -850,10 +806,8 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: [34, 14, 28, 25, 24, 17, 29]
-      }
+    artistIdArr: [
+      34, 14, 28, 25, 24, 17, 29
     ],
     startTime: "19:00",
     endTime: "20:00",
@@ -864,11 +818,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 27
-      }
-    ],
+    artistIdArr: [27],
     startTime: "16:30",
     endTime: "21:30",
   },
@@ -878,11 +828,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 36
-      }
-    ],
+    artistIdArr: [36],
     startTime: "16:30",
     endTime: "17:30",
   },
@@ -892,11 +838,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 7
-      }
-    ],
+    artistIdArr: [7],
     startTime: "17:30",
     endTime: "18:00",
   },
@@ -906,11 +848,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 32
-      }
-    ],
+    artistIdArr: [32],
     startTime: "18:00",
     endTime: "18:30",
   },
@@ -920,11 +858,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 55
-      }
-    ],
+    artistIdArr: [55],
     startTime: "19:00",
     endTime: "20:00",
   },
@@ -934,11 +868,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 10
-      }
-    ],
+    artistIdArr: [10],
     startTime: "20:30",
     endTime: "21:00",
   },
@@ -948,11 +878,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 3
-      }
-    ],
+    artistIdArr: [3],
     startTime: "21:00",
     endTime: "21:30",
   },
@@ -962,11 +888,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: [19, 37]
-      }
-    ],
+    artistIdArr: [19, 37],
     startTime: "16:00",
     endTime: "17:00",
   },
@@ -976,11 +898,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: 56
-      }
-    ],
+    artistIdArr: [56],
     startTime: "17:30",
     endTime: "19:00",
   },
@@ -990,11 +908,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: [35, 8]
-      }
-    ],
+    artistIdArr: [35, 8],
     startTime: "19:30",
     endTime: "20:30",
   },
@@ -1004,11 +918,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: [17, 8, 29]
-      }
-    ],
+    artistIdArr: [17, 8, 29],
     startTime: "21:00",
     endTime: "22:00",
   },
@@ -1018,11 +928,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 63
-      }
-    ],
+    artistIdArr: [63],
     startTime: "16:30",
     endTime: "18:00",
   },
@@ -1032,11 +938,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 13
-      }
-    ],
+    artistIdArr: [13],
     startTime: "17:20",
     endTime: "18:00",
   },
@@ -1046,11 +948,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 15
-      }
-    ],
+    artistIdArr: [15],
     startTime: "18:20",
     endTime: "19:20",
   },
@@ -1060,11 +958,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 54
-      }
-    ],
+    artistIdArr: [54],
     startTime: "19:50",
     endTime: "20:50",
   },
@@ -1074,11 +968,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 30
-      }
-    ],
+    artistIdArr: [30],
     startTime: "21:20",
     endTime: "22:20",
   },
@@ -1088,11 +978,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: [18, 2]
-      }
-    ],
+    artistIdArr: [18, 2],
     startTime: "17:00",
     endTime: "18:00",
   },
@@ -1102,11 +988,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: 26
-      }
-    ],
+    artistIdArr: [26],
     startTime: "18:20",
     endTime: "19:05",
   },
@@ -1116,11 +998,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: 9
-      }
-    ],
+    artistIdArr: [9],
     startTime: "19:25",
     endTime: "20:20",
   },
@@ -1130,11 +1008,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: 21
-      }
-    ],
+    artistIdArr: [21],
     startTime: "17:20",
     endTime: "18:20",
   },
@@ -1144,11 +1018,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: [48, 5, 33]
-      }
-    ],
+    artistIdArr: [48, 5, 33],
     startTime: "18:40",
     endTime: "20:00",
   },
@@ -1158,11 +1028,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 47
-      }
-    ],
+    artistIdArr: [47],
     startTime: "16:30",
     endTime: "17:00",
   },
@@ -1172,11 +1038,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 23
-      }
-    ],
+    artistIdArr: [23],
     startTime: "17:00",
     endTime: "17:30",
   },
@@ -1186,11 +1048,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 30
-      }
-    ],
+    artistIdArr: [30],
     startTime: "18:00",
     endTime: "19:00",
   },
@@ -1200,11 +1058,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 44
-      }
-    ],
+    artistIdArr: [44],
     startTime: "19:30",
     endTime: "20:00",
   },
@@ -1214,11 +1068,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 5,
-    artists: [
-      {
-        artistID: 7
-      }
-    ],
+    artistIdArr: [7],
     startTime: "20:00",
     endTime: "20:30",
   },
@@ -1228,11 +1078,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: [38, 57]
-      }
-    ],
+    artistIdArr: [38, 57],
     startTime: "17:00",
     endTime: "18:00",
   },
@@ -1242,11 +1088,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 4,
-    artists: [
-      {
-        artistID: 58
-      }
-    ],
+    artistIdArr: [58],
     startTime: "18:30",
     endTime: "21:00",
   },
@@ -1256,11 +1098,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 31
-      }
-    ],
+    artistIdArr: [31],
     startTime: "16:00",
     endTime: "16:45",
   },
@@ -1270,11 +1108,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 12
-      }
-    ],
+    artistIdArr: [12],
     startTime: "17:00",
     endTime: "18:00",
   },
@@ -1284,11 +1118,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: 4
-      }
-    ],
+    artistIdArr: [4],
     startTime: "18:30",
     endTime: "19:30",
   },
@@ -1298,11 +1128,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 3,
-    artists: [
-      {
-        artistID: [51, 14]
-      }
-    ],
+    artistIdArr: [51, 14],
     startTime: "20:00",
     endTime: "21:00",
   },
@@ -1312,11 +1138,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: 1
-      }
-    ],
+    artistIdArr: [1],
     startTime: "17:15",
     endTime: "18:15",
   },
@@ -1326,11 +1148,7 @@ const eventSeed = [
     startDate: "09/15/2019",
     endDate: "09/15/2019",
     locationID: 7,
-    artists: [
-      {
-        artistID: [8, 17]
-      }
-    ],
+    artistIdArr: [8, 17],
     startTime: "18:45",
     endTime: "20:00",
   },
@@ -1340,11 +1158,7 @@ const eventSeed = [
     startDate: "09/17/2019",
     endDate: "09/18/2019",
     locationID: 6,
-    artists: [
-      {
-        artistID: [8, 7, 17]
-      }
-    ],
+    artistIdArr: [8, 7, 17],
     startTime: "21:30",
     endTime: "1:00",
   }
@@ -1354,49 +1168,51 @@ const eventSeed = [
 
 
 db.Artist
-  .remove({})
+  .deleteMany()
   .then(() => db.Artist.collection.insertMany(artistSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+    const updatedEventSeed = eventSeed.map(event => {
+      event.artists = event.artistIdArr.map(artistIndex => {
+        return data.insertedIds[artistIndex]
+      })
+      return event;
+    });
+
+
+
+    db.Event
+      .deleteMany()
+      .then(() => db.Event.collection.insertMany(updatedEventSeed))
+      .then(data => {
+        console.log(data.result.n + " records inserted!");
+      })
+      .catch(err => {
+        console.error(err);
+      });
+
   })
   .catch(err => {
     console.error(err);
-    process.exit(1);
   });
 
 db.Location
-  .remove({})
+  .deleteMany()
   .then(() => db.Location.collection.insertMany(locationSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
   })
   .catch(err => {
     console.error(err);
-    process.exit(1);
   });
 
-db.Event
-  .remove({})
-  .then(() => db.Event.collection.insertMany(eventSeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
 
 db.User
-  .remove({})
+  .deleteMany()
   .then(() => db.User.collection.insertMany(userSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
   })
   .catch(err => {
     console.error(err);
-    process.exit(1);
   });

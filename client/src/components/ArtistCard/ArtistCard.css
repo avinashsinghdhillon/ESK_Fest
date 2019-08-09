@@ -55,3 +55,31 @@
       background-color: #137ad6;
       transition: 0.5s;
   }
+
+  @media (max-width: 992px) {
+    .card {
+      width: 48%;
+    }
+    .button {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 48%;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+    .card {
+      width: 100%;
+    }
+    .button {
+      width: 100%;
+    }
+  }

@@ -2,10 +2,18 @@ require("dotenv").config();
 const express = require("express");
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-mongoose.set("useNewUrlParser", true);
+mongoose.set('useNewUrlParser', true);
+const cookieSession = require('cookie-session');
+const passport = require("passport");
+//this will need to be modified later if needed. connected to routes/auth-routes///////////////
+const authRoutes = require('./apiauthentication/routes/users');
+const passportSetup = require('./config/passport');
+const path = require("path");
 // var passport = require("passport");
 // var session = require("express-session");
 const bodyParser = require("body-parser");
+const keys = process.env;
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -23,14 +31,24 @@ app.use(bodyParser.json());
 // // For Passport
 // app.use(session({ secret: "keyboard cat",resave: true, saveUninitialized:true})); // session secret
  
-// app.use(passport.initialize());
+app.use(passport.initialize());
  
+app.use(passport.session()); // persistent login sessions
 // app.use(passport.session()); // persistent login sessions
 
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static("client/build"))
+}
 
+// set up session cookies
+app.use(cookieSession({
+  maxAge: 24 * 60 * 60 * 1000,
+  keys: [keys.COOKIE_KEY]
+}));
 
-// Routes
+// Routes///////////////////////////does it need any more routes listed?
 app.use('/users', require('./apiauthentication/routes/users'));
+app.use('/api/', require('./apiauthentication/routes/api/event'));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
@@ -45,6 +63,10 @@ if (process.env.NODE_ENV === "test") {
 }
 //Connect to Mongoose:
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/esk");
+
+app.use("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build/index.html"))
+})
 
 // Starting the server, syncing our models ------------------------------------/
 // db.sequelize.sync(syncOptions).then(function () {

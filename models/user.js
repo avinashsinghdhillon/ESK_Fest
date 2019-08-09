@@ -3,7 +3,6 @@ const bcrypt = require('bcryptjs');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    userID: { type: Number, required: true, unique: true },
     userType: { type: String, required: true },
     email: { type: String, required: true, unique: true, lowercase: true},
     password: { type: String, required: true },
@@ -35,6 +34,6 @@ userSchema.methods.isValidPassword = async function(newPassword){
     }
 }
 
-const User = mongoose.model("user", userSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;

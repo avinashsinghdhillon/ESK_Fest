@@ -9,7 +9,7 @@ import { Carousel } from 'react-bootstrap';
 
 function EskCarousel(props) {
     return (
-    <Carousel style={{height:"100%"}}>
+    <Carousel style={{height:"100%", zIndex:-1}}>
         <Carousel.Item>
             <img
             className="d-block w-100 bigImg"
