@@ -5,7 +5,7 @@ function MainNav(props) {
     return (
         <ul className="nav" id="mainNav">
             <li>
-                <a href="/">ESK FEST</a>
+                <a href="/">Eastside Kings Festival</a>
             </li>
             <li>
                 {/* All = About = Home? */}
@@ -17,18 +17,14 @@ function MainNav(props) {
             <li>
                 <a href="/faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
             </li>
-            <li><a href="#">Account</a>
-                <ul className="dropdown">
-                    <li onClick={() => props.handlePageChange("SignIn")}>
-                        <a href="/signup">Sign In</a>
-                    </li>
-                    <li onClick={() => props.handlePageChange("SignUp")}>
-                        <a href="/signup">Sign Up</a>
-                    </li>
-                    <li onClick={() => props.handlePageChange("Itinerary")}>
-                        <a href="/itinerary">Itinerary</a>
-                    </li>
-                </ul>
+            <li>
+                <a href="/signup" onClick={() => props.handlePageChange("SignIn")}>Sign In</a>
+            </li>
+            <li>
+                <a href="/signup" onClick={() => props.handlePageChange("SignUp")}>Sign Up</a>
+            </li>
+            <li>
+                <a href="/itinerary" onClick={() => props.handlePageChange("Itinerary")}>Itinerary</a>
             </li>
         </ul>
     )
