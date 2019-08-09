@@ -1,3 +1,25 @@
-.bigImg{
-    height:100%
+.bigImg {
+    height: 100%;
+}
+
+.artist-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+}
+
+.artist-caption {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    p.artist-caption {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h3.artist-name {
+      display: none;
+    }
 }

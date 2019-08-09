@@ -2,6 +2,11 @@ import axios from "axios";
 
 //this gets one user that matches the email
 export default {
+  //get all events
+  getEvents: function() {
+    console.log("getEvents from API.js");
+    return axios.get("/api/events")
+  },
   getUserByEmail: function(query) {
     return axios.post("/users/checkEmail", { email: query});
   },
@@ -19,5 +24,4 @@ export default {
       }
     );
   }
-
 };

@@ -8,6 +8,8 @@ const passport = require("passport");
 //this will need to be modified later if needed. connected to routes/auth-routes///////////////
 const authRoutes = require('./apiauthentication/routes/users');
 const passportSetup = require('./config/passport');
+const path = require("path");
+// var passport = require("passport");
 // var session = require("express-session");
 const bodyParser = require("body-parser");
 const keys = process.env;
@@ -32,6 +34,11 @@ app.use(bodyParser.json());
 app.use(passport.initialize());
  
 app.use(passport.session()); // persistent login sessions
+// app.use(passport.session()); // persistent login sessions
+
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static("client/build"))
+}
 
 // set up session cookies
 app.use(cookieSession({
@@ -41,6 +48,7 @@ app.use(cookieSession({
 
 // Routes///////////////////////////does it need any more routes listed?
 app.use('/users', require('./apiauthentication/routes/users'));
+app.use(require('./apiauthentication/routes/api/event'));
 
 
 var syncOptions = { force: false };
@@ -52,6 +60,10 @@ if (process.env.NODE_ENV === "test") {
 }
 //Connect to Mongoose:
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/esk");
+
+app.use("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build/index.html"))
+})
 
 // Starting the server, syncing our models ------------------------------------/
 // db.sequelize.sync(syncOptions).then(function () {

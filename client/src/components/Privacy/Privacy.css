@@ -1,22 +1,29 @@
-font {
-    color: black;
-}
-
-p {
-    color: black;
-    font-size: 18px;
-    line-height: 2rem
-}
-
-h6 {
-    text-align: left;
-    
-}
-
-li {
-    display: block;
-    color: black;
+#privacy-div h1 {
+    padding-top: 15px;
+    padding-bottom: 10px;
     text-align: center;
+}
+
+#privacy-div h5 {
+    font-size: 0.8rem;
+}
+
+#privacy-div li {
+    float: none !important;
+    color: #333;
+    font-size: 12px;
+    line-height: 1rem;
     padding: 10px 10px;
-    text-decoration: none;
   }
+
+#privacy-div h6 {
+    /* color:black; */
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+#privacy-div p {
+    font-size: 12px;
+    line-height: 1rem;
+    color: #333;
+}

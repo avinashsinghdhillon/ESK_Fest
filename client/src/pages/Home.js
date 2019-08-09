@@ -11,67 +11,30 @@ import Carousel from "../components/Carousel"
 class Home extends Component {
     state = { show: false }
 
-    // showModal = () => {
-    //     this.setState({ show: true });
-    // }
-
-    // hideModal = () => {
-    //     this.setState({ show: false });
-    // }
     render() {
         return (
+            <div>
+            <div className="big" >
+            <Carousel/>
+            </div>
             <Container fluid>
-                <h1>JUMBOTRON</h1>
-                <div  className="big" >
-                <Carousel/>
-                </div>
+                <div>
                 <hr/>
-                <h1>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL, LOCATED IN AUSTIN, TX.</h1>
+                <h1 style={{textAlign:"center"}}>WELCOME TO THE EASTSIDE KINGS MUSIC FESTIVAL</h1><br/>
                 <div id="eventDetails">
-                    <h4>Event Details Here</h4>
+                    <h5>Eastside Kings Fest is a celebration for the great living musicians who have given us some of the best years of music.</h5>
+                    <h5>The Eastside Kings Fest takes place the first week of September putting together great Blues/Gospel/Jazz acts every year for two amazing evenings.</h5>
+                    <h5>This year's show is in East Austin, TX September 14th & 15th, 2019.</h5>
                 </div>
                 <hr/>
                 <h1>SPONSORS</h1>
                 <hr/>
                 <h1>CONTACT</h1>
-                {/* <Modal show={this.state.show} handleClose={this.hideModal} >
-                <div className="signup">
-                    <div class="google">
-                        <a href="#"><img src="../../images/btn_google_signin_dark_normal_web.png" alt="google sign in"/></a>
-                    </div>
-                    <div>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname"/>
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname"/>
-                        <label for="email">E-Mail</label>
-                        <input type="text" id="email" name="email"/>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Must include a capital letter, number, and at least 6 characters"/>
-                    </div>
-                    <div className="submit">
-                        <input type="submit" value="Submit"/>
-                    </div>
                 </div>
-                </Modal> */}
             </Container>
+            </div>
         )
     }
 }
-
-// const Modal = ({ handleClose, show, children }) => {
-//     const showHideClassName = show ? 'modal display-block' : 'modal display-none';
-
-//     return (
-//         <div className={showHideClassName}>
-//             <section className='modal-main'>
-//                 {children}
-//                 <button onClick={handleClose}>
-//                     Close
-//                 </button>
-//             </section>
-//         </div>
-//     );
-// };
 
 export default Home;
