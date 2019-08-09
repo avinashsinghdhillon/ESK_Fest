@@ -807,7 +807,7 @@ const eventSeed = [
     endDate: "09/14/2019",
     locationID: 8,
     artistIdArr: [
-       34, 14, 28, 25, 24, 17, 29
+      34, 14, 28, 25, 24, 17, 29
     ],
     startTime: "19:00",
     endTime: "20:00",
@@ -1179,6 +1179,8 @@ db.Artist
       return event;
     });
 
+
+
     db.Event
       .deleteMany()
       .then(() => db.Event.collection.insertMany(updatedEventSeed))
@@ -1188,7 +1190,7 @@ db.Artist
       .catch(err => {
         console.error(err);
       });
-    
+
   })
   .catch(err => {
     console.error(err);

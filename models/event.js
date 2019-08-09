@@ -9,7 +9,10 @@ const eventSchema = new Schema({
             ref: "Artist"
          }
         ],
-    locationID: { type: Number, required: true },
+    locationID: { 
+            type: Schema.Types.ObjectId,
+            ref: "Location"
+        },
     startDate: { type: Date, required: false },
     endDate: { type: Date, required: false },
     startTime: { type: String, required: true },

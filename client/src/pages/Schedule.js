@@ -14,11 +14,12 @@ class Schedule extends Component {
     }
 
     //function to load artists and make call to API
-    loadEvents = () => {
+    loadArtists = () => {
         API.getArtists()
         .then(res => {
+            console.log("loading artists")
             console.log(res.data)
-            this.setState({ events: res.data})
+            this.setState({ artists: res.data})
         })
     }
 
