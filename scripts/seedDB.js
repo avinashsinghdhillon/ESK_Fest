@@ -847,11 +847,7 @@ const eventSeed = [
     startDate: "09/14/2019",
     endDate: "09/14/2019",
     locationID: 8,
-    artists: [
-      {
-        artistID: [34, 14, 28, 25, 24, 17, 29]
-      }
-    ],
+    artists: [34, 14, 28, 25, 24, 17, 29],
     startTime: "19:00",
     endTime: "20:00",
   },

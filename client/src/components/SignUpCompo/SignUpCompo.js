@@ -36,22 +36,22 @@ class SignUpCompo extends Component {
   //this is the non-google signup onClick button event
   signupUser = function (event){
     event.preventDefault();
-    // //if signup form entries are not valid, do not proceed
-    // if(!this.signupDataValidation())
-    // {
-    //   return alert("please check all fields");
-    // }
-    // console.log("in button. state.email: " + this.state.email);
-    // //Check to see if user profile already exists in our DB using the email input
-    // API.getUserByEmail(this.state.email)
-    //   .then(function (res){ 
-    //     console.log("Get user by email route: ", res);
-    //     //if the user email exists redirect to login page////////////////////Modal or alert?
-    //     if(res.data){
-    //       return alert("That email account already exists. Please sign in to access your acount");
-    //     }
-    //   })
-    //   .catch(err => console.log(err));
+    //if signup form entries are not valid, do not proceed
+    if(!this.signupDataValidation())
+    {
+      return alert("please check all fields");
+    }
+    console.log("in button. state.email: " + this.state.email);
+    //Check to see if user profile already exists in our DB using the email input
+    API.getUserByEmail(this.state.email)
+      .then(function (res){ 
+        console.log("Get user by email route: ", res);
+        //if the user email exists redirect to login page////////////////////Modal or alert?
+        if(res.data){
+          return alert("That email account already exists. Please sign in to access your acount");
+        }
+      })
+      .catch(err => console.log(err));
 
     //create the new account as "local"
     API.createUserAccount({
