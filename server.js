@@ -2,6 +2,7 @@
 const express = require("express");
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const path = require("path");
 mongoose.set("useNewUrlParser", true);
 // var passport = require("passport");
 // var session = require("express-session");
@@ -27,6 +28,9 @@ app.use(bodyParser.json());
  
 // app.use(passport.session()); // persistent login sessions
 
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static("client/build"))
+}
 
 
 // Routes
@@ -43,6 +47,10 @@ if (process.env.NODE_ENV === "test") {
 }
 //Connect to Mongoose:
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/esk");
+
+app.use("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build/index.html"))
+})
 
 // Starting the server, syncing our models ------------------------------------/
 // db.sequelize.sync(syncOptions).then(function () {
