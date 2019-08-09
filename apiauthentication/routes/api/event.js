@@ -1,12 +1,12 @@
 const eventsRouter = require("express").Router();
 const eventsController = require("../../controllers/eventsController");
 
-eventsRouter.route("/api/events")
+eventsRouter.route("/events")
     .get(eventsController.findAll);
 
-eventsRouter.route("api/artists")
+eventsRouter.route("/artists")
     .get(eventsController.findAllArtists);
 
-eventsRouter.route("api/venues")
+eventsRouter.route("/venues")
     .get(eventsController.findAllVenues);
 module.exports = eventsRouter;

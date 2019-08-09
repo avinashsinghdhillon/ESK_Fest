@@ -10,23 +10,15 @@ mongoose.connect(
 
 const artistSeed = [
   {
-    artistID: 0,
-    artistName: "",
-    artistPicture: "",
-    artistAbout: "",
-    artistSite: "",
-    artistSpotify: "",
-    artistYoutube: ""
-  },
-  {
     artistID: 1,
     artistName: "Adrian Reed Gospel Mass",
+    artistPicture: "https://i.imgur.com/ek1y02a.png",
     artistYoutube: "https://www.youtube.com/watch?time_continue=55&v=IrcSmpOs-EA"
   },
   {
     artistID: 2,
     artistName: "Andre Hayward",
-    artistPicture: "https://eastsidemusic.com/wp-content/uploads/2017/01/528798_4073025378524_1688142703_n.jpg",
+    artistPicture: "https://i.imgur.com/FAOP6fb.jpg",
     artistAbout: "",
     artistSite: "https://eastsidemusic.com/meet-the-teachers/andre-hayward/",
     artistSpotify: "https://open.spotify.com/track/1XEOnfdtuJRmvdG1jvpGuW",
@@ -35,7 +27,7 @@ const artistSeed = [
   {
     artistID: 3,
     artistName: "Andrea Dawson",
-    artistPicture: "http://andrea-dawson.com/img/thumbs/promo1.jpg",
+    artistPicture: "https://i.imgur.com/CsPSt9k.jpg",
     artistAbout: "",
     artistSite: "http://andrea-dawson.com/",
     artistSpotify: "",
@@ -44,7 +36,7 @@ const artistSeed = [
   {
     artistID: 4,
     artistName: "Barbara Lynn",
-    artistPicture: "http://blog.ponderosastomp.com/wp-content/uploads/2015/06/BarbaraLynn63.jpg",
+    artistPicture: "https://i.imgur.com/7kVMtuZ.jpg",
     artistAbout: "",
     artistSite: "https://www.chron.com/entertainment/music/article/Barbara-Lynn-receives-NEA-honor-13010469.php",
     artistSpotify: "https://open.spotify.com/track/5CEREcGR5WaLt40YzTQ62e",
@@ -53,7 +45,7 @@ const artistSeed = [
   {
     artistID: 5,
     artistName: "Big Jack Williams",
-    artistPicture: "https://media.licdn.com/dms/image/C4E03AQGwVU7Ffw7zTw/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=OeRR8kBQbV7bpY_avz6zSSCd_HduvrhKEst12oB7lYg",
+    artistPicture: "https://i.imgur.com/1rh3ZFX.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -62,7 +54,7 @@ const artistSeed = [
   {
     artistID: 6,
     artistName: "Bill Campbell",
-    artistPicture: "https://i.ytimg.com/vi/WSicdduH0ds/hqdefault.jpg",
+    artistPicture: "https://i.imgur.com/3bGnfOG.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -71,7 +63,7 @@ const artistSeed = [
   {
     artistID: 7,
     artistName: "Birdlegg",
-    artistPicture: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/12079084_1070606249650755_6408743538498699032_n.jpg?_nc_cat=108&_nc_oc=AQkEzUvJVNIhnVEvLIh1QyPhloebqRw4BvLKLHANZQVITKedCJ6yAlc2Sgy3HMJvvXo&_nc_ht=scontent-ort2-1.xx&oh=0ed7d899fd35c5f57bc3a797fb3d4b44&oe=5DE67C60",
+    artistPicture: "https://i.imgur.com/k0XmE6O.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/69CuiaKEedGZ91mvdzysZq",
@@ -80,7 +72,7 @@ const artistSeed = [
   {
     artistID: 8,
     artistName: "Bloodest Saxophone",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/29597822_1700496680039606_9109238817085062677_n.jpg?_nc_cat=111&_nc_oc=AQkVvwPXFZD_WQelg_SHz8hnCJ98Ji-LGHKmZdefLMiy7USyF9RmWbo4oOrJyZZtyDPbahCGvWKCwLW9WfAxPH5S&_nc_ht=scontent.faus1-1.fna&oh=1930b359963f9f155f1c7d3d8782b8b1&oe=5DD5250E",
+    artistPicture: "https://i.imgur.com/fQzVI6S.jpg",
     artistAbout: "",
     artistSite: "http://bloodsax.main.jp/?fbclid=IwAR1ptCsXR-CEAtyKj6qGp70J1X__tI76dOSxdQw3bpGr9OCSnwQuiRycD1s",
     artistSpotify: "https://open.spotify.com/track/1wSL3lQHdSoGwtFbOis0Zm",
@@ -89,16 +81,16 @@ const artistSeed = [
   {
     artistID: 9,
     artistName: "Blues Jazz Plus",
-    artistPicture: "",
-    artistAbout: "The New School of Music is a 501(c)(3) nonprofit community music school founded in 2013. We provide world-class jazz & blues masterclasses, workshops, and concerts in the Austin area. Previous clinicians/ performers include Don Braden, Andre Hayward, Tom Brechtlein, Eddie Gomez Trio, Alex Coke, Murali Coryell, Ernie Durawa, Mike Flanigin, Sue Foley, Chris Layton, and Denny Freeman.",
-    artistSite: "https://www.newschoolofmusic.net/",
+    artistPicture: "https://i.imgur.com/mm1PNsG.png",
+    artistAbout: "",
+    artistSite: "https://www.newschoolofmusic.org/",
     artistSpotify: "",
     artistYoutube: ""
   },
   {
     artistID: 10,
     artistName: "Brown Sugar",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/41788147_1679291582179809_6125589121852243968_n.jpg?_nc_cat=101&_nc_oc=AQlh9DN2fRZSb4K9a6jnla5lNXpFHM1CLCo9YmE3Wp8UY-esaZPWiUuPSHJCk3q-jMrmnkHrfowX2iaZBpGoC7_0&_nc_ht=scontent.faus1-1.fna&oh=0f366e338a3134f8739bb11426608c54&oe=5DE0509F",
+    artistPicture: "https://i.imgur.com/4o6Wtbj.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -107,7 +99,7 @@ const artistSeed = [
   {
     artistID: 11,
     artistName: "Burley Manor Jr",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/uFaS0Bi.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -116,7 +108,7 @@ const artistSeed = [
   {
     artistID: 12,
     artistName: "Carl Weathersby",
-    artistPicture: "https://photos.bandsintown.com/thumb/8319855.jpeg",
+    artistPicture: "https://i.imgur.com/so4I3WP.png",
     artistAbout: "",
     artistSite: "http://www.carlweathersby.org/",
     artistSpotify: "https://open.spotify.com/track/7Jxp79DHtduKJ7YPo4lDaC",
@@ -134,7 +126,7 @@ const artistSeed = [
   {
     artistID: 14,
     artistName: "Chuck Rainey",
-    artistPicture: "http://chuckrainey.com/wp-content/uploads/2015/03/3675748_orig.jpg",
+    artistPicture: "https://i.imgur.com/OoNZM4y.jpg",
     artistAbout: "",
     artistSite: "https://chuckrainey.com/",
     artistSpotify: "https://open.spotify.com/track/2uqr9arJdbS5Huef2eFJol",
@@ -143,7 +135,7 @@ const artistSeed = [
   {
     artistID: 15,
     artistName: "Classie Ballou",
-    artistPicture: "http://www.absmag.fr/wp-content/uploads/2017/08/classieballou-bis.jpg",
+    artistPicture: "https://i.imgur.com/Tu4gi8U.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/4Q0oqa1l7WJXmtGaZbzPS0",
@@ -152,7 +144,7 @@ const artistSeed = [
   {
     artistID: 16,
     artistName: "Corey Keller",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t31.0-8/12194736_794810897294553_7856540980212221690_o.jpg?_nc_cat=111&_nc_oc=AQlb3hmwlcihFpIY4VqjvXKr-kQbwprniD3cOjq087gBa4ynWdFt5k_jsuhPw_q369k&_nc_ht=scontent.fftw1-1.fna&oh=62cb60eae155bd641b20aa19556dcd60&oe=5DA4D33C",
+    artistPicture: "https://i.imgur.com/eda2s9g.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -161,7 +153,7 @@ const artistSeed = [
   {
     artistID: 17,
     artistName: "Crystal Thomas",
-    artistPicture: "https://cdbaby.name/artist/c/r/crystalthomas3.jpg",
+    artistPicture: "https://i.imgur.com/oQNm7t4.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/4r17N5j0GXjbHFgUY5Dd1o",
@@ -170,7 +162,7 @@ const artistSeed = [
   {
     artistID: 18,
     artistName: "Don Braden",
-    artistPicture: "http://www.donbraden.com/images/DB%20by%20Will%20Hauser_6499%20E1cm.jpg",
+    artistPicture: "https://i.imgur.com/VS4YOia.jpg",
     artistAbout: "",
     artistSite: "http://www.donbraden.com/",
     artistSpotify: "https://open.spotify.com/track/7Gq3gnDaQK8pfP8pnPjoG4",
@@ -179,7 +171,7 @@ const artistSeed = [
   {
     artistID: 19,
     artistName: "Eastside Syndicate",
-    artistPicture: "https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/3084710/original/resize:248x186/crop:x142y44w724h542/hash:1467395310/1362527457_488414221199879_1214049152_n.jpg?1467395310",
+    artistPicture: "https://i.imgur.com/3mxteG9.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -188,7 +180,7 @@ const artistSeed = [
   {
     artistID: 20,
     artistName: "Ernie Durawa",
-    artistPicture: "https://www.txstate.edu/cachee80a581ae26788da9181af1af4f44a23/imagehandler/scaler/gato-docs.its.txstate.edu/jcr:2fe47598-306e-4309-bc20-2c751e64f590/1965_or_1966sm.jpg?mode=fit&width=432",
+    artistPicture: "https://i.imgur.com/PiogG3j.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -815,7 +807,7 @@ const eventSeed = [
     endDate: "09/14/2019",
     locationID: 8,
     artistIdArr: [
-       34, 14, 28, 25, 24, 17, 29
+      34, 14, 28, 25, 24, 17, 29
     ],
     startTime: "19:00",
     endTime: "20:00",
@@ -1187,6 +1179,8 @@ db.Artist
       return event;
     });
 
+
+
     db.Event
       .deleteMany()
       .then(() => db.Event.collection.insertMany(updatedEventSeed))
@@ -1196,7 +1190,7 @@ db.Artist
       .catch(err => {
         console.error(err);
       });
-    
+
   })
   .catch(err => {
     console.error(err);
