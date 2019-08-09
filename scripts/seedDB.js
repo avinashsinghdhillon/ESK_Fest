@@ -189,7 +189,7 @@ const artistSeed = [
   {
     artistID: 21,
     artistName: "Gregg Smith",
-    artistPicture: "https://imagery.zoogletools.com/u/261759/e8756c09497185f526d97eb42060b0d7107eedbb/photo/grsmith-143.jpg",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "https://greggasmithmusic.com/home",
     artistSpotify: "",
@@ -198,7 +198,7 @@ const artistSeed = [
   {
     artistID: 22,
     artistName: "Hash Brown",
-    artistPicture: "https://s.hdnux.com/photos/66/76/45/14412124/3/920x920.jpg",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -207,7 +207,7 @@ const artistSeed = [
   {
     artistID: 23,
     artistName: "James 'Killer Bug' Morris",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/54515484_10156174120792514_4866167022603468800_n.jpg?_nc_cat=100&_nc_oc=AQk8cKMN8RpmC3TA-y6VrJSnxKK04eXL2xkKcuGmjR7ULMn-LVlfKZS8X_5ym93UmkaQFTpt2dan4QRYabhk_7qs&_nc_ht=scontent.faus1-1.fna&oh=44ce78f1b14f0fd702815b9bcaabab44&oe=5DE7A1B5",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -216,7 +216,7 @@ const artistSeed = [
   {
     artistID: 24,
     artistName: "James Fenner",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/67782054_10156486062302514_4794770810579451904_n.jpg?_nc_cat=109&_nc_oc=AQlqZrV0fM_RuL9-IhKNwWZ4Mixx5mOevun5jTXXcqpHgrNW8z8DMVf1hPNmObHI_MX7Jbu2Aqkj8MvPDzG3YvfS&_nc_ht=scontent.faus1-1.fna&oh=d506b95c15acc13a623d281bfe229f7c&oe=5DE6A3BE",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -225,7 +225,7 @@ const artistSeed = [
   {
     artistID: 25,
     artistName: "Jason Moeller",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t31.0-8/13112801_1082616131801639_761232208215079285_o.jpg?_nc_cat=107&_nc_oc=AQnCb1TmJKj4K8cqLnPpmj8eq1E1acla-hy4HZqHDw1HO_70j0BWssciz27eVwC3KOyhNWyVoSGJY_1Y-5HzK2cD&_nc_ht=scontent.faus1-1.fna&oh=f6a03153ebb893941d3e24d55bbf0dae&oe=5DEAD0D4",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -234,7 +234,7 @@ const artistSeed = [
   {
     artistID: 26,
     artistName: "Jewel Brown",
-    artistPicture: "http://bluesjunctionproductions.com/yahoo_site_admin/assets/images/10943844_564746530327408_5582291932400111792_n.190130132_std.jpg",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/1ZZ4xYTORrkU9gY0isK6OR",
@@ -243,7 +243,7 @@ const artistSeed = [
   {
     artistID: 27,
     artistName: "Johnny LaTouf, MC",
-    artistPicture: "https://i1.sndcdn.com/artworks-000239007989-hz6zfb-t500x500.jpg",
+    artistPicture: "",
     artistAbout: "Johnny LaTouf is the owner of Skylark Lounge, a generous supporter of the Eastside Kings Festival and blues musicians.",
     artistSite: "",
     artistSpotify: "",
@@ -252,7 +252,7 @@ const artistSeed = [
   {
     artistID: 28,
     artistName: "Johnny Moeller",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t31.0-8/13112801_1082616131801639_761232208215079285_o.jpg?_nc_cat=107&_nc_oc=AQnCb1TmJKj4K8cqLnPpmj8eq1E1acla-hy4HZqHDw1HO_70j0BWssciz27eVwC3KOyhNWyVoSGJY_1Y-5HzK2cD&_nc_ht=scontent.faus1-1.fna&oh=f6a03153ebb893941d3e24d55bbf0dae&oe=5DEAD0D4",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -261,7 +261,7 @@ const artistSeed = [
   {
     artistID: 29,
     artistName: "Kaz Kazanoff",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/49739111_10157198870228463_5685837152810696704_n.jpg?_nc_cat=107&_nc_oc=AQnNhb5bFIKlh3ncO0LxRpi6RhOPZQ4Vj74wd3kar1xnFu9Yrne4c5M3c16GgQastDMomdMUp4nu9r5xbQMTd29r&_nc_ht=scontent.faus1-1.fna&oh=c84509fd73c3bf93f4cb59f5224030d3&oe=5DE3F6F9",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -270,7 +270,7 @@ const artistSeed = [
   {
     artistID: 30,
     artistName: "Keith Dunn",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/43023513_1699379583504342_446324020623704064_n.jpg?_nc_cat=108&_nc_oc=AQla9B_S1HD-S0v0PSOklhMFM98OoXcf8okMXB45E-S0vaEtQL3Wxmn0IoP3lCMWQTeGFOdc9Jx0_p5i-MxWVtqN&_nc_ht=scontent.faus1-1.fna&oh=54fc3b5978b0ab4f4f9656dc0e052384&oe=5DD814B1",
+    artistPicture: "git",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/6BIpLmms6hIdSFI3GNTw8J",
