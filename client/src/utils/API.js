@@ -5,7 +5,7 @@ export default {
   //get all events
   getEvents: function () {
     console.log("getEvents from API.js");
-    return axios.get("/api/events")
+    return axios.get("/events")
   },
   getArtists: function () {
     console.log("getEvents from API.js");
@@ -13,7 +13,7 @@ export default {
   },
   getVenues: function () {
     console.log("getEvents from API.js");
-    return axios.get("/api/venues")
+    return axios.get("/venues")
   },
   getUserByEmail: function (query) {
     return axios.post("/users/checkEmail", { email: query });
