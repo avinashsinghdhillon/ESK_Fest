@@ -48,7 +48,11 @@ li a:hover {
   background-color: #137ad6;
 }
 
-/* @media screen and (max-width: 600px) {
+/* .nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
   .nav a:not(:first-child) {display: none;}
   .nav a.icon {
     float: right;
@@ -58,7 +62,7 @@ li a:hover {
 
 @media screen and (max-width: 600px) {
   .nav.responsive {position: relative;}
-  .nav.responsive a.icon {
+  .nav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
