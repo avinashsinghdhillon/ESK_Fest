@@ -20,4 +20,7 @@ router.route('/itinerary')
  router.route('/checkEmail')
  .post(UsersController.findByEmail)
 
+//  router.route('/signup')
+//  .post(UsersController.signUp)
+
 module.exports = router;

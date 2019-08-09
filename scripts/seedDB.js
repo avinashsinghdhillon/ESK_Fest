@@ -731,28 +731,25 @@ const locationSeed = [
 
 const userSeed = [
   {
-    userID: 1,
     userType: "local",
-    userEmail: "email@email.com",
-    userPassword: "Password1",
+    email: "email@email.com",
+    password: "Password1",
     googleID: "",
     firstName: "Test",
     lastName: "User1"
   },
   {
-    userID: 2,
     userType: "local",
-    userEmail: "1@email.com",
-    userPassword: "Password1",
+    email: "1@email.com",
+    password: "Password1",
     googleID: "",
     firstName: "Test",
     lastName: "User2"
   },
   {
-    userID: 3,
     userType: "local",
-    userEmail: "3@email.com",
-    userPassword: "Password1",
+    email: "3@email.com",
+    password: "Password1",
     googleID: "",
     firstName: "Test",
     lastName: "User3"

@@ -16,8 +16,7 @@ class SignUpCompo extends Component {
   }
 
   componentDidMount(){
-    //check to see if the user is logged in and load User in state or a Json file that updates state ////////////////////////
-
+    //not sure what to add here.
   }
 
   handleInputChange = event => {
@@ -26,22 +25,60 @@ class SignUpCompo extends Component {
       [name]: value
     });
   };
-//////////////////////// this section handles the sign up page//////////////////////
-  ///////////////////////////////////////////////////////////////////////////////
+
+  //Validate all fields in the sign up form//////////////////////////////////////
+  signupDataValidation = ()=>{
+    return true;
+  }
+
+
+  // this section handles the SIGN-UP button click
   //this is the non-google signup onClick button event
-  signupUser = event => {
+  signupUser = function (event){
+    event.preventDefault();
+    // //if signup form entries are not valid, do not proceed
+    // if(!this.signupDataValidation())
+    // {
+    //   return alert("please check all fields");
+    // }
+    // console.log("in button. state.email: " + this.state.email);
+    // //Check to see if user profile already exists in our DB using the email input
+    // API.getUserByEmail(this.state.email)
+    //   .then(function (res){ 
+    //     console.log("Get user by email route: ", res);
+    //     //if the user email exists redirect to login page////////////////////Modal or alert?
+    //     if(res.data){
+    //       return alert("That email account already exists. Please sign in to access your acount");
+    //     }
+    //   })
+    //   .catch(err => console.log(err));
+
+    //create the new account as "local"
+    API.createUserAccount({
+      email: this.state.email,
+      password: this.state.password,
+      lname: this.state.lname,
+      fname: this.state.fname,
+      userType: "local"
+    })
+    .then(function(res){
+       alert("user account created. res:", res);
+    })
+    .catch(err => console.log(err));
+  }
+
+  // this section handles the SIGN-IN button click
+  //this is the non-google signin onClick button event
+  signInUser = event => {
     event.preventDefault();
     console.log("in button. state.email: " + this.state.email);
-    //1. check to see if user profile already exists in our DB using the email input
+    //1. Pull the user account
     API.getUserByEmail(this.state.email)
-      .then(function (res){ 
-        console.log("Get user by email route: ", res);
-        //if the user email exists redirect to login page////////////////////Modal or alert?
+      .then(function (res){
         
       })
       .catch(err => console.log(err));
-    }
-
+  }
   render() {
     return (
       <div>
