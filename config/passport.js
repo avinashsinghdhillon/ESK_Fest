@@ -45,6 +45,7 @@ passport.use(new LocalStrategy({
             return done(null, false);
         }
         //otherwise, return the user
+        console.log("The user is authenticated")
         done(null, user)
     } catch(error){
         done(error, false);

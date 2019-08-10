@@ -20,7 +20,6 @@ export default {
   },
 
   createUserAccount: function (query) {
-    console.log("In API.js/createUser. query: ", query);
     return axios.post(
       "users/signup",
       {
@@ -31,5 +30,15 @@ export default {
         lastName: query.lname
       }
     );
+  },
+  signIn: function (query){
+    console.log("In API.js/Login User. query: ", query);
+    return axios.post(
+      "users/signin",
+      {
+        email: query.email,
+        password: query.password
+      }
+    )
   }
 };
