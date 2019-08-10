@@ -48,7 +48,7 @@ app.use(cookieSession({
 
 // Routes///////////////////////////does it need any more routes listed?
 app.use('/users', require('./apiauthentication/routes/users'));
-app.use('/api/', require('./apiauthentication/routes/api/event'));
+app.use('/api', require('./apiauthentication/routes/api/event'));
 
 
 var syncOptions = { force: false };

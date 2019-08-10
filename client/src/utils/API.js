@@ -22,7 +22,7 @@ export default {
   createUserAccount: function (query) {
     console.log("In API.js/createUser. query: ", query);
     return axios.post(
-      "users/signup",
+      "/users/signup",
       {
         userType: query.userType,
         email: query.email,
