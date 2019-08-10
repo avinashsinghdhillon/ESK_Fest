@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MoreInfo from './MoreInfo';
+import Logo from '../../images/ESK-FOUNDATION-LOGO.png';
 import './ArtistCard.css';
 
 class ArtistCard extends Component {
@@ -34,7 +35,7 @@ class ArtistCard extends Component {
             <div>
                 <div className="card">
                     <div className="image">
-                        <img className="artistImage" src={this.props.src} alt={this.props.name}/>
+                        <img className="artistImage" src={this.props.src || Logo} alt={this.props.name}/>
                         {/* <img className="artistImage" src="https://www.placehold.it/200x200" alt="placeholder artist image"/> */}
                     </div>
                     <div className="container">
