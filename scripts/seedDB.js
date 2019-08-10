@@ -189,7 +189,7 @@ const artistSeed = [
   {
     artistID: 21,
     artistName: "Gregg Smith",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/Do8dLQS.jpg",
     artistAbout: "",
     artistSite: "https://greggasmithmusic.com/home",
     artistSpotify: "",
@@ -198,7 +198,7 @@ const artistSeed = [
   {
     artistID: 22,
     artistName: "Hash Brown",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/L7mB3rU.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -207,7 +207,7 @@ const artistSeed = [
   {
     artistID: 23,
     artistName: "James 'Killer Bug' Morris",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/iddERyH.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -216,7 +216,7 @@ const artistSeed = [
   {
     artistID: 24,
     artistName: "James Fenner",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/wkUaDUb.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -225,7 +225,7 @@ const artistSeed = [
   {
     artistID: 25,
     artistName: "Jason Moeller",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/oNe3IjM.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -234,7 +234,7 @@ const artistSeed = [
   {
     artistID: 26,
     artistName: "Jewel Brown",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/Ozy0eVx.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/1ZZ4xYTORrkU9gY0isK6OR",
@@ -243,7 +243,7 @@ const artistSeed = [
   {
     artistID: 27,
     artistName: "Johnny LaTouf, MC",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/n24ldhH.jpg",
     artistAbout: "Johnny LaTouf is the owner of Skylark Lounge, a generous supporter of the Eastside Kings Festival and blues musicians.",
     artistSite: "",
     artistSpotify: "",
@@ -252,7 +252,7 @@ const artistSeed = [
   {
     artistID: 28,
     artistName: "Johnny Moeller",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/0BcNj2e.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -261,7 +261,7 @@ const artistSeed = [
   {
     artistID: 29,
     artistName: "Kaz Kazanoff",
-    artistPicture: "",
+    artistPicture: "https://i.imgur.com/7yV6N52.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -270,7 +270,7 @@ const artistSeed = [
   {
     artistID: 30,
     artistName: "Keith Dunn",
-    artistPicture: "git",
+    artistPicture: "https://i.imgur.com/EZAbbAo.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/6BIpLmms6hIdSFI3GNTw8J",
@@ -279,7 +279,7 @@ const artistSeed = [
   {
     artistID: 31,
     artistName: "Lady D",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t31.0-8/12885732_1680533962213496_3774963263196003649_o.jpg?_nc_cat=110&_nc_oc=AQmI1-VSNiG3wBOt6X3V5aZUYKSP976v9bMvKxjlCDII8kxj6M5LLNjwGBsecJHPpnqP6oS-ZkAvP3Uiq52iGotF&_nc_ht=scontent.faus1-1.fna&oh=d6138f0657f8db2481ec0433990226b9&oe=5DE27882",
+    artistPicture: "https://i.imgur.com/5DYQT5V.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -288,7 +288,7 @@ const artistSeed = [
   {
     artistID: 32,
     artistName: "Lavelle White",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/10404253_252850634902844_9000365098548372968_n.jpg?_nc_cat=109&_nc_oc=AQl3Cq60pjXkCtq-Z1gdNI-BoJrfEtXXak6sXgl12TOFUXcmcHZW3aOlWO51mwoXRZ41E_artfZpzR29vgja45AO&_nc_ht=scontent.faus1-1.fna&oh=4d39625314b2c089ff4b30ba672831d7&oe=5DE44631",
+    artistPicture: "https://i.imgur.com/qREXo0i.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/7lOV91qKP6qRTrE5Hg9HCb",
@@ -306,7 +306,7 @@ const artistSeed = [
   {
     artistID: 34,
     artistName: "Lucky Peterson",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t1.0-9/57080006_10156221375977514_2352383691444977664_n.jpg?_nc_cat=105&_nc_oc=AQlslQ3Cpi5DdFJ-DsVqLx37SSQ2erLuucoJsEh__lE4Qx7nLuEbSHHHQnqIuCIIBrKpnaHACbIVqf8IitUHs_gI&_nc_ht=scontent.faus1-1.fna&oh=221fe7cd4a79874dee4269cacbf21f38&oe=5DA11807",
+    artistPicture: "https://i.imgur.com/bBlTxIl.jpg",
     artistAbout: "",
     artistSite: "https://luckypeterson.com/",
     artistSpotify: "https://open.spotify.com/track/6QSH6q90XNj5VDi52qpe8B",
@@ -315,7 +315,7 @@ const artistSeed = [
   {
     artistID: 35,
     artistName: "Mac McIntosh",
-    artistPicture: "https://pbs.twimg.com/media/DsVLjHGU0AAgAcd.jpg",
+    artistPicture: "https://i.imgur.com/oLDCppD.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -324,7 +324,7 @@ const artistSeed = [
   {
     artistID: 36,
     artistName: "Margaret Wright",
-    artistPicture: "http://static.wixstatic.com/media/72e1d1_a4f3ad6085e942f1b88281a9593b991d.jpg/v1/fill/w_259,h_348,al_c,q_80,usm_0.66_1.00_0.01/72e1d1_a4f3ad6085e942f1b88281a9593b991d.webp",
+    artistPicture: "https://i.imgur.com/ahM5j1V.png",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -333,7 +333,7 @@ const artistSeed = [
   {
     artistID: 37,
     artistName: "Matthew Robinson",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/41691143_1679291835513117_510880501523808256_n.jpg?_nc_cat=101&_nc_oc=AQlD3lKhTqmStjVzYBXB66EV0sSSbhu--ZFNApXulGS2CrD6O1CbH2IK2mSyWSOgVlM&_nc_ht=scontent.fftw1-1.fna&oh=980f1dc70b8e376f4cec940be15c314e&oe=5DEC3D2C",
+    artistPicture: "https://i.imgur.com/FoHmHJ7.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -342,7 +342,7 @@ const artistSeed = [
   {
     artistID: 38,
     artistName: "Mel Davis",
-    artistPicture: "https://bluesvibe.files.wordpress.com/2014/01/mel-davis-1.jpg",
+    artistPicture: "https://i.imgur.com/ruB4P1H.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -351,7 +351,7 @@ const artistSeed = [
   {
     artistID: 39,
     artistName: "Mike Buck",
-    artistPicture: "https://image-ticketfly.imgix.net/00/01/83/50/23-og.jpg?w=950&h=690",
+    artistPicture: "https://i.imgur.com/SeC7aBh.jpg",
     artistAbout: "Mike is one of the owners of Antone's Record Store, a generous supporter of the Eastside Kings Festival.",
     artistSite: "",
     artistSpotify: "",
@@ -360,7 +360,7 @@ const artistSeed = [
   {
     artistID: 40,
     artistName: "Mike Keller",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t31.0-8/12194736_794810897294553_7856540980212221690_o.jpg?_nc_cat=111&_nc_oc=AQlb3hmwlcihFpIY4VqjvXKr-kQbwprniD3cOjq087gBa4ynWdFt5k_jsuhPw_q369k&_nc_ht=scontent.fftw1-1.fna&oh=62cb60eae155bd641b20aa19556dcd60&oe=5DA4D33C",
+    artistPicture: "https://i.imgur.com/H62VePx.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -378,7 +378,7 @@ const artistSeed = [
   {
     artistID: 42,
     artistName: "Nick Connolly",
-    artistPicture: "https://austinplaymeimyours.files.wordpress.com/2011/05/img_3088.jpg",
+    artistPicture: "https://i.imgur.com/GxNf2Wj.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -396,7 +396,7 @@ const artistSeed = [
   {
     artistID: 44,
     artistName: "Orange Jefferson",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/40665422_10155803952627253_8320881369378979840_o.jpg?_nc_cat=109&_nc_oc=AQktxY4_ZDG1u8qlmRtWHH7fH0TN3DlP2hHReqNhAz38_uzMR0t0RcIXWU9nD0Xum7w&_nc_ht=scontent.fftw1-1.fna&oh=46ef1a7bc1d6f15bc364e06fcab3910f&oe=5DA1AA50",
+    artistPicture: "https://i.imgur.com/JVzyxWv.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -405,7 +405,7 @@ const artistSeed = [
   {
     artistID: 45,
     artistName: "PeeWee Calvin",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t31.0-8/16722805_10154321604117514_4810332527603151996_o.jpg?_nc_cat=100&_nc_oc=AQkoCqnxcBLn-mmPcLngsGq-gmfYB_j5YqFOgXfE1Unzk7H_CX81Il4YOd4JfmcbHcA&_nc_ht=scontent.fftw1-1.fna&oh=4fad8ec426183e2c4798d972a63bef7d&oe=5DD474DD",
+    artistPicture: "https://i.imgur.com/2nMSQx9.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -414,7 +414,7 @@ const artistSeed = [
   {
     artistID: 46,
     artistName: "Pierre Pelegrin",
-    artistPicture: "http://www.absmag.fr/wp-content/uploads/2019/04/Pierre.jpg",
+    artistPicture: "https://i.imgur.com/2eesK9g.jpg",
     artistAbout: "Pierre and his wife Justine are the owners of Justine's Brasserie, a generous supporter of the Eastside Kings Festival. He is also a member of the Eastside Kings Foundation board of directors.",
     artistSite: "https://www.justines1937.com/",
     artistSpotify: "",
@@ -423,7 +423,7 @@ const artistSeed = [
   {
     artistID: 47,
     artistName: "Ray Reed",
-    artistPicture: "https://www.star-telegram.com/news/local/community/fort-worth/lfydjw/picture85259857/alternates/FREE_768/Ray%20Reed",
+    artistPicture: "https://i.imgur.com/eiQf6sd.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -432,7 +432,7 @@ const artistSeed = [
   {
     artistID: 48,
     artistName: "RL Griffin",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/67818496_10156483257332514_515492879787884544_n.jpg?_nc_cat=104&_nc_oc=AQmD7ZcGoBl9_he_3kmTcrogX-eZ16DA7XkBFtTBktqQHa1ZUs41OR09n4rScIjjexw&_nc_ht=scontent.fftw1-1.fna&oh=775976dadddfb7412c878556e3f97591&oe=5DE183C4",
+    artistPicture: "https://i.imgur.com/jFEEbvi.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -441,7 +441,7 @@ const artistSeed = [
   {
     artistID: 49,
     artistName: "Roger Wood, MC",
-    artistPicture: "https://scontent.faus1-1.fna.fbcdn.net/v/t31.0-8/457519_10150889025972514_564556137_o.jpg?_nc_cat=111&_nc_oc=AQla2TatyguyOhJla_QJdrHqogVKiOcyu4JM74Bt_5Np6S-9DxksmcskVJnT2VTOjKu5AsSwDJ50TcervOQMGwbc&_nc_ht=scontent.faus1-1.fna&oh=07a333b1576d2ccc8aaaf51ce29ca5f8&oe=5DE653A8",
+    artistPicture: "https://i.imgur.com/GTmNHUn.jpg",
     artistAbout: "Dr. Roger Wood is a music author, a Blues afficionado, and a huge supporter of the Eastside Kings Festival. We are grateful to Roger for being an MC for the festival.",
     artistSite: "",
     artistSpotify: "",
@@ -450,7 +450,7 @@ const artistSeed = [
   {
     artistID: 50,
     artistName: "Scott Bock, MC",
-    artistPicture: "../../client/images/scottbock.jpg",
+    artistPicture: "https://i.imgur.com/uNdMNM2.jpg",
     artistAbout: "Scott Bock is a writer for Living Blues magazine. His support of the Eastside Kings Festival is greatly appreciated, and we are grateful to him for being an MC year after year.",
     artistSite: "",
     artistSpotify: "",
@@ -459,7 +459,7 @@ const artistSeed = [
   {
     artistID: 51,
     artistName: "Shake Anderson Band",
-    artistPicture: "https://static1.squarespace.com/static/586154f7d1758e4fc99b0b2d/58769937f7e0ab30297062a3/58769942a5790a29d2aa1311/1484168177535/facebook+closeup+cropped.jpg?format=1000w",
+    artistPicture: "https://i.imgur.com/AundVq7.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -468,7 +468,7 @@ const artistSeed = [
   {
     artistID: 52,
     artistName: "Shimi",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/34644218_10155566884297514_2398727535325085696_n.jpg?_nc_cat=109&_nc_oc=AQn9WbaxUjn416A97HnjkYsbTgVRqSAHgc2XWllVdfpld3UOCuNXEywHwB1NDTes9Zc&_nc_ht=scontent.fftw1-1.fna&oh=755aef72401974d5b4f9685e278bea06&oe=5DD87B3D",
+    artistPicture: "https://i.imgur.com/7SjAkUt.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -477,7 +477,7 @@ const artistSeed = [
   {
     artistID: 53,
     artistName: "Shuji 'Apple Juice' Sato",
-    artistPicture: "http://smashingmag.com/tour/trphoto/sama/060429bloodsax/img_8878.jpg",
+    artistPicture: "https://i.imgur.com/YNiY2XA.jpg",
     artistAbout: "",
     artistSite: "http://bloodsax.main.jp/?fbclid=IwAR1ptCsXR-CEAtyKj6qGp70J1X__tI76dOSxdQw3bpGr9OCSnwQuiRycD1s",
     artistSpotify: "",
@@ -486,7 +486,7 @@ const artistSeed = [
   {
     artistID: 54,
     artistName: "Smiling Bobby",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t31.0-8/10497474_750348201724024_7347258931308411427_o.jpg?_nc_cat=106&_nc_oc=AQlwKLkHE_SUuKsDy_xWH5HcpsKi0AdpzlRF8CfYmT6htGdn11K4nRZ4b5OpvBhe1vg&_nc_ht=scontent.fftw1-1.fna&oh=6530de5cd631ac2b7a225aba3db31b8f&oe=5DE30EE4",
+    artistPicture: "https://i.imgur.com/veTdgok.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -495,7 +495,7 @@ const artistSeed = [
   {
     artistID: 55,
     artistName: "Soul Man Sam",
-    artistPicture: "https://image-ticketfly.imgix.net/00/02/66/81/77-og.jpg?w=500&h=334&fit=crop&crop=top",
+    artistPicture: "https://i.imgur.com/GImgEmT.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -504,7 +504,7 @@ const artistSeed = [
   {
     artistID: 56,
     artistName: "Tamara Mack & The Mack Daddies",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/47393038_1953714551589315_8039045593940623360_n.jpg?_nc_cat=108&_nc_oc=AQmolsb-mwuu2SRzw9JLR9cdw1M_pSFetIleN9szXgoWw27t74c5rg2PWaACYX6jEzc&_nc_ht=scontent.fftw1-1.fna&oh=c4d365655c15b685bf5a1eb73d9ef8dc&oe=5DA2B02B",
+    artistPicture: "https://i.imgur.com/Wt1copK.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -513,7 +513,7 @@ const artistSeed = [
   {
     artistID: 57,
     artistName: "The Blues Specialists",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/67773355_10212935051964554_3237415252438024192_o.jpg?_nc_cat=100&_nc_oc=AQnqUjVJJO1lzqR9O6kliHJReRUX4pJHTq9DvdXZTXonrghZBmbZvLfFQ9vpSuntefI&_nc_ht=scontent.fftw1-1.fna&oh=4392a6a481001614185b54f9990e8e0f&oe=5DDEFD08",
+    artistPicture: "https://i.imgur.com/uMIR03i.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -522,7 +522,7 @@ const artistSeed = [
   {
     artistID: 58,
     artistName: "The Gladiators",
-    artistPicture: "http://www.bogfire.com/img/itw_4_lg.jpg",
+    artistPicture: "https://i.imgur.com/D7NF2xR.jpg",
     artistAbout: "House band at the Silver Slipper in Houston, TX.",
     artistSite: "",
     artistSpotify: "",
@@ -540,7 +540,7 @@ const artistSeed = [
   {
     artistID: 60,
     artistName: "TuTu Jones Band",
-    artistPicture: "https://i2.wp.com/www.tolbertsrestaurant.com/wp-content/uploads/2019/03/tutu.jpg?fit=800%2C533&ssl=1",
+    artistPicture: "https://i.imgur.com/hDc3obW.png",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/3T1iXyK8LzxE4QYbU30z2N",
@@ -549,7 +549,7 @@ const artistSeed = [
   {
     artistID: 61,
     artistName: "Young Corn",
-    artistPicture: "http://static.wixstatic.com/media/11749e_d45d3205389a40fbbb29ba9dd6098fcb~mv2_d_4032_2688_s_4_2.jpg/v1/fill/w_631,h_421,al_c,q_80,usm_0.66_1.00_0.01/11749e_d45d3205389a40fbbb29ba9dd6098fcb~mv2_d_4032_2688_s_4_2.webp",
+    artistPicture: "https://i.imgur.com/iRV7DhQ.png",
     artistAbout: "",
     artistSite: "http://bloodsax.main.jp/?fbclid=IwAR1ptCsXR-CEAtyKj6qGp70J1X__tI76dOSxdQw3bpGr9OCSnwQuiRycD1s",
     artistSpotify: "",
@@ -558,7 +558,7 @@ const artistSeed = [
   {
     artistID: 62,
     artistName: "Curley Cormier",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/67599843_10156483232787514_5623817133566722048_n.jpg?_nc_cat=108&_nc_oc=AQk35vJIVSYiCdueRK-ba_v_lJ4VdaFXmbPRbfYemrpX_TQGuVdingUaYd3gGAZAe3g&_nc_ht=scontent.fftw1-1.fna&oh=562d710b89c9d82d0586254366bafdb4&oe=5DD74CDF",
+    artistPicture: "https://i.imgur.com/i6q5sPI.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -567,7 +567,7 @@ const artistSeed = [
   {
     artistID: 63,
     artistName: "Mike Milligan",
-    artistPicture: "https://scontent.fftw1-1.fna.fbcdn.net/v/t31.0-8/12891038_998578553557629_573424629459222966_o.jpg?_nc_cat=103&_nc_eui2=AeEwZI2n5qdc9I20DtigjyupINt45jAgvP3Kb_42iCs3Xq8kB7rRQAk6z2V0ZOZZ6CAfjIKegTVf86VfOrfnPygENBDo2XEi-R-kdriViy3epg&_nc_oc=AQkh0dPaXun9Y-ugYK9BBOhKn8w8bliXYwkLcHC5J4ozgNXqT6WypKEC2JBhmhBxfp8&_nc_ht=scontent.fftw1-1.fna&oh=d46c001637911e335625cfb6229dff6c&oe=5DE6CE25",
+    artistPicture: "https://i.imgur.com/jDWDZIW.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
