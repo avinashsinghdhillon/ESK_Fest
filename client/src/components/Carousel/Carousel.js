@@ -51,7 +51,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Crystal, Lucky, and Chuck</h3>
-            <p className="artist-caption">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="artist-caption">Recording session for the “Don’t Worry About The Blues” album.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
