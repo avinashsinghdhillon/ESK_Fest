@@ -69,14 +69,17 @@ class SignUpCompo extends Component {
 
   // this section handles the SIGN-IN button click
   //this is the non-google signin onClick button event
-  signInUser = event => {
+  signInUser = (event) => {
+    console.log("button clicked");
     event.preventDefault();
-    console.log("in button. state.email: " + this.state.email);
     //1. Pull the user account
-    API.getUserByEmail(this.state.email)
-      .then(function (res){
-        
-      })
+    API.signInUser({
+      email: this.state.email,
+      password: this.state.password
+    })
+      .then(
+        console.log("signed in??")
+      )
       .catch(err => console.log(err));
   }
   render() {
@@ -107,12 +110,12 @@ class SignUpCompo extends Component {
           <div>
             <h4>Sign In</h4>
             <label htmlFor="email">E-Mail</label>
-            <input type="text" id="userEmail" name="userEmail" placeholder="Enter your account e-mail" />
+            <input type="text" id="userEmail" name="userEmail" onChange={this.handleInputChange} value = {this.state.email} placeholder="Enter your account e-mail" />
             <label htmlFor="password">Password</label>
-            <input type="password" id="userPassword" name="userPassword" placeholder="Enter your password" />
+            <input type="password" id="userPassword" name="userPassword" onChange={this.handleInputChange} value = {this.state.password} placeholder="Enter your password" />
           </div>
           <div className="submit">
-            <button className="button" id="signinSubmit" type="submit" text="Submit">Submit</button>
+            <button className="button" id="signinSubmit" type="submit" onClick={()=>{this.signInUser(event)}}>Submit</button>
           </div>
         </div>
       </div>

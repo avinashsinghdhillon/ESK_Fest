@@ -18,10 +18,10 @@ function MainNav(props) {
                 <a href="/faq" onClick={() => props.handlePageChange("FAQ")}>FAQ</a>
             </li>
             <li>
-                <a href="/signup" onClick={() => props.handlePageChange("SignIn")}>Sign In</a>
+                <a href="/users/signin" onClick={() => props.handlePageChange("SignIn")}>Sign In</a>
             </li>
             <li>
-                <a href="/signup" onClick={() => props.handlePageChange("SignUp")}>Sign Up</a>
+                <a href="/users/signup" onClick={() => props.handlePageChange("SignUp")}>Sign Up</a>
             </li>
             <li>
                 <a href="/itinerary" onClick={() => props.handlePageChange("Itinerary")}>Itinerary</a>

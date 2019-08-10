@@ -22,14 +22,25 @@ export default {
   createUserAccount: function (query) {
     console.log("In API.js/createUser. query: ", query);
     return axios.post(
-      "users/signup",
-      {
-        userType: query.userType,
-        email: query.email,
-        password: query.password,
-        firstName: query.fname,
-        lastName: query.lname
+      "/signup",
+        {
+          userType: query.userType,
+          email: query.email,
+          password: query.password,
+          firstName: query.fname,
+          lastName: query.lname
+        }
+      );
+  },
+
+  signInUser: function (req) {
+      console.log("signin user: ");
+      return axios.post ( "/users/signin",
+        {
+        email: req.email,
+        password: req.password
       }
-    );
+      )
   }
+  
 };
