@@ -9,6 +9,38 @@
     float: left;
     /* z-index: -1; */
   }
+  .cardInfo {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    /* font-size: 25px; */
+    /* text-align: center; */
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+    float: right;
+  }
+
+  .moreInfo {
+    width: 100%;
+    display:inline-flex;
+  }
+
+  .moreEventInfo {
+    margin: 1%;
+    width: 30%;
+    display:inline-block;
+    text-align: center;
+  }
+
+  iframe {
+    margin: 5px;
+  }
+
+  .media {
+    justify-content: center;
+  }
   
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -72,6 +104,13 @@
     .button {
       width: 100%;
     }
+    .media {
+      display: block;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+    }
   }
 
 
@@ -80,6 +119,13 @@
       width: 100%;
     }
     .button {
+      width: 100%;
+    }
+    .media {
+      display: block;
+      text-align: center;
+    }
+    iframe {
       width: 100%;
     }
   }
