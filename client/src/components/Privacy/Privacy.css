@@ -1,15 +1,3 @@
-
-
-font {
-    color: black;
-}
-
-p {
-    color: black;
-    font-size: 18px;
-    line-height: 2rem
-}
-
 #privacy-div h1 {
     padding-top: 15px;
     padding-bottom: 10px;
@@ -22,7 +10,7 @@ p {
 
 #privacy-div li {
     float: none !important;
-    color: rgb(41, 41, 41);
+    color: #333;
     font-size: 12px;
     line-height: 1rem;
     padding: 10px 10px;
@@ -37,4 +25,5 @@ p {
 #privacy-div p {
     font-size: 12px;
     line-height: 1rem;
+    color: #333;
 }

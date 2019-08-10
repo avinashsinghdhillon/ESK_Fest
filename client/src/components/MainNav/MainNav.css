@@ -29,6 +29,7 @@ ul {
   
 li {
   float: left;
+  display: block;
 }
 
 li a {
@@ -41,30 +42,36 @@ li a {
 
 li a:hover {
   background-color: #137ad6;
+  color: white;
 }
 
 .active {
   background-color: #137ad6;
 }
 
-/* @media screen and (max-width: 600px) {
-  .nav a:not(:first-child) {display: none;}
-  .nav a.icon {
-    float: right;
-    display: block;
-  }
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  z-index: 2;
 }
 
-@media screen and (max-width: 600px) {
-  .nav.responsive {position: relative;}
-  .nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-} */
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  width: 100px !important;
+  z-index: 2;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}

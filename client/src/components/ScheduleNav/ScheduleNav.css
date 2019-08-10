@@ -39,6 +39,6 @@ ul {
 
   /* this is used one the Schedule.js container */
   .under-nav {
-    margin-top: 107px;
+    margin-top: 100px;
     z-index: -1;
   }
