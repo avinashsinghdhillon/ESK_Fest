@@ -2,8 +2,8 @@ import React from 'react';
 
 export default ({ name }) => 
     <div className="cardInfo">
-        <h2 style={{backgroundColor:"#137ad6", color:"white", padding:"10px", borderRadius:"5px"}}>ARTIST NAME HERE</h2><hr/>
-        {/* <h2 style={{backgroundColor:"#137ad6", color:"white", padding:"10px", borderRadius:"5px"}}>{props.name}</h2><hr/> */}
+        {/* <h2 style={{backgroundColor:"#137ad6", color:"white", padding:"10px", borderRadius:"5px"}}>ARTIST NAME HERE</h2><hr/> */}
+        <h2 style={{backgroundColor:"#137ad6", color:"white", padding:"10px", borderRadius:"5px"}}>{props.name}</h2><hr/>
         <h3 style={{backgroundColor:"#137ad6", color:"white", padding:"5px", borderRadius:"5px"}}>Playing At:</h3>
         <div className="moreInfo">
             <div className="moreEventInfo">
