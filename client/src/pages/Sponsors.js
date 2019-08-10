@@ -18,7 +18,7 @@ class Sponsors extends Component {
         return (
             <Container>
                 <h1>Eastside Kings Festival</h1>
-                <h2>Would like to thank the following event sponsors for the support!</h2>
+                <h3>Would like to thank the following event sponsors for their gracious support for this event!</h3>
                 <img src={Boa1} alt=""/>
                 <img src={Boa2} alt=""/>
                 <img src={AntoneBW} alt=""/>

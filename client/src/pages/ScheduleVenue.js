@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScheduleNav from '../components/ScheduleNav';
+import ScheduleNavVenue from '../components/ScheduleNav/ScheduleNavVenue';
 import ArtistCard from '../components/ArtistCard';
 import { Container } from '../components/Grid';
 import API from '../utils/API';
@@ -29,7 +29,7 @@ class Schedule extends Component {
         
         return (
             <div>
-            <ScheduleNav />
+            <ScheduleNavVenue />
             <Container>
             {this.state.events.map((events, index) => {
                 return(<ArtistCard
