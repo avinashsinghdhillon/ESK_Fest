@@ -2,28 +2,43 @@
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 38px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #privacy-div h5 {
-    font-size: 0.8rem;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #privacy-div li {
     float: none !important;
     color: #333;
-    font-size: 12px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
     line-height: 1rem;
     padding: 10px 10px;
   }
 
 #privacy-div h6 {
-    /* color:black; */
     font-weight: bold;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
     padding-top: 25px;
 }
 
 #privacy-div p {
-    font-size: 12px;
-    line-height: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 2rem;
     color: #333;
+}
+
+#privacy-div h4 {
+    font-size: 18px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: -30px;
 }

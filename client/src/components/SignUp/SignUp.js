@@ -105,7 +105,7 @@ class SignUp extends Component {
             <label htmlFor="email">E-Mail</label>
             <input type="text" id="email" name="email" onChange={this.handleInputChange} value = {this.state.email}/>
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" name="password"  onChange={this.handleInputChange} value = {this.state.password} placeholder="Needs a capital letter, a number, and minimun 6 characters" />
+            <input type="password" id="password" name="password"  onChange={this.handleInputChange} value = {this.state.password} placeholder="Needs a capital letter, a number, and minimum 6 characters" />
           </div>
           <div className="submit">
             <input className="button" id="signupSubmit" type="submit" text="Submit"  onClick={(event)=>{this.signupUser(event)}}/>
