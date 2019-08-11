@@ -6,7 +6,8 @@ import API from '../utils/API';
 
 class Schedule extends Component {
     state = {
-        artists: []
+        artists: [],
+        events: []
     };
 
     componentDidMount(){
@@ -34,6 +35,8 @@ class Schedule extends Component {
                     id={artists.id}
                     src={artists.artistPicture}
                     name={artists.artistName}
+                    spotify={artists.artistSpotify}
+                    youtube={artists.artistYoutube}
                     />)
             })}
             </Container>

@@ -13,7 +13,7 @@ const artistSeed = [
     artistID: 1,
     artistName: "Adrian Reed Gospel Mass",
     artistPicture: "https://i.imgur.com/ek1y02a.png",
-    artistYoutube: "https://www.youtube.com/watch?time_continue=55&v=IrcSmpOs-EA"
+    artistYoutube: "https://www.youtube.com/embed/IrcSmpOs-EA"
   },
   {
     artistID: 2,
@@ -21,8 +21,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/FAOP6fb.jpg",
     artistAbout: "",
     artistSite: "https://eastsidemusic.com/meet-the-teachers/andre-hayward/",
-    artistSpotify: "https://open.spotify.com/track/1XEOnfdtuJRmvdG1jvpGuW",
-    artistYoutube: "https://www.youtube.com/watch?v=GKCpaLR_r14&list=PLh6cmoyN1yneZ4Sb1zrLhF7bhLmDUU-nB&index=5"
+    artistSpotify: "https://open.spotify.com/embed/track/1XEOnfdtuJRmvdG1jvpGuW",
+    artistYoutube: "https://www.youtube.com/embed/GKCpaLR_r14&list=PLh6cmoyN1yneZ4Sb1zrLhF7bhLmDUU-nB&index=5"
   },
   {
     artistID: 3,
@@ -30,8 +30,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/CsPSt9k.jpg",
     artistAbout: "",
     artistSite: "http://andrea-dawson.com/",
-    artistSpotify: "https://open.spotify.com/track/2u66IcKxHxadKe1YpHNxNT?si=XqN1O6t_SL6H_XEeCQNzYw",
-    artistYoutube: "https://youtu.be/VkBlf95HRCw"
+    artistSpotify: "https://open.spotify.com/embed/track/2u66IcKxHxadKe1YpHNxNT?si=XqN1O6t_SL6H_XEeCQNzYw",
+    artistYoutube: "https://www.youtube.com/embed/VkBlf95HRCw"
   },
   {
     artistID: 4,
@@ -39,8 +39,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/7kVMtuZ.jpg",
     artistAbout: "",
     artistSite: "https://www.chron.com/entertainment/music/article/Barbara-Lynn-receives-NEA-honor-13010469.php",
-    artistSpotify: "https://open.spotify.com/track/5CEREcGR5WaLt40YzTQ62e",
-    artistYoutube: "https://www.youtube.com/watch?v=U6Y7sEO7Low"
+    artistSpotify: "https://open.spotify.com/embed/track/5CEREcGR5WaLt40YzTQ62e",
+    artistYoutube: "https://www.youtube.com/embed/U6Y7sEO7Low"
   },
   {
     artistID: 5,
@@ -58,7 +58,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=WSicdduH0ds"
+    artistYoutube: "https://www.youtube.com/embed/WSicdduH0ds"
   },
   {
     artistID: 7,
@@ -66,8 +66,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/k0XmE6O.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/69CuiaKEedGZ91mvdzysZq",
-    artistYoutube: "https://www.youtube.com/watch?v=tIq_tbz7Gf8"
+    artistSpotify: "https://open.spotify.com/embed/track/69CuiaKEedGZ91mvdzysZq",
+    artistYoutube: "https://www.youtube.com/embed/tIq_tbz7Gf8"
   },
   {
     artistID: 8,
@@ -75,8 +75,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/fQzVI6S.jpg",
     artistAbout: "",
     artistSite: "http://bloodsax.main.jp/?fbclid=IwAR1ptCsXR-CEAtyKj6qGp70J1X__tI76dOSxdQw3bpGr9OCSnwQuiRycD1s",
-    artistSpotify: "https://open.spotify.com/track/1wSL3lQHdSoGwtFbOis0Zm",
-    artistYoutube: "https://www.youtube.com/watch?v=pqI7QIsJkR4"
+    artistSpotify: "https://open.spotify.com/embed/track/1wSL3lQHdSoGwtFbOis0Zm",
+    artistYoutube: "https://www.youtube.com/embed/pqI7QIsJkR4"
   },
   {
     artistID: 9,
@@ -111,8 +111,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/so4I3WP.png",
     artistAbout: "",
     artistSite: "http://www.carlweathersby.org/",
-    artistSpotify: "https://open.spotify.com/track/7Jxp79DHtduKJ7YPo4lDaC",
-    artistYoutube: "https://youtu.be/oLfkXAeboKA"
+    artistSpotify: "https://open.spotify.com/embed/track/7Jxp79DHtduKJ7YPo4lDaC",
+    artistYoutube: "https://www.youtube.com/embed/oLfkXAeboKA"
   },
   {
     artistID: 13,
@@ -129,8 +129,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/OoNZM4y.jpg",
     artistAbout: "",
     artistSite: "https://chuckrainey.com/",
-    artistSpotify: "https://open.spotify.com/track/2uqr9arJdbS5Huef2eFJol",
-    artistYoutube: "https://www.youtube.com/watch?v=O2ahiZvCP8o&list=OLAK5uy_n4-JORxnqU0ZzwMNmJHMOqWRU6SZNa2JA&index=3"
+    artistSpotify: "https://open.spotify.com/embed/track/2uqr9arJdbS5Huef2eFJol",
+    artistYoutube: "https://www.youtube.com/embed/O2ahiZvCP8o&list=OLAK5uy_n4-JORxnqU0ZzwMNmJHMOqWRU6SZNa2JA&index=3"
   },
   {
     artistID: 15,
@@ -138,7 +138,7 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/Tu4gi8U.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/4Q0oqa1l7WJXmtGaZbzPS0",
+    artistSpotify: "https://open.spotify.com/embed/track/4Q0oqa1l7WJXmtGaZbzPS0",
     artistYoutube: ""
   },
   {
@@ -148,7 +148,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://youtu.be/C5CG5qe9wac"
+    artistYoutube: "https://www.youtube.com/embed/C5CG5qe9wac"
   },
   {
     artistID: 17,
@@ -156,7 +156,7 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/oQNm7t4.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/4r17N5j0GXjbHFgUY5Dd1o",
+    artistSpotify: "https://open.spotify.com/embed/track/4r17N5j0GXjbHFgUY5Dd1o",
     artistYoutube: ""
   },
   {
@@ -165,7 +165,7 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/VS4YOia.jpg",
     artistAbout: "",
     artistSite: "http://www.donbraden.com/",
-    artistSpotify: "https://open.spotify.com/track/7Gq3gnDaQK8pfP8pnPjoG4",
+    artistSpotify: "https://open.spotify.com/embed/track/7Gq3gnDaQK8pfP8pnPjoG4",
     artistYoutube: ""
   },
   {
@@ -184,7 +184,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=BlRc3mp2F9Q"
+    artistYoutube: "https://www.youtube.com/embed/BlRc3mp2F9Q"
   },
   {
     artistID: 21,
@@ -193,7 +193,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "https://greggasmithmusic.com/home",
     artistSpotify: "",
-    artistYoutube: "https://youtu.be/YW-lSDjkS1I"
+    artistYoutube: "https://www.youtube.com/embed/YW-lSDjkS1I"
   },
   {
     artistID: 22,
@@ -229,7 +229,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=wUPZO3sHN5c"
+    artistYoutube: "https://www.youtube.com/embed/wUPZO3sHN5c"
   },
   {
     artistID: 26,
@@ -237,8 +237,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/Ozy0eVx.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/1ZZ4xYTORrkU9gY0isK6OR",
-    artistYoutube: "https://www.youtube.com/watch?v=MegutC1rUok"
+    artistSpotify: "https://open.spotify.com/embed/track/1ZZ4xYTORrkU9gY0isK6OR",
+    artistYoutube: "https://www.youtube.com/embed/MegutC1rUok"
   },
   {
     artistID: 27,
@@ -256,7 +256,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=wUPZO3sHN5c"
+    artistYoutube: "https://www.youtube.com/embed/wUPZO3sHN5c"
   },
   {
     artistID: 29,
@@ -264,8 +264,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/7yV6N52.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/327RfrgwD8WNelFhU4NCNr?si=kLuGQ9mYQGC28EcS3l86KQ",
-    artistYoutube: "https://www.youtube.com/watch?v=4kNVSAXhycw"
+    artistSpotify: "https://open.spotify.com/embed/track/327RfrgwD8WNelFhU4NCNr?si=kLuGQ9mYQGC28EcS3l86KQ",
+    artistYoutube: "https://www.youtube.com/embed/4kNVSAXhycw"
   },
   {
     artistID: 30,
@@ -273,17 +273,17 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/EZAbbAo.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/6BIpLmms6hIdSFI3GNTw8J",
-    artistYoutube: "https://www.youtube.com/watch?v=8vM0Vq_v72c"
+    artistSpotify: "https://open.spotify.com/embed/track/6BIpLmms6hIdSFI3GNTw8J",
+    artistYoutube: "https://www.youtube.com/embed/8vM0Vq_v72c"
   },
   {
     artistID: 31,
     artistName: "Lady D",
     artistPicture: "https://i.imgur.com/5DYQT5V.jpg",
     artistAbout: "",
-    artistSite: "",
+    artistSite: "https://www.facebook.com/ThaLadyD/videos/1700878136845745/",
     artistSpotify: "",
-    artistYoutube: "https://www.facebook.com/ThaLadyD/videos/1700878136845745/"
+    artistYoutube: ""
   },
   {
     artistID: 32,
@@ -291,8 +291,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/qREXo0i.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/7lOV91qKP6qRTrE5Hg9HCb",
-    artistYoutube: "https://www.youtube.com/watch?v=dRpV94UuyHM"
+    artistSpotify: "https://open.spotify.com/embed/track/7lOV91qKP6qRTrE5Hg9HCb",
+    artistYoutube: "https://www.youtube.com/embed/dRpV94UuyHM"
   },
   {
     artistID: 33,
@@ -309,8 +309,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/bBlTxIl.jpg",
     artistAbout: "",
     artistSite: "https://luckypeterson.com/",
-    artistSpotify: "https://open.spotify.com/track/6QSH6q90XNj5VDi52qpe8B",
-    artistYoutube: "https://www.youtube.com/watch?v=TI5GHHYE6Ko&list=PLYc0FapKFwGr4TvMHx_EqeSWnufyIEVLG&index=8"
+    artistSpotify: "https://open.spotify.com/embed/track/6QSH6q90XNj5VDi52qpe8B",
+    artistYoutube: "https://www.youtube.com/embed/TI5GHHYE6Ko&list=PLYc0FapKFwGr4TvMHx_EqeSWnufyIEVLG&index=8"
   },
   {
     artistID: 35,
@@ -319,7 +319,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=Mi-n6UeZaDk"
+    artistYoutube: "https://www.youtube.com/embed/Mi-n6UeZaDk"
   },
   {
     artistID: 36,
@@ -328,7 +328,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=t27HK1qdNiI"
+    artistYoutube: "https://www.youtube.com/embed/t27HK1qdNiI"
   },
   {
     artistID: 37,
@@ -337,7 +337,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://youtu.be/piF1zkw8iKA"
+    artistYoutube: "https://www.youtube.com/embed/piF1zkw8iKA"
   },
   {
     artistID: 38,
@@ -346,7 +346,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=6ZHOgmJycmk"
+    artistYoutube: "https://www.youtube.com/embed/6ZHOgmJycmk"
   },
   {
     artistID: 39,
@@ -363,8 +363,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/H62VePx.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/5m4Kj4yfqgJmjAoaJlzJd4?si=YOzGKFujRpa4LN3K8Sp_hQ",
-    artistYoutube: "https://youtu.be/KD3uE5vqMTo"
+    artistSpotify: "https://open.spotify.com/embed/track/5m4Kj4yfqgJmjAoaJlzJd4?si=YOzGKFujRpa4LN3K8Sp_hQ",
+    artistYoutube: "https://www.youtube.com/embed/KD3uE5vqMTo"
   },
   {
     artistID: 41,
@@ -372,8 +372,8 @@ const artistSeed = [
     artistPicture: "",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/5cDIbJtehjhImG8eytKwGw?si=YIm4v7mrSHOVBJFZI9CXbg",
-    artistYoutube: "https://www.youtube.com/watch?v=KNcZs2qFM-E"
+    artistSpotify: "https://open.spotify.com/embed/track/5cDIbJtehjhImG8eytKwGw?si=YIm4v7mrSHOVBJFZI9CXbg",
+    artistYoutube: "https://www.youtube.com/embed/KNcZs2qFM-E"
   },
   {
     artistID: 42,
@@ -382,7 +382,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=8NU0Ie3XQeY"
+    artistYoutube: "https://www.youtube.com/embed/8NU0Ie3XQeY"
   },
   {
     artistID: 43,
@@ -400,7 +400,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=esJapjFRTEI"
+    artistYoutube: "https://www.youtube.com/embed/esJapjFRTEI"
   },
   {
     artistID: 45,
@@ -427,7 +427,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=vNRL5XVrFJI"
+    artistYoutube: "https://www.youtube.com/embed/vNRL5XVrFJI"
   },
   {
     artistID: 48,
@@ -436,7 +436,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=uYvBmXwipC0"
+    artistYoutube: "https://www.youtube.com/embed/uYvBmXwipC0"
   },
   {
     artistID: 49,
@@ -463,7 +463,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=RVCywyqBdYA&feature=youtu.be"
+    artistYoutube: "https://www.youtube.com/embed/RVCywyqBdYA&feature=youtu.be"
   },
   {
     artistID: 52,
@@ -481,7 +481,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "http://bloodsax.main.jp/?fbclid=IwAR1ptCsXR-CEAtyKj6qGp70J1X__tI76dOSxdQw3bpGr9OCSnwQuiRycD1s",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=pqI7QIsJkR4"
+    artistYoutube: "https://www.youtube.com/embed/pqI7QIsJkR4"
   },
   {
     artistID: 54,
@@ -499,16 +499,16 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://youtu.be/bkW8DTXjn9E"
+    artistYoutube: "https://www.youtube.com/embed/bkW8DTXjn9E"
   },
   {
     artistID: 56,
     artistName: "Tamara Mack & The Mack Daddies",
     artistPicture: "https://i.imgur.com/Wt1copK.jpg",
     artistAbout: "",
-    artistSite: "",
+    artistSite: "https://www.facebook.com/mackdaddymusic/videos/1033365060177569/",
     artistSpotify: "",
-    artistYoutube: "https://www.facebook.com/mackdaddymusic/videos/1033365060177569/"
+    artistYoutube: ""
   },
   {
     artistID: 57,
@@ -517,7 +517,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=6ZHOgmJycmk"
+    artistYoutube: "https://www.youtube.com/embed/6ZHOgmJycmk"
   },
   {
     artistID: 58,
@@ -534,8 +534,8 @@ const artistSeed = [
     artistPicture: "",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/6CM6bg4owVXEHo1g7QzWyg?si=GJkiV_KSTImLs5AtiYLhXQ",
-    artistYoutube: "https://www.youtube.com/watch?v=bgVVJYS0fqI"
+    artistSpotify: "https://open.spotify.com/embed/track/6CM6bg4owVXEHo1g7QzWyg?si=GJkiV_KSTImLs5AtiYLhXQ",
+    artistYoutube: "https://www.youtube.com/embed/bgVVJYS0fqI"
   },
   {
     artistID: 60,
@@ -543,8 +543,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/hDc3obW.png",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "https://open.spotify.com/track/3T1iXyK8LzxE4QYbU30z2N",
-    artistYoutube: "https://www.youtube.com/watch?v=S8-ubeKgrUg"
+    artistSpotify: "https://open.spotify.com/embed/track/3T1iXyK8LzxE4QYbU30z2N",
+    artistYoutube: "https://www.youtube.com/embed/S8-ubeKgrUg"
   },
   {
     artistID: 61,
@@ -553,7 +553,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "http://bloodsax.main.jp/?fbclid=IwAR1ptCsXR-CEAtyKj6qGp70J1X__tI76dOSxdQw3bpGr9OCSnwQuiRycD1s",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=pqI7QIsJkR4"
+    artistYoutube: "https://www.youtube.com/embed/pqI7QIsJkR4"
   },
   {
     artistID: 62,
@@ -562,7 +562,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=vXcGNx-KioM"
+    artistYoutube: "https://www.youtube.com/embed/vXcGNx-KioM"
   },
   {
     artistID: 63,
@@ -571,7 +571,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: "https://www.youtube.com/watch?v=v04SFLh_QCI"
+    artistYoutube: "https://www.youtube.com/embed/v04SFLh_QCI"
   },
   {
     artistID: 64,

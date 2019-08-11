@@ -17,8 +17,8 @@ class ArtistCard extends Component {
             this.setState({
                 show: true,
                 artistName: this.props.name,
-                artistSpotify: this.props.spotify,
-                artistYoutube: this.props.youtube
+                // artistSpotify: this.props.spotify,
+                // artistYoutube: this.props.youtube
             });
         } else {
             this.setState({
@@ -37,7 +37,6 @@ class ArtistCard extends Component {
                     </div>
                     <div className="container">
                         <h4>{this.props.name}</h4>
-                        {/* <h4>ARTIST NAME HERE</h4> */}
                         <button className="button" onClick={this._show.bind(null, true) || this._show.bind(null, false)}>More Info</button>
                         {/* <button className="button" onClick={this._show.bind(null, false)}>Less Info</button> */}
                         {/* <button href="/eventpage" className="button" onClick={() => props.handlePageChange("EventPage")}>Event Info</button> */}
@@ -46,8 +45,8 @@ class ArtistCard extends Component {
                 {this.state.show 
                 ? <MoreInfo 
                     name={this.state.artistName}
-                    spotify={this.state.artistSpotify}
-                    youtube={this.state.artistYoutube || "https://www.youtube.com/watch?v=pDyXZuvMaFc"}/> 
+                    spotify={this.state.artistSpotify || "https://open.spotify.com/embed/track/1zs2cc3xtGpXtcrqTbBlnc"}
+                    youtube={this.state.artistYoutube || "https://www.youtube.com/embed/pDyXZuvMaFc"}/> 
                 : null}
             </div>
             )
