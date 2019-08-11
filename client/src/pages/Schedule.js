@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ScheduleNav from '../components/ScheduleNav';
 import ArtistCard from '../components/ArtistCard';
-import { Container, Row } from '../components/Grid';
+import { Container } from '../components/Grid';
 import API from '../utils/API';
 
 class Schedule extends Component {
@@ -36,18 +36,6 @@ class Schedule extends Component {
                     name={artists.artistName}
                     />)
             })}
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-
             </Container>
             </div>
         );
