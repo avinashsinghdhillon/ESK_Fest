@@ -8,27 +8,27 @@ export default (props) =>
         <div className="moreInfo">
             <div className="moreEventInfo">
                 <h4 style={{color: "#137ad6"}}>Friday September 13, 2019</h4>
-                <a href="#"><p style={{color: "#333"}}>Antone's Record Shop</p>
-                <p style={{color: "#333"}}>8:00 - 9:00 PM</p></a>
+                <p style={{color: "#333"}}>Antone's Record Shop</p>
+                <p style={{color: "#333"}}>8:00 - 9:00 PM</p>
             </div>
             <div className="moreEventInfo">
                 <h4 style={{color: "#137ad6"}}>Saturday September 14, 2019</h4>
-                <a href="#"><p style={{color: "#333"}}>Antone's Record Shop</p>
-                <p style={{color: "#333"}}>8:00 - 9:00 PM</p></a>
+                <p style={{color: "#333"}}>Antone's Record Shop</p>
+                <p style={{color: "#333"}}>8:00 - 9:00 PM</p>
                 <hr/>
-                <a href="#"><p style={{color: "#333"}}>Antone's Record Shop</p>
-                <p style={{color: "#333"}}>8:00 - 9:00 PM</p></a>
+                <p style={{color: "#333"}}>Antone's Record Shop</p>
+                <p style={{color: "#333"}}>8:00 - 9:00 PM</p>
                 <hr/>
-                <a href="#"><p style={{color: "#333"}}>Antone's Record Shop</p>
-                <p style={{color: "#333"}}>8:00 - 9:00 PM</p></a>
+                <p style={{color: "#333"}}>Antone's Record Shop</p>
+                <p style={{color: "#333"}}>8:00 - 9:00 PM</p>
             </div>
             <div className="moreEventInfo">
                 <h4 style={{color: "#137ad6"}}>Sunday September 15, 2019</h4>
-                <a href="#"><p style={{color: "#333"}}>Antone's Record Shop</p>
-                <p style={{color: "#333"}}>8:00 - 9:00 PM</p></a>
+                <p style={{color: "#333"}}>Antone's Record Shop</p>
+                <p style={{color: "#333"}}>8:00 - 9:00 PM</p>
                 <hr/>
-                <a href="#"><p style={{color: "#333"}}>Antone's Record Shop</p>
-                <p style={{color: "#333"}}>8:00 - 9:00 PM</p></a>
+                <p style={{color: "#333"}}>Antone's Record Shop</p>
+                <p style={{color: "#333"}}>8:00 - 9:00 PM</p>
             </div>
         </div>
         <hr/>
