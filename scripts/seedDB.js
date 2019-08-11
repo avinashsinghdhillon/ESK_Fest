@@ -427,7 +427,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=vNRL5XVrFJI"
   },
   {
     artistID: 48,
