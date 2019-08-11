@@ -13,6 +13,8 @@ router.route('/signup')
 
 router.route('/signin')
  .post(validateBody(schemas.authSchema), passportSignIn, UsersController.signIn);
+//  .post(passportSignIn, UsersController.signIn);
+
 
 router.route('/itinerary')
  .get(passportJWT, UsersController.itinerary);
@@ -22,5 +24,8 @@ router.route('/itinerary')
 
 //  router.route('/signup')
 //  .post(UsersController.signUp)
+
+router.route('/getusers')
+    .get(UsersController.findAll)
 
 module.exports = router;

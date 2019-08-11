@@ -20,21 +20,24 @@ module.exports = {
     console.log('contents or req.value.body', req.value.body)
     console.log('usersController.signUp() called!')
     //check if there is already a user with the same email
-    const { email, password, lastName, firstName, userType, } = req.value.body;
+    const { email, password, lastName, firstName, } = req.value.body;
 
     const foundUser = await User.findOne({ email });
     if (foundUser) {
-      return res.status(403).json({ error: 'Email or password is incorrect.' });
+      return res.status(403).json({ error: 'Please sign-in with your email.' });
     }
-    //create new user
-    const newUser = new User({ email, password, lastName, firstName, userType });
-    await newUser.save();
+    else {
+      //create new user
+      const newUser = new User({ email, password, lastName, firstName, userType:"local" });
+      //////update the usertype to Local here/////
+      await newUser.save();
 
-    //Generate the token
-    const token = signToken(newUser);
+      //Generate the token
+      const token = signToken(newUser);
 
-    //Respond with a token
-    res.status(200).json({ token })
+      //Respond with a token
+      res.status(200).json({ token })
+    }
   },
 
   signIn: async (req, res, next) => {
@@ -54,5 +57,15 @@ module.exports = {
       .findOne({ email: req.body.email })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-  }
+  },
+
+  findAll: function(req, res){
+    User
+        .find({})
+        // .populate("artists")
+        // console.log("artists populated")
+        // console.log(res.data)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err));
+}
 }

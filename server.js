@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const cors = require('cors')
 mongoose.set('useNewUrlParser', true);
 const cookieSession = require('cookie-session');
 const passport = require("passport");
@@ -24,6 +25,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
+//add whitelist for cors for development
+app.use(cors());
+
+
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -31,9 +36,8 @@ app.use(bodyParser.json());
 // // For Passport
 // app.use(session({ secret: "keyboard cat",resave: true, saveUninitialized:true})); // session secret
  
-app.use(passport.initialize());
+// app.use(passport.initialize());
  
-app.use(passport.session()); // persistent login sessions
 // app.use(passport.session()); // persistent login sessions
 
 if(process.env.NODE_ENV === "production"){
@@ -41,10 +45,10 @@ if(process.env.NODE_ENV === "production"){
 }
 
 // set up session cookies
-app.use(cookieSession({
-  maxAge: 24 * 60 * 60 * 1000,
-  keys: [keys.COOKIE_KEY]
-}));
+// app.use(cookieSession({
+//   maxAge: 24 * 60 * 60 * 1000,
+//   keys: [keys.COOKIE_KEY]
+// }));
 
 // Routes///////////////////////////does it need any more routes listed?
 app.use('/users', require('./apiauthentication/routes/users'));

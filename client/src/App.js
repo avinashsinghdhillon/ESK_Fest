@@ -1,5 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import reduxThunk from 'redux-thunk';
+
+import reducers from './reducers'
 import Home from './pages/Home';
 import MainNav from './components/MainNav';
 import SignUp from './components/SignUp';
@@ -20,6 +25,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
+    <Provider store={createStore(reducers, {}, applyMiddleware(reduxThunk) )}>
     <Router>
       <div>
         <MainNav />
@@ -41,6 +47,7 @@ function App() {
         {/* <Footer /> */}
       </div>
     </Router>
+    </Provider>
   );
 }
 

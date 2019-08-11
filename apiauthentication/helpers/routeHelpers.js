@@ -17,10 +17,10 @@ module.exports = {
 
   schemas: {
     authSchema: Joi.object().keys({
-      email: Joi.string().email({ minDomainSegments: 2 }).required(),
-      password: Joi.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/).required(),
+      Email: Joi.string().email({ minDomainSegments: 2 }).required(),
+      Password: Joi.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/).required(),
       //userID: Joi.number().integer().min(1),
-      userType: Joi.string(),
+      // userType: Joi.string(),
       firstName: Joi.string(),
       lastName: Joi.string()
     })

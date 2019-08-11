@@ -1,131 +1,84 @@
 import React, { Component } from 'react';
+import { reduxForm, Field } from 'redux-form';
+import {connect} from 'react-redux';
+import {compose} from 'redux';
+
+import * as actions from '../../actions'
 import { Container } from '../Grid';
+import CustomInput from '../CustomInput'
 import './SignUp.css';
 import API from "../../utils/API";
 import googleSignInButton from "../../images/btn_google_signin_dark_normal_web.png";
 
 class SignUp extends Component {
-  state = {
-    //the state will hold the user object if the user logs in or creates a new account
-    user: {},
-    fname: "",
-    lname: "",
-    email: "",
-    password:""
-  }
-
-  componentDidMount(){
-    //not sure what to add here.
-  }
-
-  handleInputChange = event => {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
+  //allows us to use the this.props.signUp for our axios call
+  constructor(props){
+    super(props);
+    this.onSubmit = this.onSubmit.bind(this)
   };
 
-  handleInputSignIn = event => {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
-  };
+ async onSubmit(formData){
+   console.log("onSubmit got called");
+   console.log("data", formData)
+   console.log(this.props)
+   //
+   await this.props.signUp(formData)
+ }
 
-  //Validate all fields in the sign up form//////////////////////////////////////
-  signupDataValidation = ()=>{
-    return true;
-  }
-
-
-  // this section handles the SIGN-UP button click
-  //this is the non-google signup onClick button event
-  signupUser = function (event){
-    event.preventDefault();
-    //if signup form entries are not valid, do not proceed
-    if(!this.signupDataValidation())
-    {
-      return alert("please check all fields");
-    }
-    console.log("in button. state.email: " + this.state.email);
-    //Check to see if user profile already exists in our DB using the email input
-    API.getUserByEmail(this.state.email)
-      .then(function (res){ 
-        console.log("Get user by email route: ", res);
-        //if the user email exists redirect to login page////////////////////Modal or alert?
-        if(res.data){
-          return alert("That email account already exists. Please sign in to access your acount");
-        }
-      })
-      .catch(err => console.log(err));
-
-    //create the new account as "local"
-    API.createUserAccount({
-      email: this.state.email,
-      password: this.state.password,
-      lname: this.state.lname,
-      fname: this.state.fname,
-      userType: "local"
-    })
-    .then(function(res){
-       alert("user account created. res:", res);
-    })
-    .catch(err => console.log(err));
-  }
-
-  // this section handles the SIGN-IN button click
-  //this is the non-google signin onClick button event
-  signInUser = function (event) {
-    console.log("button clicked");
-    event.preventDefault();
-    //1. Pull the user account
-    API.signInUser({
-      email: this.state.email,
-      password: this.state.password
-    })
-      .then(
-        console.log("signed in??")
-      )
-      .catch(err => console.log(err));
-  }
   render() {
+    const { handleSubmit } = this.props;
     return (
       <Container>
-        <div className="signup">
-          <div className="google">
-            <img src={googleSignInButton} alt="" />
-            <button href="#">SIGN IN WITH GOOGLE</button>
-          </div>
-          <div>
-            <h4>Sign Up</h4>
-            <label htmlFor="fname">First Name</label>
-            <input type="text" id="fname" name="fname" onChange={this.handleInputChange} value = {this.state.fname}/>
-            <label htmlFor="lname">Last Name</label>
-            <input type="text" id="lname" name="lname" onChange={this.handleInputChange} value = {this.state.lname}/>
-            <label htmlFor="email">E-Mail</label>
-            <input type="text" id="email" name="email" onChange={this.handleInputChange} value = {this.state.email}/>
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" name="password"  onChange={this.handleInputChange} value = {this.state.password} placeholder="Needs a capital letter, a number, and minimum 6 characters" />
-          </div>
-          <div className="submit">
-            <input className="button" id="signupSubmit" type="submit" text="Submit"  onClick={(event)=>{this.signupUser(event)}}/>
-          </div>
+        <div className="text-center">
+          <div className="alert alert-primary">Sign Up Using Google</div>
+          {/* insert google button here */}
         </div>
-        <div className="signin">
-          <div>
-            <h4>Sign In</h4>
-            <label htmlFor="email">E-Mail</label>
-            <input type="text" id="emailSignIn" name="email2" onChange={this.handleInputSignIn} value = {this.state.email} placeholder="Enter your account e-mail" />
-            <label htmlFor="password">Password</label>
-            <input type="password" id="passwordSignIn" name="password2" onChange={this.handleInputSignIn} value = {this.state.password} placeholder="Enter your password" />
-          </div>
-          <div className="submit">
-            <button className="button" id="signinSubmit" type="submit" onClick={(event)=>{this.signInUser(event)}}>Submit</button>
-          </div>
-        </div>
+        <form onSubmit={handleSubmit(this.onSubmit)}>
+         <fieldset>
+            <Field
+              name="firstName"
+              label="First Name"
+              type="text"
+              id="firstName"
+              component={CustomInput}
+              placeholder="First Name" />
+          </fieldset>
+          <fieldset>
+            <Field
+              name="lastName"
+              label="Last Name"
+              type="text"
+              id="lastName"
+              component={CustomInput}
+              placeholder="Last Name" />
+          </fieldset>
+          <fieldset>
+            <Field
+              name="email"
+              label="Email"
+              type="text"
+              id="email"
+              component={CustomInput}
+              placeholder="Email" />
+          </fieldset>
+          <fieldset>
+            <Field
+              name="password"
+              label="Password"
+              type="password"
+              id="password"
+              component={CustomInput}
+              placeholder="Password" />
+          </fieldset>
+          <button type="submit" name="userType" value="local">Sign Up</button>
+        </form>
       </Container>
     )
   }
 }
 
-export default SignUp;
+export default compose (
+  connect(null, actions),
+  reduxForm({ form: 'signup' })
+)
+(SignUp);
