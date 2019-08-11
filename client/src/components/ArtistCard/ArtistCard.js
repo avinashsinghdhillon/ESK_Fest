@@ -5,14 +5,11 @@ import './ArtistCard.css';
 
 class ArtistCard extends Component {
 
-    // constructor(){
-    //     super();
-    //     this.state = { show: false, name: this.props.name }
-    // }
-
     state = {
         show: false,
         artistName: "",
+        artistSpotify: "",
+        artistYoutube: "",
     }
 
     _show = (bool) => {
@@ -20,8 +17,8 @@ class ArtistCard extends Component {
             this.setState({
                 show: true,
                 artistName: this.props.name,
-                // artistSpotify: this.props.spotify,
-                // artistYoutube: this.props.youtube
+                artistSpotify: this.props.spotify,
+                artistYoutube: this.props.youtube
             });
         } else {
             this.setState({
@@ -49,8 +46,8 @@ class ArtistCard extends Component {
                 {this.state.show 
                 ? <MoreInfo 
                     name={this.state.artistName}
-                    spotify={this.state.artistSpotify}
-                    youtube={this.state.artistYoutube}/> 
+                    spotify={this.state.spotify}
+                    youtube={this.state.youtube}/> 
                 : null}
             </div>
             )
