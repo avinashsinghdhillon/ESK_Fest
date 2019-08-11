@@ -18,7 +18,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Crystal Thomas</h3>
-            <p className="artist-caption">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="artist-caption">Fresh face for the Blues with a voice that blows you away.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -29,7 +29,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Barbara Lynn</h3>
-            <p className="artist-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="artist-caption">20th century icon for Soul/Blues, recipient of the NEA National Heritage Fellowship.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -40,7 +40,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Jewel Brown</h3>
-            <p className="artist-caption">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p className="artist-caption">Vocalist for Louis Armstrong in the '50s and '60s; still going strong today.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -51,7 +51,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Crystal, Lucky, and Chuck</h3>
-            <p className="artist-caption">Recording session for the “Don’t Worry About The Blues” album.</p>
+            <p className="artist-caption">Chuck Rainey played on 7 gold records and has worked with the best of the best. Recording session for the “Don’t Worry About The Blues” album with Crystal and Lucky. </p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -62,7 +62,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Lavelle White and Barbara Lynn</h3>
-            <p className="artist-caption">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="artist-caption">The two queens who helped shape the sound of the Blues.</p>
             </Carousel.Caption>
         </Carousel.Item>
     </Carousel>   
