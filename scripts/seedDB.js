@@ -30,7 +30,7 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/CsPSt9k.jpg",
     artistAbout: "",
     artistSite: "http://andrea-dawson.com/",
-    artistSpotify: "",
+    artistSpotify: "https://open.spotify.com/track/2u66IcKxHxadKe1YpHNxNT?si=XqN1O6t_SL6H_XEeCQNzYw",
     artistYoutube: "https://youtu.be/VkBlf95HRCw"
   },
   {
@@ -58,7 +58,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=WSicdduH0ds"
   },
   {
     artistID: 7,
@@ -184,7 +184,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=BlRc3mp2F9Q"
   },
   {
     artistID: 21,
@@ -229,7 +229,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=wUPZO3sHN5c"
   },
   {
     artistID: 26,
@@ -256,7 +256,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=wUPZO3sHN5c"
   },
   {
     artistID: 29,
@@ -264,8 +264,8 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/7yV6N52.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "",
-    artistYoutube: ""
+    artistSpotify: "https://open.spotify.com/track/327RfrgwD8WNelFhU4NCNr?si=kLuGQ9mYQGC28EcS3l86KQ",
+    artistYoutube: "https://www.youtube.com/watch?v=4kNVSAXhycw"
   },
   {
     artistID: 30,
@@ -292,7 +292,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/track/7lOV91qKP6qRTrE5Hg9HCb",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=dRpV94UuyHM"
   },
   {
     artistID: 33,
@@ -319,7 +319,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=Mi-n6UeZaDk"
   },
   {
     artistID: 36,
@@ -328,7 +328,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=t27HK1qdNiI"
   },
   {
     artistID: 37,
@@ -346,7 +346,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=6ZHOgmJycmk"
   },
   {
     artistID: 39,
@@ -363,7 +363,7 @@ const artistSeed = [
     artistPicture: "https://i.imgur.com/H62VePx.jpg",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "",
+    artistSpotify: "https://open.spotify.com/track/5m4Kj4yfqgJmjAoaJlzJd4?si=YOzGKFujRpa4LN3K8Sp_hQ",
     artistYoutube: "https://youtu.be/KD3uE5vqMTo"
   },
   {
@@ -372,8 +372,8 @@ const artistSeed = [
     artistPicture: "",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "",
-    artistYoutube: ""
+    artistSpotify: "https://open.spotify.com/track/5cDIbJtehjhImG8eytKwGw?si=YIm4v7mrSHOVBJFZI9CXbg",
+    artistYoutube: "https://www.youtube.com/watch?v=KNcZs2qFM-E"
   },
   {
     artistID: 42,
@@ -382,7 +382,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=8NU0Ie3XQeY"
   },
   {
     artistID: 43,
@@ -400,7 +400,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=esJapjFRTEI"
   },
   {
     artistID: 45,
@@ -517,7 +517,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=6ZHOgmJycmk"
   },
   {
     artistID: 58,
@@ -534,8 +534,8 @@ const artistSeed = [
     artistPicture: "",
     artistAbout: "",
     artistSite: "",
-    artistSpotify: "",
-    artistYoutube: ""
+    artistSpotify: "https://open.spotify.com/track/6CM6bg4owVXEHo1g7QzWyg?si=GJkiV_KSTImLs5AtiYLhXQ",
+    artistYoutube: "https://www.youtube.com/watch?v=bgVVJYS0fqI"
   },
   {
     artistID: 60,
@@ -562,7 +562,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=vXcGNx-KioM"
   },
   {
     artistID: 63,
@@ -571,7 +571,7 @@ const artistSeed = [
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
-    artistYoutube: ""
+    artistYoutube: "https://www.youtube.com/watch?v=v04SFLh_QCI"
   },
   {
     artistID: 64,
@@ -1171,7 +1171,7 @@ db.Artist
   .deleteMany()
   .then(() => db.Artist.collection.insertMany(artistSeed))
   .then(data => {
-    console.log(data.result.n + " records inserted!");
+    console.log(data.result.n + " artist records inserted!");
     const updatedEventSeed = eventSeed.map(event => {
       event.artists = event.artistIdArr.map(artistIndex => {
         return data.insertedIds[artistIndex]
@@ -1185,7 +1185,7 @@ db.Artist
       .deleteMany()
       .then(() => db.Event.collection.insertMany(updatedEventSeed))
       .then(data => {
-        console.log(data.result.n + " records inserted!");
+        console.log(data.result.n + " event records inserted!");
       })
       .catch(err => {
         console.error(err);
@@ -1200,7 +1200,7 @@ db.Location
   .deleteMany()
   .then(() => db.Location.collection.insertMany(locationSeed))
   .then(data => {
-    console.log(data.result.n + " records inserted!");
+    console.log(data.result.n + " location records inserted!");
   })
   .catch(err => {
     console.error(err);
@@ -1211,7 +1211,7 @@ db.User
   .deleteMany()
   .then(() => db.User.collection.insertMany(userSeed))
   .then(data => {
-    console.log(data.result.n + " records inserted!");
+    console.log(data.result.n + " user records inserted!");
   })
   .catch(err => {
     console.error(err);
