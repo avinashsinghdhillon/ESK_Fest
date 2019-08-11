@@ -25,6 +25,13 @@ class SignUp extends Component {
     });
   };
 
+  handleInputSignIn = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
   //Validate all fields in the sign up form//////////////////////////////////////
   signupDataValidation = ()=>{
     return true;
@@ -108,9 +115,9 @@ class SignUp extends Component {
           <div>
             <h4>Sign In</h4>
             <label htmlFor="email">E-Mail</label>
-            <input type="text" id="emailSignIn" name="email" onChange={this.handleInputChange} value = {this.state.email} placeholder="Enter your account e-mail" />
+            <input type="text" id="emailSignIn" name="email2" onChange={this.handleInputSignIn} value = {this.state.email} placeholder="Enter your account e-mail" />
             <label htmlFor="password">Password</label>
-            <input type="password" id="passwordSignIn" name="password" onChange={this.handleInputChange} value = {this.state.password} placeholder="Enter your password" />
+            <input type="password" id="passwordSignIn" name="password2" onChange={this.handleInputSignIn} value = {this.state.password} placeholder="Enter your password" />
           </div>
           <div className="submit">
             <button className="button" id="signinSubmit" type="submit" onClick={(event)=>{this.signInUser(event)}}>Submit</button>

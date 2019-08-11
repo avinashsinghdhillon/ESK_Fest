@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import MainNav from './components/MainNav';
 import SignUp from './components/SignUp';
+import SignIn from './components/SignIn';
 import Schedule from './pages/Schedule';
 import ScheduleDay from './pages/ScheduleDay';
 import ScheduleVenue from './pages/ScheduleVenue';
@@ -25,7 +26,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/users/signup" component={SignUp} />
-          <Route exact path="/users/signin" component={SignUp} />
+          <Route exact path="/users/signin" component={SignIn} />
           <Route exact path="/schedule" component={Schedule} />
           <Route exact path="/scheduleday" component={ScheduleDay} />
           <Route exact path="/schedulevenue" component={ScheduleVenue} />

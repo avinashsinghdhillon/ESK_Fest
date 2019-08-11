@@ -34,13 +34,8 @@ export default {
   },
 
   signInUser: function (req) {
-      console.log("signin user: ");
-      return axios.post ( "/users/signin",
-        {
-        email: req.email,
-        password: req.password
-      }
-      )
+      console.log("signin user: ", req);
+      return axios.post ( "/users/signin", req[0], req[1])
   }
   
 };

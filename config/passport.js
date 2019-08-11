@@ -45,6 +45,7 @@ passport.use(new LocalStrategy({
             return done(null, false);
         }
         //otherwise, return the user
+        console.log("you have been logged in")
         done(null, user)
     } catch(error){
         done(error, false);
