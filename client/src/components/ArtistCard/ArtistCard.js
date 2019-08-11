@@ -46,8 +46,8 @@ class ArtistCard extends Component {
                 {this.state.show 
                 ? <MoreInfo 
                     name={this.state.artistName}
-                    spotify={this.state.spotify}
-                    youtube={this.state.youtube}/> 
+                    spotify={this.state.artistSpotify}
+                    youtube={this.state.artistYoutube}/> 
                 : null}
             </div>
             )
