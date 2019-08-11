@@ -1,16 +1,16 @@
 require('dotenv').config();
-const JWT = require('jsonwebtoken');
+//const JWT = require('jsonwebtoken');
 const User = require('../../models/user');
 
-signToken = user => {
-  return JWT.sign({
-    iss: 'esk',
-    sub: user._id,
-    iat: Date.now() / 1000,
-    expiresIn: '4 days'
-  }, process.env.JWT_SECRET)
+// signToken = user => {
+//   return JWT.sign({
+//     iss: 'esk',
+//     sub: user._id,
+//     iat: Date.now() / 1000,
+//     expiresIn: '4 days'
+//   }, process.env.JWT_SECRET)
 
-}
+// }
 
 
 module.exports = {
@@ -31,23 +31,23 @@ module.exports = {
     await newUser.save();
 
     //Generate the token
-    const token = signToken(newUser);
+    //const token = signToken(newUser);
 
     //Respond with a token
-    res.status(200).json({ token })
+    res.status(200).json({ newUser });
   },
 
   signIn: async (req, res, next) => {
     //generate a token
     console.log("In signin. Res: ", req);
-    const token = signToken(req.user);
-    res.status(200).json({ token });
+    //const token = signToken(req.user);
+    res.status(200).json( req.user );
   },
 
-  itinerary: async (req, res, next) => {
-    console.log('I managed to get here');
-    res.json({ secret: "resource" })
-  },
+  // itinerary: async (req, res, next) => {
+  //   console.log('I managed to get here');
+  //   res.json({ secret: "resource" })
+  // },
 
   findByEmail: function (req, res) {
     console.log("In users controller");
