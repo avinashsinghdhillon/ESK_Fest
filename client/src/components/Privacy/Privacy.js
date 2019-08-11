@@ -83,7 +83,7 @@ function Privacy() {
                             </p>
                         </div>
 
-                        <h6>If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at (512) 228-8434 or via <a href="mailto:dial@dialtonerecords.com">email</a>.</h6>
+                        <h4>If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at (512) 228-8434 or via <a href="mailto:dial@dialtonerecords.com">email</a>.</h4>
                     </div>
             </Container>
         )
