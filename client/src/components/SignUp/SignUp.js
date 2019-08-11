@@ -55,17 +55,17 @@ class SignUp extends Component {
       .catch(err => console.log(err));
 
     //create the new account as "local"
-    API.createUserAccount({
-      email: this.state.email,
-      password: this.state.password,
-      lname: this.state.lname,
-      fname: this.state.fname,
-      userType: "local"
-    })
-    .then(function(res){
-       alert("user account created. res:", res);
-    })
-    .catch(err => console.log(err));
+    // API.createUserAccount({
+    //   email: this.state.email,
+    //   password: this.state.password,
+    //   lname: this.state.lname,
+    //   fname: this.state.fname,
+    //   userType: "local"
+    // })
+    // .then(function(res){
+    //    alert("user account created. res:", res);
+    // })
+    // .catch(err => console.log(err));
   }
 
   // this section handles the SIGN-IN button click
