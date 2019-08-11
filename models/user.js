@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    userType: { type: String, required: true },
+    userType: { type: String, required: false },
     email: { type: String, required: true, unique: true, lowercase: true },
     password: { type: String, required: true },
     googleID: { type: String, required: false },
@@ -11,23 +11,19 @@ const userSchema = new Schema({
     lastName: { type: String, required: true }
 });
 
-// userSchema.methods.checkPassword = function (password) {
-//     return bcrypt.compareSync(password, this.password);
-// };
+userSchema.methods.checkPassword = function (password) {
+    return bcrypt.compareSync(password, this.password);
+};
 
-// User.addHook("beforeCreate", function (user) {
-//     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
-// });
+userSchema.pre('save', function(next){
+    return bcrypt.genSalt(10).then(salt => {
+        return bcrypt.hash(this.password, salt)
+    }).then(hash => {
+        this.password = hash
+        return Promise.resolve()
+    })
+});
 
-// userSchema.pre('save', function(next){
-//     return bcrypt.genSalt(10).then(salt => {
-//         return bcrypt.hash(this.password, salt)
-//     }).then(hash => {
-//         this.password = hash
-//         return Promise.resolve()
-//     })
-// });
-
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("user", userSchema);
 
 module.exports = User;

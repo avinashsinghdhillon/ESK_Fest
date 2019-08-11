@@ -1,4 +1,5 @@
 const User = require('../../models/user');
+const passport = require('../../config/passport')
 
 
 module.exports = {
@@ -16,9 +17,10 @@ module.exports = {
     .catch(err => res.status(422).json(err));
   },
 
-  // signIn: function (req, res) {
-
-  // },
+  signIn: function (req, res) {
+    passport.authenticate("local");
+    return res.json(req.user);
+  },
 
   findByEmail: function (req, res) {
     console.log("In users controller. findByEmail");
@@ -29,9 +31,10 @@ module.exports = {
   },
 
   findAllUsers: function(req, res){
+    console.log("In users controller. findAllUsers");
     User  
-      .find(req.query)
-      .then(dbModel => res.json(dbModel))
+      .find({})
+      .then(dbModel => res.send(dbModel))
       .catch(err => res.status(500).json(err))
   }
 }
