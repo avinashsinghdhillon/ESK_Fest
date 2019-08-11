@@ -10,7 +10,7 @@ input {
     border-radius: 4px;
     padding: 10px;
     width: 100%;
-    font-size: 20px;
+    font-size: 1rem;
   }
 
 input[type=submit] {
@@ -25,6 +25,11 @@ input[type=submit] {
     cursor: pointer;
   }
 
+.googleLogo {
+  width: 40% !important;
+  height: 40% !important;
+}
+
 input[type=submit]:hover {
     background-color: #00a9e7;
     transition: 0.3s;
@@ -35,9 +40,9 @@ input[type=submit]:hover {
     float: right;
 }
 
-.google {
+/* .google {
   text-align: center;
-}
+} */
 
 .button {
   background-color: #00a9e7;
@@ -49,7 +54,7 @@ input[type=submit]:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   width: 48%;
   border-radius: 5px 5px 5px 5px;
 }
@@ -57,4 +62,25 @@ input[type=submit]:hover {
 .button:hover {
     background-color: #137ad6;
     transition: 0.5s;
+}
+
+@media (max-width: 992px) {
+  .googleLogo {
+    width: 80% !important;
+    height: 80% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .googleLogo {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .googleLogo {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }

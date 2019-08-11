@@ -12,6 +12,7 @@ import Faq from './pages/FAQ';
 import Privacy from './components/Privacy';
 import About from './pages/About';
 import Itinerary from './pages/Itinerary';
+import Contact from './pages/Contact';
 //import SignUpCompo from './components/SignUpCompo/SignUpCompo';
 // import logo from './logo.svg';
 // import './App.css';
@@ -33,6 +34,7 @@ function App() {
           <Route exact path="/privacy" component={Privacy} />
           <Route exact path="/about" component={About} />
           <Route exact path="/itinerary" component={Itinerary} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
         {/* <Footer /> */}
       </div>
