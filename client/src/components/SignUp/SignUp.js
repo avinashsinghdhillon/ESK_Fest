@@ -11,7 +11,9 @@ class SignUp extends Component {
     fname: "",
     lname: "",
     email: "",
-    password:""
+    password:"",
+    userPassword: "",
+    userEmail: ""
   }
 
   componentDidMount(){
@@ -70,11 +72,14 @@ class SignUp extends Component {
   //this is the non-google signin onClick button event
   signInUser = event => {
     event.preventDefault();
-    console.log("in button. state.email: " + this.state.email);
+    console.log("in button. state.userEmail: " + this.state.userEmail);
     //1. Pull the user account
-    API.getUserByEmail(this.state.email)
+    API.signIn({
+      email: this.state.userEmail, 
+      password: this.state.userPassword
+    })
       .then(function (res){
-        
+        alert("You are logged in", );
       })
       .catch(err => console.log(err));
   }
@@ -83,9 +88,9 @@ class SignUp extends Component {
       <Container>
         <div className="signup">
           <div className="google">
-            <img className="googleLogo" src={googleSignInButton} alt="" />
-            {/* <button href="#">SIGN IN WITH GOOGLE</button> */}
-          </div><hr/>
+            <img src={googleSignInButton} alt="" />
+            <button href="#">SIGN IN WITH GOOGLE</button>
+          </div>
           <div>
             <h4>Sign Up</h4>
             <label htmlFor="fname">First Name</label>
@@ -95,22 +100,22 @@ class SignUp extends Component {
             <label htmlFor="email">E-Mail</label>
             <input type="text" id="email" name="email" onChange={this.handleInputChange} value={this.state.email}/>
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" name="password" onChange={this.handleInputChange} value={this.state.password} placeholder="Needs a capital letter, a number, and minimum 6 characters" />
+            <input type="password" id="password" name="password"  onChange={this.handleInputChange} value={this.state.password} placeholder="Needs a capital letter, a number, and minimun 6 characters" />
           </div>
           <div className="submit">
             <input className="button" id="signupSubmit" type="submit" text="Submit" onClick={(event)=>{this.signupUser(event)}}/>
           </div>
         </div>
         <div className="signin">
-          <div><hr/>
+          <div>
             <h4>Sign In</h4>
             <label htmlFor="email">E-Mail</label>
-            <input type="text" id="userEmail" name="userEmail" placeholder="Enter your account e-mail" />
+            <input type="text" id="userEmail" name="userEmail" placeholder="Enter your account e-mail"  onChange={this.handleInputChange} value = {this.state.userEmail}/>
             <label htmlFor="password">Password</label>
-            <input type="password" id="userPassword" name="userPassword" placeholder="Enter your password" />
+            <input type="password" id="userPassword" name="userPassword" placeholder="Enter your password"  onChange={this.handleInputChange} value = {this.state.userPassword}/>
           </div>
           <div className="submit">
-            <input className="button" id="signinSubmit" type="submit" text="Submit" />
+            <input className="button" id="signinSubmit" type="submit" text="Submit" onClick={(event)=>{this.signInUser(event)}}/>
           </div>
         </div>
       </Container>
