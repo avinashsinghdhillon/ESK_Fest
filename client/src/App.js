@@ -8,7 +8,6 @@ import Sponsors from './pages/Sponsors';
 import Faq from './pages/FAQ';
 // import Footer from './components/Footer';
 import Privacy from './components/Privacy';
-//import SignUpCompo from './components/SignUpCompo/SignUpCompo';
 // import logo from './logo.svg';
 // import './App.css';
 

@@ -14,13 +14,13 @@ module.exports ={
     findAllArtists: function(req, res){
         db.Artist
             .find(req.query)
-            .then(dbModel => res.json(dbModel))
+            .then(dbModel => req.json(dbModel))
             .catch(err => res.status(422).json(err));
     },
     findAllVenues: function(req, res){
         db.Location
             .find(req.query)
-            .then(dbModel => res.json(dbModel))
+            .then(dbModel => req.json(dbModel))
             .catch(err => res.status(422).json(err));
     }
 };
