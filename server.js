@@ -61,13 +61,6 @@ app.use('/users', require('./apiauthentication/routes/users'));
 app.use('/api', require('./apiauthentication/routes/api/event'));
 app.use('/itinerary', require('./apiauthentication/routes/users'));
 
-// Routes
-app.use(require('./apiauthentication/routes/apiRoutes'));
-app.use(require('./apiauthentication/routes/htmlRoutes'));
-app.use(require('./apiauthentication/routes/api/event'));
-// require('./apiauthentication/routes/apiRoutes')(app);
-// require('./apiauthentication/routes/api/event')(app);
-
 var syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true
