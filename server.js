@@ -45,8 +45,8 @@ if(process.env.NODE_ENV === "production"){
 // }));
 
 // Routes
-app.use(require('./apiauthentication/routes/apiRoutes'));
-app.use(require('./apiauthentication/routes/htmlRoutes'));
+// app.use(require('./apiauthentication/routes/apiRoutes'));
+// app.use(require('./apiauthentication/routes/htmlRoutes'));
 app.use(require('./apiauthentication/routes/api/event'));
 // require('./apiauthentication/routes/apiRoutes')(app);
 // require('./apiauthentication/routes/api/event')(app);
