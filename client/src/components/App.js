@@ -19,6 +19,11 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 import MainNav from './MainNav';
 import './MainNav/MainNav.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignInAlt, faSignOutAlt, faClipboardList, faIdBadge, faIdCard, faCalendarAlt, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+library.add(faSignInAlt, faSignOutAlt, faClipboardList, faIdBadge, faIdCard, faCalendarAlt, faQuestionCircle)
 
 class App extends Component {
   componentDidMount() {
@@ -29,7 +34,7 @@ class App extends Component {
     return (
       <div>
         <MainNav />
-        <div className="container">
+        <div>
         { this.props.children }
         </div>
       </div>

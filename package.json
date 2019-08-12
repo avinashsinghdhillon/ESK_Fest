@@ -20,6 +20,9 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@hapi/joi": "^15.1.0",
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",

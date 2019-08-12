@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import MoreInfo from './MoreInfo';
 import Logo from '../../images/ESK-FOUNDATION-LOGO.png';
 import './ArtistCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 class ArtistCard extends Component {
 
@@ -37,7 +39,7 @@ class ArtistCard extends Component {
                     </div>
                     <div className="container">
                         <h4>{this.props.name}</h4>
-                        <button className="button" onClick={()=>{this._show(!this.state.show)}}>More Info</button>
+                        <button style={{fontSize: "20px"}} className="button" onClick={this._show.bind(null, true) || this._show.bind(null, false)}><FontAwesomeIcon icon="id-badge" /> More Info</button>
                         <button>
                             {/* <i className="fas fa-heart"></i> */}
                             {/* <i className="far fa-heart"></i> */}
@@ -48,9 +50,9 @@ class ArtistCard extends Component {
                 </div>
                 {this.state.show 
                 ? <MoreInfo 
-                    name={this.props.artistName}
-                    spotify={this.props.spotify || ""}
-                    youtube={this.props.youtube || ""}/> 
+                    name={this.state.artistName}
+                    spotify={this.props.spotify || ""} // https://open.spotify.com/embed/track/1zs2cc3xtGpXtcrqTbBlnc
+                    youtube={this.props.youtube || ""}/> //https://www.youtube.com/embed/pDyXZuvMaFc
                 : null}
             </div>
             )

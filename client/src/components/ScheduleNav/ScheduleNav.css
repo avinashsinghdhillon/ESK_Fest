@@ -3,11 +3,10 @@
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     width: 100%;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #00a9e7;
-    top: 50px;
+    top: 42px;
     position: fixed;
     z-index: 1;
 }
@@ -18,7 +17,7 @@ ul {
   
   li.tab {
     float: left;
-    width: 33.3%
+    width: 50%
   }
   
   li a {
@@ -39,6 +38,6 @@ ul {
 
   /* this is used one the Schedule.js container */
   .under-nav {
-    margin-top: 100px;
+    margin-top: 70px;
     z-index: -1;
   }
