@@ -9,7 +9,7 @@ class Faq extends Component {
                 <div id="faq">
                     <h1>Frequently Asked Questions</h1>
                     <hr/>
-                        <h3>Where do I park?</h3>
+                        <h3>Where can I park?</h3>
                         <p>There are several parking lots along 12th street near the venues. Street parking is available as well.</p>
                     <hr/>
                         <h3>How much does it cost?</h3>

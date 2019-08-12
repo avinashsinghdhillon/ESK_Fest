@@ -47,7 +47,7 @@ function EskCarousel(props) {
             <img
             className="d-block w-100 bigImg"
             src={imgCLC}
-            alt="Crystal, Lucky and Chuck"
+            alt="Crystal, Lucky, and Chuck"
             />
             <Carousel.Caption>
             <h3 className="artist-name">Crystal, Lucky, and Chuck</h3>
