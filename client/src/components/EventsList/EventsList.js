@@ -1,7 +1,7 @@
 import React from "react";
-import "./List.css";
+import "./EventsList.css";
 
-export const List = ({ children }) => {
+export const EventsList = ({ children }) => {
   return (
     <div className="list-overflow-container">
       <ul className="list-group">

@@ -4,9 +4,9 @@ import { Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
-import BookBtn from "../../components/BookBtn";
+import EventsBtn from "../../components/BookBtn";
 
-class Saved extends Component {
+class SavedResults extends Component {
   state = {
     books: [],
     target: "",

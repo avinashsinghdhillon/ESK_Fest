@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { Container } from "../../components/Grid";
-import { List, ListItem } from "../../components/List";
+import { EventsList, EventsListItem } from "../../components/EventsList";
 import BookBtn from "../../components/BookBtn";
-import Jumbotron from "../../components/Jumbotron";
+// import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 
-class Results extends Component {
+class EventsResults extends Component {
   state = {
-    books: [],
-    target: "",
+    events: [],
+    locationID: "",
     noResults: false
   };
 
@@ -18,8 +18,8 @@ class Results extends Component {
     if (data && data.results.length > 0) {
 
       this.setState({
-        books: data.results.filter((value, index) => index < 5),
-        target: "_blank"
+        events: data.results.filter((value, index) => index < 10),
+        locationID: "_blank"
       });
     } else {
       this.setState({
@@ -28,94 +28,58 @@ class Results extends Component {
     }
   }
 
-  saveBook = book => {
-    API.saveBook(book)
+  saveEventsListItem = event => {
+    API.saveEventsListItem(event)
       .then(res => {
-        const currentBooks = this.state.books;
-        const filterBooks = currentBooks.filter(book => book.id !== res.data.id);
+        const currentEvents = this.state.events;
+        const filterEvents = currentEvents.filter(event => event.id !== res.data.id);
         this.setState({
-          books: filterBooks
+          events: filterEvents
         });
       })
       .catch(err => console.log(err));
   }
 
   render() {
-    if (this.state.noResults) {
-      return (
-        <div>
-          <Jumbotron>
-            <h1 className="display-4">Google Books Search</h1>
-            <p className="lead">Search for and Save Books of Interest.</p>
-            <hr className="my-4" />
-            <p className="lead">
-              <Link className="btn btn-default btn-lg" to="/" role="button">New Search</Link>
-              <Link className="btn btn-default btn-lg" to="/saved" role="button">Saved Books</Link>
-            </p>
-          </Jumbotron>
-          <Container>
-            <Link to="/">No results - click here to search again.</Link>
-          </Container>
-        </div>
-      )
-    }
     return (
       <div>
-        <Jumbotron>
-          <h1 className="display-4">Google Books Search</h1>
-          <p className="lead">Search for and Save Books of Interest.</p>
-          <hr className="my-4" />
-          <p className="lead">
-            <Link className="btn btn-default btn-lg" to="/" role="button">New Search</Link>
-            <Link className="btn btn-default btn-lg" to="/saved" role="button">Saved Books</Link>
-          </p>
-        </Jumbotron>
-        <br /><br />
+        <ArtistCard />
         <Container>
-          <h2>Search Results</h2>
-          <List>
-            {this.state.books.map((book, index) => (
-              <ListItem key={book.id}>
-                <div className="date-div">
-                  <a
-                    key={"" + index + book.id}
-                    href={book.volumeInfo.infoLink}
-                    target={this.state.target}
-                  >
-                    {book.volumeInfo.title}
-                  </a>
-                    <p>Written By {book.volumeInfo.authors[0]}</p>
-                  <p>
-                  <img align="left" style={{paddingRight:10}}
-                    src={book.volumeInfo.imageLinks.smallThumbnail} alt="new"
-                  />
-                    {book.volumeInfo.description}
-                  </p>
+          <h2>Events Results</h2>
+          <EventsList>
+            {this.state.events.map((event, index) => (
+              <EventsListItem key={event.id}>
+                <div className="events-div">
+                    key={"" + index + event.id}
+                    locationID={this.state.locationID}
+                    {event.eventInfo.title}
                 </div>
-                <div className="book-btn-div">
-                  <BookBtn
-                    key={"" + book.id + index}
+                <div className="event-btn-div">
+                  <EventsBtn
+                    key={"" + event.id + index}
                     btntype="info"
-                    disabled={book.volumeInfo.infoLink === "/"}
-                    onClick={() => this.saveBook({
-                      title: book.volumeInfo.title,
-                      author: book.volumeInfo.authors[0],
-                      description: book.volumeInfo.description,
-                      image: book.volumeInfo.imageLinks.smallThumbnail,
-                      link: book.volumeInfo.infoLink,
-                      _id: book.id
+                    disabled={event.eventInfo === "/"}
+                    onClick={() => this.saveEventsListItem({
+                      eventID: event.eventInfo.title,
+                      artists: event.eventInfo.artists[0],
+                      LocationID: event.eventInfo.description,
+                      startDate: event.eventInfo.startDate,
+                      endDate: event.eventInfo.endDate,
+                      startTime: event.eventInfo.startTime,
+                      endTime: event.eventInfo.endTime,
+                      _id: event.id
                     })}
                   >
                     SAVE
-                  </BookBtn>
+                  </EventsBtn>
                 </div>
-              </ListItem>
+              </EventsListItem>
             ))}
-          </List>
+          </EventsList>
         </Container>
       </div>
     );
   }
 }
 
-export default Results;
+export default EventsResults;
