@@ -56,12 +56,6 @@ if(process.env.NODE_ENV === "production"){
 //   keys: [keys.COOKIE_KEY]
 // }));
 
-// Routes
-// app.use(require('./apiauthentication/routes/apiRoutes'));
-// app.use(require('./apiauthentication/routes/htmlRoutes'));
-app.use(require('./apiauthentication/routes/api/event'));
-// require('./apiauthentication/routes/apiRoutes')(app);
-// require('./apiauthentication/routes/api/event')(app);
 // Routes///////////////////////////does it need any more routes listed?
 app.use('/users', require('./apiauthentication/routes/users'));
 app.use('/api', require('./apiauthentication/routes/api/event'));

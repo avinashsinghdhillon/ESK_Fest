@@ -9,7 +9,7 @@ export default {
   },
   getArtists: function () {
     console.log("getEvents from API.js");
-    return axios.get("/artists")
+    return axios.get("/api/artists")
   },
   getVenues: function () {
     console.log("getEvents from API.js");
