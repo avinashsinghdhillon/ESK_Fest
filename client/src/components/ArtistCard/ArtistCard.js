@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 import MoreInfo from './MoreInfo';
+import Logo from '../../images/ESK-FOUNDATION-LOGO.png';
 import './ArtistCard.css';
 
 class ArtistCard extends Component {
 
-    constructor(){
-        super();
-        this.state = { show: false }
+    state = {
+        show: false,
+        artistName: "",
+        artistSpotify: "",
+        artistYoutube: "",
     }
 
     _show = (bool) => {
         if (this.state.show === false) {
-        this.setState({
-            show: true
-        });
-    } else {
-        this.setState({
-            show: false
-        })
-    }
+            this.setState({
+                show: true,
+                artistName: this.props.name,
+                // artistSpotify: this.props.spotify,
+                // artistYoutube: this.props.youtube
+            });
+        } else {
+            this.setState({
+                show: false
+            })
+        }
     }
 
     render(props) {
@@ -26,18 +32,22 @@ class ArtistCard extends Component {
             <div>
                 <div className="card">
                     <div className="image">
-                        <img className="artistImage" src={ props.src } alt={props.name}/>
+                        <img className="artistImage" src={this.props.src || Logo} alt={this.props.name}/>
                         {/* <img className="artistImage" src="https://www.placehold.it/200x200" alt="placeholder artist image"/> */}
                     </div>
                     <div className="container">
-                        <h4>{ props.name }</h4>
-                        {/* <h4>ARTIST NAME HERE</h4> */}
+                        <h4>{this.props.name}</h4>
                         <button className="button" onClick={this._show.bind(null, true) || this._show.bind(null, false)}>More Info</button>
                         {/* <button className="button" onClick={this._show.bind(null, false)}>Less Info</button> */}
                         {/* <button href="/eventpage" className="button" onClick={() => props.handlePageChange("EventPage")}>Event Info</button> */}
                     </div>
                 </div>
-                {this.state.show ? <MoreInfo/> : null}
+                {this.state.show 
+                ? <MoreInfo 
+                    name={this.state.artistName}
+                    spotify={this.state.artistSpotify || "https://open.spotify.com/embed/track/1zs2cc3xtGpXtcrqTbBlnc"}
+                    youtube={this.state.artistYoutube || "https://www.youtube.com/embed/pDyXZuvMaFc"}/> 
+                : null}
             </div>
             )
     }

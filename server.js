@@ -6,10 +6,11 @@ const cors = require('cors')
 // const cookieSession = require('cookie-session');
 const cookieParser = require('cookie-parser');
 const passport = require("passport");
-//this will need to be modified later if needed. connected to routes/auth-routes///////////////
-const authRoutes = require('./apiauthentication/routes/users');
-const passportSetup = require('./config/passport');
+// //this will need to be modified later if needed. connected to routes/auth-routes///////////////
+// const authRoutes = require('./apiauthentication/routes/users');
+//const passportSetup = require('./config/passport');
 const path = require("path");
+var session = require("express-session");
 // var passport = require("passport");
 // var session = require("express-session");
 const bodyParser = require("body-parser");
@@ -60,6 +61,12 @@ app.use('/users', require('./apiauthentication/routes/users'));
 app.use('/api', require('./apiauthentication/routes/api/event'));
 app.use('/itinerary', require('./apiauthentication/routes/users'));
 
+// Routes
+app.use(require('./apiauthentication/routes/apiRoutes'));
+app.use(require('./apiauthentication/routes/htmlRoutes'));
+app.use(require('./apiauthentication/routes/api/event'));
+// require('./apiauthentication/routes/apiRoutes')(app);
+// require('./apiauthentication/routes/api/event')(app);
 
 var syncOptions = { force: false };
 

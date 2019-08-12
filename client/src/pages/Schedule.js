@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import ScheduleNav from '../components/ScheduleNav';
 import ArtistCard from '../components/ArtistCard';
-import { Container, Row } from '../components/Grid';
+import { Container } from '../components/Grid';
 import API from '../utils/API';
 
 class Schedule extends Component {
     state = {
-        artists: []
+        artists: [],
+        events: []
     };
 
     componentDidMount(){
@@ -34,20 +35,10 @@ class Schedule extends Component {
                     id={artists.id}
                     src={artists.artistPicture}
                     name={artists.artistName}
+                    spotify={artists.artistSpotify}
+                    youtube={artists.artistYoutube}
                     />)
             })}
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-            <ArtistCard/>
-
             </Container>
             </div>
         );

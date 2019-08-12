@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Container } from '../components/Grid';
 import ArtistCard from '../components/ArtistCard';
+import API from '../utils/API';
 
 import * as actions from '../actions';
 
@@ -16,20 +17,14 @@ class Itinerary extends Component {
             <h1>Welcome back, USER NAME.</h1>
             <h3>Here are the events you were interested in.</h3>
             <div>
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-                <ArtistCard />
-
-            {/* {this.state.events.map((events, index) => {
+            {this.state.events.map((events, index) => {
                 return(<ArtistCard
                     key={index}
                     id={events.id}
                     src={events.artistPicture}
                     name={events.artistName}
                     />)
-            })} */}
+            })}
             </div>
         </Container>
         )
