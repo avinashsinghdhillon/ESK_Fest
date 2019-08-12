@@ -22,7 +22,7 @@ function MainNav(props) {
 
             {/* IF USER IS AUTHENTICATED, SHOW THIS */}
                 <li>
-                    <a href="/itinerary" onClick={() => props.handlePageChange("Itinerary")}><i class="fas fa-id-badge"></i></a>
+                    <a href="/itinerary" onClick={() => props.handlePageChange("Itinerary")}><i className="fas fa-id-badge"></i></a>
                 </li>
                 <li>
                     <a href="/signout" onClick={() => props.handlePageChange("SignOut")}>Sign Out</a>

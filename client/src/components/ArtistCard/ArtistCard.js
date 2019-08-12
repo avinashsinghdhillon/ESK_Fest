@@ -39,8 +39,8 @@ class ArtistCard extends Component {
                         <h4>{this.props.name}</h4>
                         <button className="button" onClick={this._show.bind(null, true) || this._show.bind(null, false)}>More Info</button>
                         <button>
-                            {/* <i class="fas fa-heart"></i> */}
-                            {/* <i class="far fa-heart"></i> */}
+                            {/* <i className="fas fa-heart"></i> */}
+                            {/* <i className="far fa-heart"></i> */}
                         </button>
                         {/* <button className="button" onClick={this._show.bind(null, false)}>Less Info</button> */}
                         {/* <button href="/eventpage" className="button" onClick={() => props.handlePageChange("EventPage")}>Event Info</button> */}
