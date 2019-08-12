@@ -40,7 +40,9 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Jewel Brown</h3>
+
             <p className="artist-caption">Vocalist for Louis Armstrong in the '50s and '60s; still going strong today.</p>
+
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
