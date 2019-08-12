@@ -40,3 +40,22 @@ input[type=submit]:hover {
 .google {
   text-align: center;
 }
+
+#home {
+  font-family: 'Oswald', sans-serif;
+}
+
+#eventDetails h5{
+  padding-left: 300px;
+  padding-right: 200px;
+}
+
+#eventDetails h4{
+  padding-left: 300px;
+  padding-right: 200px;
+  text-align: center;
+}
+
+#SPnCON {
+  text-align: center;
+}
