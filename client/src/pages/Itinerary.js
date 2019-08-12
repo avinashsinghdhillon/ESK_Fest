@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Container } from '../components/Grid';
 import ArtistCard from '../components/ArtistCard';
 
+import * as actions from '../actions';
+
 class Itinerary extends Component {
+    async componentDidMount(){
+        this.props.getItinerary()
+    }
+
     render() {
         return (
             <Container>
@@ -29,4 +36,13 @@ class Itinerary extends Component {
     }
 }
 
-export default Itinerary;
+function mapStateToProps(state) {
+    console.log('state', state)
+    return {
+      secret: state.itin.secret,
+      dashboard: state.itin,
+      auth: state.auth
+    }
+  }
+
+export default connect(mapStateToProps, actions)(Itinerary);

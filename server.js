@@ -3,8 +3,8 @@ const express = require("express");
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors')
-mongoose.set('useNewUrlParser', true);
-const cookieSession = require('cookie-session');
+// const cookieSession = require('cookie-session');
+const cookieParser = require('cookie-parser');
 const passport = require("passport");
 //this will need to be modified later if needed. connected to routes/auth-routes///////////////
 const authRoutes = require('./apiauthentication/routes/users');
@@ -26,7 +26,12 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //add whitelist for cors for development
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}));
+
+app.use(cookieParser());
 
 
 //For BodyParser
@@ -64,7 +69,7 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
 //Connect to Mongoose:
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/esk");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/esk", { useNewUrlParser: true});
 
 app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"))

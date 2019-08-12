@@ -19,10 +19,12 @@ class SignUp extends Component {
 
  async onSubmit(formData){
    console.log("onSubmit got called");
-   console.log("data", formData)
-   console.log(this.props)
-   //
-   await this.props.signUp(formData)
+   formData.userType = "local";
+  console.log("data", formData)
+   await this.props.signUp(formData);
+   if(!this.props.errorMessage) {
+     this.props.history.push('/itinerary')
+   }
  }
 
   render() {
@@ -33,7 +35,7 @@ class SignUp extends Component {
           <div className="alert alert-primary">Sign Up Using Google</div>
           {/* insert google button here */}
         </div>
-        <form onSubmit={handleSubmit(this.onSubmit)}>
+        <form onSubmit= {handleSubmit(this.onSubmit)}>
          <fieldset>
             <Field
               name="firstName"
@@ -70,15 +72,26 @@ class SignUp extends Component {
               component={CustomInput}
               placeholder="Password" />
           </fieldset>
-          <button type="submit" name="userType" value="local">Sign Up</button>
+
+          { this.props.errorMessage ? 
+            <div className="alert alert-danger">
+              {this.props.errorMessage}
+            </div> : null}
+
+          <button type="submit" className="btn btn-primary">Sign Up</button>
         </form>
       </Container>
     )
   }
 }
 
+function mapStateToProps(state){
+  return {
+    errorMessage: state.auth.errorMessage
+  }
+}
+
 export default compose (
-  connect(null, actions),
+  connect(mapStateToProps, actions),
   reduxForm({ form: 'signup' })
-)
-(SignUp);
+)(SignUp);

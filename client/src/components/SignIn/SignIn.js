@@ -1,66 +1,78 @@
 import React, { Component } from 'react';
+import { reduxForm, Field } from 'redux-form';
+import {connect} from 'react-redux';
+import {compose} from 'redux';
+
+import * as actions from '../../actions'
 import { Container } from '../Grid';
+import CustomInput from '../CustomInput'
 import './SignIn.css';
 import API from "../../utils/API";
+import googleSignInButton from "../../images/btn_google_signin_dark_normal_web.png";
 
-class SignUp extends Component {
-  state = {
-    //the state will hold the user object if the user logs in or creates a new account
-    user: {},
-    email: "",
-    password:""
-  }
-
-  componentDidMount(){
-    //not sure what to add here.
-  }
-
-  handleInputSignIn = event => {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
+class SignIn extends Component {
+  //allows us to use the this.props.signUp for our axios call
+  constructor(props){
+    super(props);
+    this.onSubmit = this.onSubmit.bind(this)
   };
 
-  //Validate all fields in the sign up form//////////////////////////////////////
-  // signupDataValidation = ()=>{
-  //   return true;
-  // }
+ async onSubmit(formData){
+   console.log("onSubmit signIn got called");
+   console.log("data", formData)
+   await this.props.signIn(formData)
+   if(!this.props.errorMessage) {
+     this.props.history.push('/itinerary')
+   }
+ }
 
-  // this section handles the SIGN-IN button click
-  //this is the non-google signin onClick button event
-  signInUser = function (event) {
-    console.log("button clicked");
-    console.log(this.state.email)
-    console.log(this.state.password)
-    event.preventDefault()
-    const user = [this.state.email, this.state.password]
-    console.log("user: ", user)
-    //1. Pull the user account
-    API.signInUser(user)
-      .then(
-        console.log("signed in??")
-      )
-      .catch(err => console.log(err));
-  }
   render() {
+    const { handleSubmit } = this.props;
     return (
       <Container>
-        <div className="signin">
-          <div>
-            <h4>Sign In</h4>
-            <label htmlFor="email">E-Mail</label>
-            <input type="text" id="email" name="email" onChange={this.handleInputSignIn} value = {this.state.email} placeholder="Enter your account e-mail" />
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" name="password" onChange={this.handleInputSignIn} value = {this.state.password} placeholder="Enter your password" />
-          </div>
-          <div className="submit">
-            <button className="button" id="signinSubmit" type="submit" onClick={(event)=>{this.signInUser(event)}}>Submit</button>
-          </div>
+        <div className="text-center">
+          <div className="alert alert-primary">Sign In Using Google</div>
+          {/* insert google button here */}
         </div>
+        <form onSubmit={handleSubmit(this.onSubmit)}>
+          <fieldset>
+            <Field
+              name="email"
+              label="Email"
+              type="text"
+              id="email"
+              component={CustomInput}
+              placeholder="Your Email" />
+          </fieldset>
+          <fieldset>
+            <Field
+              name="password"
+              label="Password"
+              type="password"
+              id="password"
+              component={CustomInput}
+              placeholder="Your Password" />
+          </fieldset>
+
+          { this.props.errorMessage ? 
+            <div className="alert alert-danger">
+              {this.props.errorMessage}
+            </div> : null}
+
+          <button type="submit" className="btn btn-primary">Sign In</button>
+        </form>
       </Container>
     )
   }
 }
 
-export default SignUp;
+function mapStateToProps(state){
+  return {
+    errorMessage: state.auth.errorMessage
+  }
+}
+
+export default compose (
+  connect(mapStateToProps, actions),
+  reduxForm({ form: 'signin' })
+)(SignIn);
