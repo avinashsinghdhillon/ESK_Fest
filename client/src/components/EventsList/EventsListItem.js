@@ -5,3 +5,5 @@ export const EventsListItem = props => (
     {props.children}
   </li>
 );
+
+export default EventsListItem;

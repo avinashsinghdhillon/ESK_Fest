@@ -1,5 +1,8 @@
 import React from "react";
 import "./EventsList.css";
+import "./EventsList.css";
+
+
 
 export const EventsList = ({ children }) => {
   return (
@@ -10,3 +13,5 @@ export const EventsList = ({ children }) => {
     </div>
   );
 };
+
+export default EventsList;

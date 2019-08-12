@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
-import { Container } from "../../components/Grid";
-import { EventsList, EventsListItem } from "../../components/EventsList";
-import BookBtn from "../../components/BookBtn";
-// import Jumbotron from "../../components/Jumbotron";
+import { Container } from "../Grid";
+import { EventsList, EventsListItem } from "../EventsList";
 import API from "../../utils/API";
 
 class EventsResults extends Component {
@@ -61,12 +58,9 @@ class EventsResults extends Component {
                     disabled={event.eventInfo === "/"}
                     onClick={() => this.saveEventsListItem({
                       eventID: event.eventInfo.title,
-                      artists: event.eventInfo.artists[0],
-                      LocationID: event.eventInfo.description,
-                      startDate: event.eventInfo.startDate,
-                      endDate: event.eventInfo.endDate,
-                      startTime: event.eventInfo.startTime,
-                      endTime: event.eventInfo.endTime,
+                      eventID: event.eventInfo.locationID,
+                      eventID: event.eventInfo.startTime,
+                      eventID: event.eventInfo.endTime,
                       _id: event.id
                     })}
                   >
