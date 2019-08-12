@@ -40,10 +40,13 @@ class ArtistCard extends Component {
                     <div className="container">
                         <h4>{this.props.name}</h4>
                         <button style={{fontSize: "20px"}} className="button" onClick={this._show.bind(null, true) || this._show.bind(null, false)}><FontAwesomeIcon icon="id-badge" /> More Info</button>
-                        <button>
-                            {/* <i className="fas fa-heart"></i> */}
-                            {/* <i className="far fa-heart"></i> */}
-                        </button>
+                        <a className="saved">
+                            {/* IF EVENT IS SAVED, SHOW THIS */}
+                            {/* <FontAwesomeIcon icon={["fas", "bookmark"]} /> */}
+
+                            {/* IF EVENT IS NOT SAVED, SHOW THIS */}
+                            <FontAwesomeIcon icon={["far", "bookmark"]} />
+                        </a>
                         {/* <button className="button" onClick={this._show.bind(null, false)}>Less Info</button> */}
                         {/* <button href="/eventpage" className="button" onClick={() => props.handlePageChange("EventPage")}>Event Info</button> */}
                     </div>
