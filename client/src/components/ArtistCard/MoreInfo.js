@@ -33,7 +33,7 @@ export default (props) =>
         </div>
         <hr/>
         <div className="media">
-            <iframe src={props.artistSpotify} width="300" height="315" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe width="560" height="315" src={props.artistYoutube} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title="spotifylink" src={props.spotify} width="300" height="315" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe title="youtubelink" width="560" height="315" src={props.youtube} frameBorder="0" allow="encrypted-media; gyroscope" allowFullScreen></iframe>
         </div>
     </div>;
