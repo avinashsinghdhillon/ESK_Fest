@@ -16,12 +16,13 @@ export default {
     return axios.get("/api/venues")
   },
   getUserByEmail: function (query) {
-    return axios.post("/users/checkEmail", { email: query });
+    return axios.post("/checkEmail", { email: query });
   },
 
   createUserAccount: function (query) {
+    console.log("In API.js/Create User. query: ", query);
     return axios.post(
-      "users/signup",
+      "/signup",
       {
         userType: query.userType,
         email: query.email,
@@ -34,7 +35,7 @@ export default {
   signIn: function (query){
     console.log("In API.js/Login User. query: ", query);
     return axios.post(
-      "users/signin",
+      "/signin",
       {
         email: query.email,
         password: query.password
