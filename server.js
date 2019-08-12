@@ -1,9 +1,10 @@
-//require("dotenv").config();
+require("dotenv").config();
 const express = require("express");
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-mongoose.set('useNewUrlParser', true);
-const cookieSession = require('cookie-session');
+const cors = require('cors')
+// const cookieSession = require('cookie-session');
+const cookieParser = require('cookie-parser');
 const passport = require("passport");
 // //this will need to be modified later if needed. connected to routes/auth-routes///////////////
 // const authRoutes = require('./apiauthentication/routes/users');
@@ -25,14 +26,25 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
+//add whitelist for cors for development
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}));
+
+app.use(cookieParser());
+
+
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
- // For Passport
-app.use(session({ secret: "keyboard cat",resave: true, saveUninitialized:true})); // session secret
-app.use(passport.initialize());
-app.use(passport.session()); // persistent login sessions
+// // For Passport
+// app.use(session({ secret: "keyboard cat",resave: true, saveUninitialized:true})); // session secret
+ 
+// app.use(passport.initialize());
+ 
+// app.use(passport.session()); // persistent login sessions
 
 if(process.env.NODE_ENV === "production"){
   app.use(express.static("client/build"))
@@ -44,12 +56,19 @@ if(process.env.NODE_ENV === "production"){
 //   keys: [keys.COOKIE_KEY]
 // }));
 
+<<<<<<< HEAD
 // Routes
 // app.use(require('./apiauthentication/routes/apiRoutes'));
 // app.use(require('./apiauthentication/routes/htmlRoutes'));
 app.use(require('./apiauthentication/routes/api/event'));
 // require('./apiauthentication/routes/apiRoutes')(app);
 // require('./apiauthentication/routes/api/event')(app);
+=======
+// Routes///////////////////////////does it need any more routes listed?
+app.use('/users', require('./apiauthentication/routes/users'));
+app.use('/api', require('./apiauthentication/routes/api/event'));
+app.use('/itinerary', require('./apiauthentication/routes/users'));
+>>>>>>> d28f122b23bff4b0712ec11c6b3cf19b42a6c2db
 
 var syncOptions = { force: false };
 
@@ -59,7 +78,7 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
 //Connect to Mongoose:
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/esk");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/esk", { useNewUrlParser: true});
 
 app.use("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"))
