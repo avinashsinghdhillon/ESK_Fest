@@ -1,7 +1,5 @@
-
 import React, {Component} from 'react';
 import './MainNav.css';
-
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
@@ -19,11 +17,7 @@ class MainNav extends Component {
         return (
             <ul className="nav" id="mainNav">
                 <li>
-                    <a href="/">Eastside Kings Festival</a>
-                </li>
-                <li>
-                    {/* All = About = Home? */}
-                    <a href="/about" onClick={() => this.props.handlePageChange("About")}>About</a>
+                    <a href="/">ESK Festival</a>
                 </li>
                 <li>
                     <a href="/schedule" onClick={() => this.props.handlePageChange("Schedule")}>Schedule</a>
@@ -40,9 +34,13 @@ class MainNav extends Component {
                     </li>] : null
                 }
                 {this.props.isAuth ?
+                    [<li>
+                        <a href="/itinerary" onClick={() => this.props.handlePageChange("Itinerary")}><i className="fas fa-id-badge"></i></a>
+                    </li>,
                     <li>
-                        <a href="/itinerary" onClick={() => this.props.handlePageChange("Itinerary")}>Itinerary</a>
-                    </li> : null
+                        <a href="/signout" onClick={() => this.props.handlePageChange("SignOut")}>Sign Out</a>
+                    </li>]
+                    : null
                 }
             </ul>
        )
