@@ -6,11 +6,11 @@ import {compose} from 'redux';
 import * as actions from '../../actions'
 import { Container } from '../Grid';
 import CustomInput from '../CustomInput'
-import './SignUp.css';
+import './SignIn.css';
 import API from "../../utils/API";
 import googleSignInButton from "../../images/btn_google_signin_dark_normal_web.png";
 
-class SignUp extends Component {
+class SignIn extends Component {
   //allows us to use the this.props.signUp for our axios call
   constructor(props){
     super(props);
@@ -18,10 +18,9 @@ class SignUp extends Component {
   };
 
  async onSubmit(formData){
-   console.log("onSubmit got called");
-   formData.userType = "local";
-  console.log("data", formData)
-   await this.props.signUp(formData);
+   console.log("onSubmit signIn got called");
+   console.log("data", formData)
+   await this.props.signIn(formData)
    if(!this.props.errorMessage) {
      this.props.history.push('/itinerary')
    }
@@ -32,28 +31,10 @@ class SignUp extends Component {
     return (
       <Container>
         <div className="text-center">
-          <div className="alert alert-primary">Sign Up Using Google</div>
+          <div className="alert alert-primary">Sign In Using Google</div>
           {/* insert google button here */}
         </div>
-        <form onSubmit= {handleSubmit(this.onSubmit)}>
-         <fieldset>
-            <Field
-              name="firstName"
-              label="First Name"
-              type="text"
-              id="firstName"
-              component={CustomInput}
-              placeholder="First Name" />
-          </fieldset>
-          <fieldset>
-            <Field
-              name="lastName"
-              label="Last Name"
-              type="text"
-              id="lastName"
-              component={CustomInput}
-              placeholder="Last Name" />
-          </fieldset>
+        <form onSubmit={handleSubmit(this.onSubmit)}>
           <fieldset>
             <Field
               name="email"
@@ -61,7 +42,7 @@ class SignUp extends Component {
               type="text"
               id="email"
               component={CustomInput}
-              placeholder="Email" />
+              placeholder="Your Email" />
           </fieldset>
           <fieldset>
             <Field
@@ -70,7 +51,7 @@ class SignUp extends Component {
               type="password"
               id="password"
               component={CustomInput}
-              placeholder="Password" />
+              placeholder="Your Password" />
           </fieldset>
 
           { this.props.errorMessage ? 
@@ -78,7 +59,7 @@ class SignUp extends Component {
               {this.props.errorMessage}
             </div> : null}
 
-          <button type="submit" className="btn btn-primary">Sign Up</button>
+          <button type="submit" className="btn btn-primary">Sign In</button>
         </form>
       </Container>
     )
@@ -93,5 +74,5 @@ function mapStateToProps(state){
 
 export default compose (
   connect(mapStateToProps, actions),
-  reduxForm({ form: 'signup' })
-)(SignUp);
+  reduxForm({ form: 'signin' })
+)(SignIn);
