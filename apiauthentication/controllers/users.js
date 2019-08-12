@@ -17,7 +17,13 @@ module.exports = {
     .catch(err => res.status(422).json(err));
   },
 
-  signIn: function (req, res) {
+  logout:function (req, res) {
+    req.logout();
+    res.send("logged out");
+  },
+
+
+  signin: function (req, res) {
     passport.authenticate("local");
     return res.json(req.user);
   },
@@ -34,7 +40,7 @@ module.exports = {
     console.log("In users controller. findAllUsers");
     User  
       .find({})
-      .then(dbModel => res.send(dbModel))
+      .then(dbModel => res.json(dbModel))
       .catch(err => res.status(500).json(err))
   }
 }

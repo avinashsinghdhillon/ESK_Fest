@@ -15,6 +15,9 @@ router.route("/signup")
   .post(UsersController.signup);
 
 router.route("/signin")
-  .post(UsersController.signIn);
+  .post(UsersController.signin);
+
+router.route("/logout")
+  .get(UsersController.logout)
 
 module.exports = router;

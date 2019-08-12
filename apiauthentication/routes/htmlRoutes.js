@@ -1,3 +1,4 @@
+const router = require("express").Router();
 var db = require("../../models");
 var isAuthenticated = require("../../config/middleware/isAuthenticated");
 module.exports = function(app) {
@@ -7,6 +8,7 @@ module.exports = function(app) {
 
   app.get("/logout", function(req, res){
     req.logout();
+    res.send("SECRETS!!!!!!");
     res.redirect("/");
   });
 

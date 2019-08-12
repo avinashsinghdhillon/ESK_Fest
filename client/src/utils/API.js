@@ -15,6 +15,11 @@ export default {
     console.log("getEvents from API.js");
     return axios.get("/api/venues")
   },
+
+  getAllUsers: function (query) {
+    return axios.get("/users", { email: query });
+  },
+
   getUserByEmail: function (query) {
     return axios.post("/checkEmail", { email: query });
   },
@@ -41,5 +46,8 @@ export default {
         password: query.password
       }
     )
-  }
+  },
+  logout: function (query) {
+    return axios.get("/logout", { email: query });
+  },
 };
