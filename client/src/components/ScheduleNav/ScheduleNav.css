@@ -6,7 +6,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #00a9e7;
-    top: 50px;
+    top: 42px;
     position: fixed;
     z-index: 1;
 }
@@ -38,6 +38,6 @@ ul {
 
   /* this is used one the Schedule.js container */
   .under-nav {
-    margin-top: 100px;
+    margin-top: 70px;
     z-index: -1;
   }
