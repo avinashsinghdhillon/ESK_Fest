@@ -9,5 +9,4 @@ eventsRouter.route("/artists")
 
 eventsRouter.route("/venues")
     .get(eventsController.findAllVenues);
-    
 module.exports = eventsRouter;

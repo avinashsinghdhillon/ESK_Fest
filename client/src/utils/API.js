@@ -5,7 +5,7 @@ export default {
   //get all events
   getEvents: function () {
     console.log("getEvents from API.js");
-    return axios.get("/api/events")
+    return axios.get("/events")
   },
   getArtists: function () {
     console.log("getEvents from API.js");
@@ -13,7 +13,7 @@ export default {
   },
   getVenues: function () {
     console.log("getEvents from API.js");
-    return axios.get("/api/venues")
+    return axios.get("/venues")
   },
 
   getAllUsers: function (query) {
@@ -21,13 +21,13 @@ export default {
   },
 
   getUserByEmail: function (query) {
-    return axios.post("/checkEmail", { email: query });
+    return axios.post("/users/checkEmail", { email: query });
   },
 
   createUserAccount: function (query) {
-    console.log("In API.js/Create User. query: ", query);
+    console.log("In API.js/createUser. query: ", query);
     return axios.post(
-      "/signup",
+      "/users/signup",
       {
         userType: query.userType,
         email: query.email,
@@ -36,6 +36,7 @@ export default {
         lastName: query.lname
       }
     );
+<<<<<<< HEAD
   },
   signIn: function (query){
     console.log("In API.js/Login User. query: ", query);
@@ -50,4 +51,7 @@ export default {
   logout: function (query) {
     return axios.get("/logout", { email: query });
   },
+=======
+  }
+>>>>>>> master
 };
