@@ -1,9 +1,9 @@
-.signup {
+/* .signup {
     width: 40%;
     font-family: 'Oswald', sans-serif;
     display: inline-block;
     margin: 0 auto;
-}
+} */
 /* .big {
   height: 500px;
 } */
@@ -45,7 +45,7 @@ input[type=submit]:hover {
   font-family: 'Oswald', sans-serif;
 }
 
-#eventDetails h5{
+/* #eventDetails h5{
   padding-left: 300px;
   padding-right: 200px;
 }
@@ -54,8 +54,8 @@ input[type=submit]:hover {
   padding-left: 300px;
   padding-right: 200px;
   text-align: center;
-}
+} */
 
-#SPnCON {
+/* #SPnCON {
   text-align: center;
-}
+} */

@@ -25,6 +25,7 @@ class MainNav extends Component {
                 <li>
                     <a href="/faq" onClick={() => this.props.handlePageChange("FAQ")}>FAQ</a>
                 </li>
+                <div className="account-links">
                 {!this.props.isAuth ?
                     [<li>
                         <a href="/users/signin" onClick={() => this.props.handlePageChange("SignIn")}>Sign In</a>
@@ -42,6 +43,7 @@ class MainNav extends Component {
                     </li>]
                     : null
                 }
+                </div>
             </ul>
        )
     }

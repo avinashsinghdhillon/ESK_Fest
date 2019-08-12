@@ -3,7 +3,6 @@
     font-family: 'Oswald', sans-serif;
     font-size: 25px;
     width: 100%;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #00a9e7;
@@ -18,7 +17,7 @@ ul {
   
   li.tab {
     float: left;
-    width: 33.3%
+    width: 50%
   }
   
   li a {

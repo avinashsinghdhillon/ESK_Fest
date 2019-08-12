@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div>
         <MainNav />
-        <div className="container">
+        <div>
         { this.props.children }
         </div>
       </div>
