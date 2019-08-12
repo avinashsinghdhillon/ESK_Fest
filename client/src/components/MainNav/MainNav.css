@@ -12,6 +12,11 @@
     z-index: 1;
 }
 
+.account-links {
+  display: flex;
+  margin-left: auto;
+}
+
 img {
     height: 30px;
 }
@@ -33,7 +38,7 @@ li {
 }
 
 li a {
-  display: block;
+  display: flex;
   color: white;
   text-align: center;
   padding: 10px 10px;
@@ -49,7 +54,7 @@ li a:hover {
   background-color: #137ad6;
 }
 
-ul li ul {
+/* ul li ul {
   visibility: hidden;
   opacity: 0;
   width: 5rem;
@@ -74,4 +79,4 @@ ul li ul:hover {
 ul li ul li {
   clear: both;
   width: 100%;
-}
+} */

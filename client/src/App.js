@@ -13,6 +13,7 @@ import Privacy from './components/Privacy';
 import About from './pages/About';
 import Itinerary from './pages/Itinerary';
 import Contact from './pages/Contact';
+import NoMatch from './pages/NoMatch';
 //import SignUpCompo from './components/SignUpCompo/SignUpCompo';
 // import logo from './logo.svg';
 // import './App.css';
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/itinerary" component={Itinerary} />
           <Route exact path="/contact" component={Contact} />
+          <Route component={NoMatch}/>
         </Switch>
         {/* <Footer /> */}
       </div>
