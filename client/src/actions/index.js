@@ -25,8 +25,9 @@ export const signUp = data => {
 export const signIn = data => {
     return async dispatch => {
       try {
+        console.log("action sign in was called")
         await axios.post('http://localhost:3001/users/signin', data);
-  
+        console.log("action signin dispatch was called")
         dispatch({
           type: AUTH_SIGN_IN
         });
@@ -41,13 +42,14 @@ export const signIn = data => {
 export const checkAuth = () => {
     return async dispatch => {
       try {
+        console.log("checking auth status")
         await axios.get('http://localhost:3001/users/status');
-  
+        console.log("checking auth dispatch")
         dispatch({
           type: AUTH_SIGN_IN
         });
   
-        console.log('user is auth')
+        
       } catch(err) {
         console.log('error', err)
       }
@@ -57,7 +59,9 @@ export const checkAuth = () => {
 export const getItinerary= () => {
     return async dispatch => {
       try {
+        console.log("action get itinerary called")
         const res = await axios.get('http://localhost:3001/itinerary')
+        console.log("action get itinerary dispatch")
         dispatch({
           type: ITINERARY_GET_DATA,
           payload: res.data
@@ -71,8 +75,9 @@ export const getItinerary= () => {
 
 export const signOut = () => {
     return async dispatch => {
+        console.log("action signout got called")
       await axios.get('http://localhost:5000/users/signout');
-  
+        console.log("action signout dispatch")
       dispatch({
         type: AUTH_SIGN_OUT
       })

@@ -12,6 +12,9 @@ router.route('/signup')
 //  .post(validateBody(schemas.authSchema), UsersController.signUp);
  .post(UsersController.signUp);
 
+router.route('/signout')
+//  .post(validateBody(schemas.authSchema), UsersController.signUp);
+ .post(UsersController.signOut);
 
 router.route('/signin')
 //  .post(validateBody(schemas.authSchema), passportSignIn, UsersController.signIn);

@@ -38,7 +38,7 @@ class MainNav extends Component {
                         <a href="/itinerary" onClick={() => this.props.handlePageChange("Itinerary")}><i className="fas fa-id-badge"></i></a>
                     </li>,
                     <li>
-                        <a href="/signout" onClick={() => this.props.handlePageChange("SignOut")}>Sign Out</a>
+                        <a href="/users/signout" onClick={() => this.props.handlePageChange("SignOut")}>Sign Out</a>
                     </li>]
                     : null
                 }

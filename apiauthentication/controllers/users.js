@@ -12,7 +12,6 @@ signToken = user => {
 
 }
 
-
 module.exports = {
   signUp: async (req, res, next) => {
     //email & password validation needed
@@ -61,6 +60,7 @@ module.exports = {
 
   signOut: async (req, res, next) => {
     res.clearCookie('access_token');
+    console.log("token", signToken);
     // console.log('I managed to get here!');
     res.json({ success: true });
   },
