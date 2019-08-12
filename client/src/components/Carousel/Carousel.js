@@ -18,7 +18,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Crystal Thomas</h3>
-            <p className="artist-caption">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className="artist-caption">Gospel, soul and rhythm singer Crystal Thomas hails from Louisiana.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -29,7 +29,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Barbara Lynn</h3>
-            <p className="artist-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="artist-caption">In 2018, Lynn was one of nine artists designated to receive a National Heritage Fellowship.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -40,7 +40,7 @@ function EskCarousel(props) {
             />
             <Carousel.Caption>
             <h3 className="artist-name">Jewel Brown</h3>
-            <p className="artist-caption">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p className="artist-caption">Brown projects spirited energy when she performs.</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
