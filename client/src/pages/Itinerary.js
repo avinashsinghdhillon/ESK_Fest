@@ -1,27 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Container } from '../components/Grid';
 import ArtistCard from '../components/ArtistCard';
 import API from '../utils/API';
 
+import * as actions from '../actions';
+
 class Itinerary extends Component {
-
-    state = {
-        userName: "",
-        // artists: [],
-        events: []
-    }
-
-    componentDidMount() {
-        this.loadEvents();
-    }
-
-    loadEvents = () => {
-        API.getEvents()
-        .then(res => {
-            console.log("loading saved events")
-            console.log(res.data)
-            this.setState({ events: res.data })
-        })
+    async componentDidMount(){
+        this.props.getItinerary()
     }
 
     render() {
@@ -44,4 +31,13 @@ class Itinerary extends Component {
     }
 }
 
-export default Itinerary;
+function mapStateToProps(state) {
+    console.log('state', state)
+    return {
+      secret: state.itin.secret,
+      dashboard: state.itin,
+      auth: state.auth
+    }
+  }
+
+export default connect(mapStateToProps, actions)(Itinerary);
