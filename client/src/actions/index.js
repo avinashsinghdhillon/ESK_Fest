@@ -76,7 +76,7 @@ export const getItinerary= () => {
 export const signOut = () => {
     return async dispatch => {
         console.log("action signout got called")
-      await axios.get('http://localhost:5000/users/signout');
+      await axios.get('http://localhost:3001/users/signout');
         console.log("action signout dispatch")
       dispatch({
         type: AUTH_SIGN_OUT

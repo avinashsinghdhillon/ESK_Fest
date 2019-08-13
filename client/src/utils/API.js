@@ -19,13 +19,13 @@ export default {
     return axios.post("/users/checkEmail", { email: query });
   },
 
-  signInUser: function (req) {
-      console.log("signin user: ", req);
-      return axios.post ( "/users/signin", req[0], req[1])
-  },
-  signOut: function (req) {
-    console.log("signout: ", req);
-    return axios.post ( "/users/signout", req)
-}
+  // signInUser: function (req) {
+  //     console.log("signin user: ", req);
+  //     return axios.post ( "/users/signin", req[0], req[1])
+  // },
+  // signOut: function (req) {
+  //   console.log("signout: ", req);
+  //   return axios.post ( "/users/signout", req)
+// }
   
 };
