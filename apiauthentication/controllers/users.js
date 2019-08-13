@@ -63,7 +63,7 @@ module.exports = {
     res.clearCookie('access_token');
     console.log("token", signToken);
     // console.log('I managed to get here!');
-    res.json({ success: true });
+    res.redirect('/');
   },
 
   checkAuth: async (req, res, next) => {
