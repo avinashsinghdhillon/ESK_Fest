@@ -70,6 +70,7 @@ if(process.env.NODE_ENV === "production"){
 // Routes///////////////////////////does it need any more routes listed?
 app.use('/users', require('./apiauthentication/routes/users'));
 app.use(require('./apiauthentication/routes/api/event'));
+app.use(require('./apiauthentication/routes/api/itinerary'));
 app.use(require('./apiauthentication/routes/users'));
 
 var syncOptions = { force: false };
