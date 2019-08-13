@@ -4,17 +4,95 @@
     background-size: 100%;
     color: #333;
     padding: 10px;
-    text-align: left;
+    display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .eventText {
-    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 10%;
+    /* float: left; */
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
 }
 
 .map {
-    display: inline-block;
+    text-align: right;
+    padding: 5px;
+    width: 35%;
+    height: 35%;
+    /* float: right; */
+}
+
+.map img {
+    height: 100%;
+    width: 100%;
 }
 
 .dateTag {
     font-size: 1.5rem;
 }
+
+.saved {
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    width: 30%;
+    margin: auto;
+    background-color: #00a9e7;
+}
+
+.saved:hover {
+    background-color: #137ad6;
+    color: white;
+    transition: 0.5s;
+}
+
+@media (max-width: 992px) {
+    .saved {
+      width: 40%;
+    }
+  }
+
+@media (max-width: 768px) {
+    .saved {
+      width: 80%;
+    }
+    .eventText {
+        width: 100%;
+        margin: auto;
+    }
+    .map {
+        width: 100%;
+        margin: auto;
+    }
+    .box {
+        display: block;
+    }
+  }
+
+@media (max-width: 576px) {
+    .saved {
+      width: 80%;
+    }
+    .eventTest {
+        width: 100%;
+        margin: auto;
+    }
+    .map {
+        width: 100%;
+        margin: auto;
+    }
+    .box {
+        display: block;
+    }
+  }
