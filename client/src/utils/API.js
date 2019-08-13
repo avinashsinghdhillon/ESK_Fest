@@ -28,6 +28,18 @@ export default {
   //check this logic....I think it might be totally wrong
   saveEventsListItem: function (req, res){
     return axios.put("/save", {userId: req.user})
+  },
+
+  saveEventToItinerary: function(req, res){
+    return axios.post("/saveEventToItinerary", {userId: req.user})
+  },
+
+  deleteItinerary: function(req, res){
+    return axios.post("/deleteItinerary", {userId: req.user})
+  },
+
+  getUserItineraries: function(req, res){
+    return axios.post("/getUserItineraries", {userId: req.user})
   }
 
   // signInUser: function (req) {
