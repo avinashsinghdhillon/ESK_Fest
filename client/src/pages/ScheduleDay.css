@@ -1,6 +1,6 @@
 .scheduleByDay {
     width: 100%;
-    background-image: url("../../images/Map_EastAustin_gradient_blur_colored.png");
+    background-image: url("../images/Map_EastAustin_gradient_blur_colored.png");
     background-size: 100%;
     color: #333;
     padding: 10px;
@@ -35,8 +35,9 @@
 }
 
 .bdButton {
-    width: 150px;
+    width: 20%;
 }
+
 .dateTag {
     font-size: 1.5rem;
 }
@@ -64,6 +65,9 @@
     .saved {
       width: 40%;
     }
+    .bdButton {
+        width: 30%;
+    }
   }
 
 @media (max-width: 768px) {
@@ -81,6 +85,9 @@
     .box {
         display: block;
     }
+    .bdButton {
+        width: 50%;
+    }
   }
 
 @media (max-width: 576px) {
@@ -97,5 +104,8 @@
     }
     .box {
         display: block;
+    }
+    .bdButton {
+        width: 100%;
     }
   }
