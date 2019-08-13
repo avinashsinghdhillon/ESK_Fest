@@ -8,7 +8,6 @@ export const signUp = data => {
         //use form data to make call to server
         try {
             console.log("action sign up was called")
-            await axios.post('/users/signup', data);
             const response = await axios.post('/users/signup', data);
             console.log("action dispatch was called")
             dispatch({
@@ -28,7 +27,6 @@ export const signIn = data => {
     return async dispatch => {
       try {
         console.log("action sign in was called")
-        await axios.post('/users/signin', data);
         const response = await axios.post('/users/signin', data);
         console.log("action signin dispatch was called")
         dispatch({
@@ -47,7 +45,6 @@ export const checkAuth = () => {
     return async dispatch => {
       try {
         console.log("checking auth status")
-        await axios.get('/users/status');
         const response = await axios.get('/users/status');
         console.log("checking auth dispatch")
         dispatch({

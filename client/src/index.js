@@ -35,8 +35,8 @@ axios.defaults.withCredentials = true;
 
 
 ReactDOM.render(
-  <Provider store={createStore(reducers, {}, applyMiddleware(reduxThunk))}>
-    <BrowserRouter>
+  <BrowserRouter>
+    <Provider store={createStore(reducers, {}, applyMiddleware(reduxThunk))}>
       <App>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -55,10 +55,10 @@ ReactDOM.render(
           {/* <Route exact path="/signout" component={SignIn}/> */}
           {/* <Route component={NoMatch} /> */}
         </Switch>
-        <Footer />
       </App>
-    </BrowserRouter>
-  </Provider>,
+      <Footer />
+      </Provider>
+  </BrowserRouter>,
   document.querySelector('#root'));
 // // If you want your app to work offline and load faster, you can change
 // // unregister() to register() below. Note this comes with some pitfalls.
