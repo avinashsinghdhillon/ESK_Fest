@@ -54,8 +54,8 @@ class ArtistCard extends Component {
                 {this.state.show 
                 ? <MoreInfo 
                     name={this.state.artistName}
-                    spotify={this.props.spotify || ""} // https://open.spotify.com/embed/track/1zs2cc3xtGpXtcrqTbBlnc
-                    youtube={this.props.youtube || ""}/> //https://www.youtube.com/embed/pDyXZuvMaFc
+                    spotify={this.props.spotify || ""}
+                    youtube={this.props.youtube || ""}/> 
                 : null}
             </div>
             )
