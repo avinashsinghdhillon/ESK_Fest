@@ -7,8 +7,12 @@
     text-align: left;
 }
 
+.eventText {
+    display: inline-block;
+}
+
 .map {
-    margin-right: 0;
+    display: inline-block;
 }
 
 .dateTag {

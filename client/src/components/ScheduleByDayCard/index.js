@@ -8,10 +8,12 @@ class ScheduleByDayCard extends Component {
       <div>
         <div className="card scheduleByDay">
           {/* <h5> */}
-            <h4 style={{textAlign: "center"}}><span className="dateTag">Date: {this.props.startDate}</span></h4><hr/>
-            <h4>Times: {this.props.startTime} - {this.props.endTime}</h4>
-            <h4>Artists: {this.props.artists}</h4>
-            <h4>Location: {this.props.location}</h4>
+              <h4 style={{textAlign: "center"}}><span className="dateTag">Date: {this.props.startDate}</span></h4><hr/>
+            <div className="eventText">
+              <h4>Times: {this.props.startTime} - {this.props.endTime}</h4>
+              <h4>Artists: {this.props.artists}</h4>
+              <h4>Location: {this.props.location}</h4>
+            </div>
             <div className="map">
               <img src={this.props.map} alt="venue location"/>
             </div>
