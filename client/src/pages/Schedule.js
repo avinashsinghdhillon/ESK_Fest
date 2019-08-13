@@ -31,7 +31,7 @@ class Schedule extends Component {
             <Container className="under-nav">
             {this.state.artists.map((artists, index) => {
                 return(<ArtistCard
-                    key={index}
+                    key={artists.id}
                     id={artists.id}
                     src={artists.artistPicture}
                     name={artists.artistName}

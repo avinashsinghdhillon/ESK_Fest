@@ -7,6 +7,12 @@ export default {
     console.log("getEvents from API.js");
     return axios.get("/events")
   },
+
+  getEventsByDay:function () {
+    console.log("getEventByDay from API.js");
+    return axios.get("/eventsByDay")
+  },
+
   getArtists: function () {
     console.log("getEvents from API.js");
     return axios.get("/artists")
