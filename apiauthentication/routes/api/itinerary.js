@@ -1,7 +1,7 @@
 const itineraryRouter = require("express").Router();
 const db = require("../../../models")
 
-itineraryRouter.route("/newItineray")
+itineraryRouter.route("/newItinerary")
     .post((req,res)=>{
         db.Event.findById(req.body.eventId).then((event)=>{
             console.log(event._id);
@@ -31,7 +31,7 @@ itineraryRouter.route("/newItineray")
         })
     })
 })
-itineraryRouter.route("/getItineray")
+itineraryRouter.route("/getItinerary")
     .get((req,res)=>{
         db.Itinerary.findOne({userID:req.user._id}).populate({path:"events",populate:{
             path:"artists"

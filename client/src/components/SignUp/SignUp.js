@@ -78,6 +78,7 @@ class SignUp extends Component {
           
           <button type="submit" className="button" style={{fontSize: "20px", width: "100%"}}>Sign Up</button>
         </form>
+        <div style={{height: "209px"}}></div>
       </Container>
     )
   }
