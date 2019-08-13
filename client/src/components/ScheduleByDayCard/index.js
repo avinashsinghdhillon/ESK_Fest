@@ -7,13 +7,13 @@ class ScheduleByDayCard extends Component {
     return (
       <div>
         <div className="card scheduleByDay">
-          <h5>
-            <span className="dateTag">Date: {this.props.startDate}</span> | 
-            Times: {this.props.startTime}-{this.props.endTime} |
-            Artists: {this.props.artists} | 
-            Location: {this.props.location}
-          </h5>
-          <button>More Info</button>
+          {/* <h5> */}
+            <h4 style={{textAlign: "center"}}><span className="dateTag">Date: {this.props.startDate}</span></h4><hr/>
+            <h4>Times: {this.props.startTime}-{this.props.endTime}</h4>
+            <h4>Artists: {this.props.artists}</h4>
+            <h4>Location: {this.props.location}</h4>
+          {/* </h5> */}
+          <button className="button" style={{margin: "auto", fontSize:"20px"}}>More Info</button>
         </div>
       </div>
     )
