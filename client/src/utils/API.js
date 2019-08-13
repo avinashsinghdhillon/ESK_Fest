@@ -25,6 +25,11 @@ export default {
     return axios.post("/users/checkEmail", { email: query });
   },
 
+  //check this logic....I think it might be totally wrong
+  saveEventsListItem: function (req, res){
+    return axios.put("/save", {userId: req.user})
+  }
+
   // signInUser: function (req) {
   //     console.log("signin user: ", req);
   //     return axios.post ( "/users/signin", req[0], req[1])

@@ -29,5 +29,12 @@ findAllVenues: function(req, res) {
     .find({})
     .then(dbModel => res.json(dbModel))
     .catch(err => res.status(422).json(err));
+},
+//check this logic...
+saveEventsListItem: function(req, res) {
+  db.Event
+    .findById({id: req._id})
+    .then(dbModel => res.json(dbModel))
+    .catch(err => res.status(422).json(err));
 }
 };
