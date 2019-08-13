@@ -14,7 +14,7 @@ module.exports = {
   findAllByDay: function (req, res) {
     db.Event
     .find({})
-    .sort({startDate: 'asc', startTime: 'asc'})
+    .sort({startDate: 'asc', locationID: 'asc', startTime: 'asc'})
     .then(dbModel => res.json(dbModel))
     .catch(err => res.status(422).json(err));
 },

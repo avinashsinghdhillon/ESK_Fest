@@ -45,6 +45,11 @@ input[type=submit]:hover {
   font-family: 'Oswald', sans-serif;
 }
 
+.aboutHome {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 /* #eventDetails h5{
   padding-left: 300px;
   padding-right: 200px;
