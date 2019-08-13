@@ -1201,6 +1201,17 @@ const eventSeed = [
 
 ]
 
+const itinerarySeed=[
+  {
+    userID: 1,
+    events: [42, 12, 4, 6]
+  },
+  {
+    userID: 2,
+    events: [4, 1, 7, 11]
+  }
+]
+
 
 
 db.Artist
@@ -1251,4 +1262,14 @@ db.User
   })
   .catch(err => {
     console.error(err);
-  });
+});
+
+db.Itinerary
+  .deleteMany()
+  .then(() => db.Itinerary.collection.insertMany(itinerarySeed))
+  .then(data => {
+    console.log(data.result.n + " itinerary records inserted!");
+  })
+  .catch(err => {
+    console.error(err);
+});
