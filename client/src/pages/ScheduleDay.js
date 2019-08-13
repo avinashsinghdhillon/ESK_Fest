@@ -16,6 +16,7 @@ class ScheduleDay extends Component {
     this.loadVenues();
     this.loadArtists();
     this.loadEventsDay();
+
   }
   
   //function to load venues
@@ -51,18 +52,14 @@ class ScheduleDay extends Component {
           }
 debugger;
           //add the location name to the dataset
-          eventsByDay[i].locationName = venues.filter(row => row.locationID == eventsByDay[i].locationID)[0].locationName;
+          eventsByDay[i].locationName = venues.filter(row => row.locationID === eventsByDay[i].locationID)[0].locationName;
 
           //add the artists
-          eventsByDay[i].ArtistNames = "";
+          eventsByDay[i].artistNames = "";
           for (var a = 0; a < eventsByDay[i].artists.length; a++){
-            eventsByDay[i].ArtistNames += artists.filter(r => r._id == eventsByDay[i].artists[a])[0].artistName + (i = eventsByDay.length -1 ? "": ", ");
+            eventsByDay[i].artistNames += artists.filter(r => r._id === eventsByDay[i].artists[a])[0].artistName + (i < eventsByDay[i].artists.length -1 ? ", ": "");
           }
         }
-        
-
-
-
         this.setState({ events: eventsByDay })
       });
   }
@@ -76,10 +73,11 @@ debugger;
             return (<ScheduleByDayCard
               key={event.id}
               id={event.id}
-              location={event.location}
+              location={event.locationName}
               startDate={event.startDate}
               startTime={event.startTime}
               endTime={event.endTime}
+              artists={event.artistNames}
             />)
           })}
         </Container>

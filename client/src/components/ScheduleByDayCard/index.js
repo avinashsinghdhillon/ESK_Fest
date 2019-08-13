@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
+import "./style.css";
 
 class ScheduleByDayCard extends Component {
 
   render(props) {
     return (
       <div>
-        <div className="card">
-          <p>
-            {this.props.location} | 
-            {this.props.startDate} | 
-            {this.props.startTime}-{this.props.endTime}
-          </p>
+        <div className="card scheduleByDay">
+          <h5>
+            <span className="dateTag">Date: {this.props.startDate}</span> | 
+            Times: {this.props.startTime}-{this.props.endTime} |
+            Artists: {this.props.artists} | 
+            Location: {this.props.location}
+          </h5>
           <button>More Info</button>
         </div>
       </div>
