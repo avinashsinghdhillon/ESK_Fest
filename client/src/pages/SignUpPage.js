@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container } from '../components/Grid';
 import SignUp from '../components/SignUp';
 
-class SignUp extends Component {
+class SignUpPage extends Component {
     render() {
         return (
             <Container>
@@ -35,4 +35,4 @@ class SignUp extends Component {
     }
 }
 
-export default SignUp;
+export default SignUpPage;

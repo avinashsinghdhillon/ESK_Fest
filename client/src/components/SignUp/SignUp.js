@@ -7,8 +7,6 @@ import * as actions from '../../actions'
 import { Container } from '../Grid';
 import CustomInput from '../CustomInput'
 import './SignUp.css';
-import API from "../../utils/API";
-import googleSignInButton from "../../images/btn_google_signin_dark_normal_web.png";
 
 class SignUp extends Component {
   //allows us to use the this.props.signUp for our axios call
@@ -35,13 +33,13 @@ class SignUp extends Component {
           <div className="alert alert-primary">Sign Up Using Google</div>
           {/* insert google button here */}
         </div>
-        <form onSubmit= {handleSubmit(this.onSubmit)}>
+        <form style={{width:"70%", margin: "auto"}} onSubmit= {handleSubmit(this.onSubmit)}>
          <fieldset>
             <Field
               name="firstName"
               label="First Name"
               type="text"
-              id="firstName"
+              id="First Name"
               component={CustomInput}
               placeholder="First Name" />
           </fieldset>
@@ -50,7 +48,7 @@ class SignUp extends Component {
               name="lastName"
               label="Last Name"
               type="text"
-              id="lastName"
+              id="Last Name"
               component={CustomInput}
               placeholder="Last Name" />
           </fieldset>
@@ -59,7 +57,7 @@ class SignUp extends Component {
               name="email"
               label="Email"
               type="text"
-              id="email"
+              id="E-mail"
               component={CustomInput}
               placeholder="Email" />
           </fieldset>
@@ -68,7 +66,7 @@ class SignUp extends Component {
               name="password"
               label="Password"
               type="password"
-              id="password"
+              id="Password"
               component={CustomInput}
               placeholder="Password" />
           </fieldset>
@@ -77,8 +75,8 @@ class SignUp extends Component {
             <div className="alert alert-danger">
               {this.props.errorMessage}
             </div> : null}
-
-          <button type="submit" className="btn btn-primary">Sign Up</button>
+          
+          <button type="submit" className="button" style={{fontSize: "20px", width: "100%"}}>Sign Up</button>
         </form>
       </Container>
     )

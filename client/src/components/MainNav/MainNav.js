@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './MainNav.css';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class MainNav extends Component {
     constructor(props) {
@@ -16,32 +17,34 @@ class MainNav extends Component {
     render() {
         return (
             <ul className="nav" id="mainNav">
-                <li>
+                <li key="eskmain">
                     <a href="/">ESK Festival</a>
                 </li>
-                <li>
-                    <a href="/schedule" onClick={() => this.props.handlePageChange("Schedule")}>Schedule</a>
+                <li key="schedule">
+                    <a href="/schedule" onClick={() => this.props.handlePageChange("Schedule")}><FontAwesomeIcon icon="calendar-alt" /> Schedule</a>
                 </li>
-                <li>
-                    <a href="/faq" onClick={() => this.props.handlePageChange("FAQ")}>FAQ</a>
+                <li key="faq">
+                    <a href="/faq" onClick={() => this.props.handlePageChange("FAQ")}><FontAwesomeIcon icon="question-circle" /> FAQ</a>
                 </li>
+                <div className="account-links">
                 {!this.props.isAuth ?
-                    [<li>
-                        <a href="/users/signin" onClick={() => this.props.handlePageChange("SignIn")}>Sign In</a>
+                    [<li key="signin">
+                        <a href="/users/signin" onClick={() => this.props.handlePageChange("SignIn")}><FontAwesomeIcon icon="sign-in-alt" /> Sign In</a>
                     </li>,
-                    <li>
+                    <li key="signup">
                         <a href="/users/signup" onClick={() => this.props.handlePageChange("SignUp")}>Sign Up</a>
                     </li>] : null
                 }
                 {this.props.isAuth ?
-                    [<li>
-                        <a href="/itinerary" onClick={() => this.props.handlePageChange("Itinerary")}><i className="fas fa-id-badge"></i></a>
+                    [<li key="itinerary">
+                        <a href="/itinerary" onClick={() => this.props.handlePageChange("Itinerary")}><FontAwesomeIcon icon="clipboard-list" /> Itinerary</a>
                     </li>,
-                    <li>
-                        <a href="/signout" onClick={() => this.props.handlePageChange("SignOut")}>Sign Out</a>
+                    <li key="signout">
+                        <a href="/signout" onClick={this.signOut}><FontAwesomeIcon icon="sign-out-alt" /> Sign Out</a>
                     </li>]
                     : null
                 }
+                </div>
             </ul>
        )
     }

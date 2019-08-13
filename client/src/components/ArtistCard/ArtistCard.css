@@ -83,6 +83,21 @@
     border-radius: 5px;
   }
 
+  .saved {
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .saved:hover {
+    background-color: lightgray;
+    transition: 0.5s;
+  }
+
   .button:hover {
       background-color: #137ad6;
       transition: 0.5s;
@@ -102,7 +117,7 @@
       width: 48%;
     }
     .button {
-      width: 100%;
+      width: 80%;
     }
     .media {
       display: block;
@@ -119,7 +134,7 @@
       width: 100%;
     }
     .button {
-      width: 100%;
+      width: 80%;
     }
     .media {
       display: block;

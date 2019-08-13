@@ -25,10 +25,11 @@ import Privacy from './components/Privacy';
 import About from './pages/About';
 import Itinerary from './pages/Itinerary';
 import Contact from './pages/Contact';
+// import NoMatch from './pages/NoMatch';
 // import './App.css';
 
 import authGuard from './components/HOCs/authGuard';
-import * as actions from './actions'
+// import * as actions from './actions'
 
 axios.defaults.withCredentials = true;
 
@@ -51,6 +52,8 @@ ReactDOM.render(
           <Route exact path="/about" component={About} />
           <Route exact path="/itinerary" component={authGuard(Itinerary)} />
           <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/signout" component={SignIn}/> */}
+=          {/* <Route component={NoMatch} /> */}
         {/* </Switch>  */}
       </App>
     <Footer />
