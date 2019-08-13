@@ -1218,11 +1218,7 @@ db.Artist
     console.log(data.result.n + " artist records inserted!");
     const updatedEventSeed = eventSeed.map(event => {
       event.artists = event.artistIdArr.map(artistIndex => {
-<<<<<<< HEAD
-        return data.insertedIds[artistIndex -1]
-=======
         return data.insertedIds[artistIndex-1]
->>>>>>> master
       })
       return event;
     });
