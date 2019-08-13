@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import ScheduleNavDay from '../components/ScheduleNav/ScheduleNavDay';
-// import ScheduleByDayCard from '../components/ScheduleByDayCard';
 import { Container } from '../components/Grid';
 import API from '../utils/API';
 import moment from 'moment';
 import "./ScheduleDay.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
 
 class ScheduleDay extends Component {
+  constructor(props){
+    super(props);
+    //this.onSubmit = this.onSubmit.bind(this)
+  };
+
   state = {
     events: [],
     artists: [],
@@ -74,11 +80,38 @@ class ScheduleDay extends Component {
       });
   }
 
+  itineraryClick = (bool) => {
+    debugger;
+    if (this.state.clicked === false) {
+      this.setState({
+        clicked: true,
+        // saved: true
+      })
+      //this is where we add the event to the users itinerary
+      API.saveEventToItinerary(function(req, res){
+        // userID: req.user._id,
+        // eventID: this._id
+      })
+      .then(console.log("itenerary saved"))
+      .catch(err => console.log(err));
+
+
+
+    } else {
+      this.setState({
+        clicked: false,
+        // saved: false
+      })
+    }
+    //this is where we DELETE the event from the user's itinerary
+
+
+  }
+
   createScheduleLayout = () => {
 
     //Losing state in the loops hence these temporary variables to hold the state data
     const stateVenues = this.state.venues;
-    const stateArtists = this.state.artists;
     const stateEvents = this.state.events;
     const stateDays = this.state.days;
 
@@ -100,8 +133,17 @@ class ScheduleDay extends Component {
                 <div>
                   <h4>{tempEventList[e].locationName} | {tempEventList[e].startTime} - {tempEventList[e].endTime}</h4>
                   <h6>Artists: {tempEventList[e].artistNames}</h6>
-                  <button style={{fontSize: "20px"}} className="button bdButton"><FontAwesomeIcon icon="id-badge" /> More Info</button>
-                
+                  <button style={{ fontSize: "20px" }} className="button bdButton"><FontAwesomeIcon icon="id-badge" /> More Info</button>
+                  <button id={tempEventList[e]._id} className="saved bdIcon" onClick={() => this.itineraryClick()}>
+                    {/* IF EVENT IS SAVED, SHOW THIS */}
+                    {/* <FontAwesomeIcon icon={["fas", "bookmark"]} /> */}
+                    {/* IF EVENT IS NOT SAVED, SHOW THIS */}
+                    {
+                      this.state.clicked
+                        ? <span><FontAwesomeIcon icon={['fas', 'bookmark']} /> Saved to Itinerary</span>
+                        : <span><FontAwesomeIcon icon={['far', 'bookmark']} /> Save to Itinerary</span>
+                    }
+                  </button>
                 </div>
               )
             }
@@ -132,5 +174,11 @@ class ScheduleDay extends Component {
     );
   }
 }
-
-export default ScheduleDay;
+function mapStateToProps(state) {
+  return {
+      isAuth: state.auth.isAuthenticated,
+      auth: state.auth
+  }
+}
+export default connect(mapStateToProps, actions)(ScheduleDay);
+//export default ScheduleDay;
