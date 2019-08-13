@@ -1209,17 +1209,6 @@ const eventSeed = [
 
 ]
 
-const itinerarySeed=[
-  {
-    userID: 1,
-    events: [42, 12, 4, 6]
-  },
-  {
-    userID: 2,
-    events: [4, 1, 7, 11]
-  }
-]
-
 
 
 db.Artist
@@ -1229,7 +1218,11 @@ db.Artist
     console.log(data.result.n + " artist records inserted!");
     const updatedEventSeed = eventSeed.map(event => {
       event.artists = event.artistIdArr.map(artistIndex => {
+<<<<<<< HEAD
+        return data.insertedIds[artistIndex -1]
+=======
         return data.insertedIds[artistIndex-1]
+>>>>>>> master
       })
       return event;
     });
