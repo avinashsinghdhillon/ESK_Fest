@@ -8,7 +8,7 @@ import * as actions from '../actions';
 
 class Itinerary extends Component {
     async componentDidMount(){
-        this.props.getItinerary()
+        this.props.getItinerary(this.props.auth.id)
     }
 
     render() {

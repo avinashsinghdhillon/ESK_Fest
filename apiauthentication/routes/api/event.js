@@ -12,4 +12,9 @@ eventsRouter.route("/artists")
 
 eventsRouter.route("/venues")
   .get(eventsController.findAllVenues);
+
+//check this route - we would need to set this one up...
+eventsRouter.route("/save")
+    .put(eventsController.saveEventsListItem);
+
 module.exports = eventsRouter;
