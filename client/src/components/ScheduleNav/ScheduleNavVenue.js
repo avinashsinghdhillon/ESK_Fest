@@ -10,9 +10,9 @@ function ScheduleNavVenue(props) {
             <li className="tab">
                 <a href="/schedule" onClick={() => props.handlePageChange("Schedule")}>By Artist</a>
             </li>
-            <li className="tab">
+            {/* <li className="tab">
                 <a href="/schedulevenue" onClick={() => props.handlePageChange("ScheduleVenue")} className="active">By Venue</a>
-            </li>
+            </li> */}
         </ul>
     )
 }

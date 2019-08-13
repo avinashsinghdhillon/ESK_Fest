@@ -34,13 +34,13 @@ class SignIn extends Component {
           <div className="alert alert-primary">Sign In Using Google</div>
           {/* insert google button here */}
         </div>
-        <form onSubmit={handleSubmit(this.onSubmit)}>
+        <form style={{width:"70%", margin: "auto"}} onSubmit={handleSubmit(this.onSubmit)}>
           <fieldset>
             <Field
               name="email"
               label="Email"
               type="text"
-              id="email"
+              id="E-mail"
               component={CustomInput}
               placeholder="Your Email" />
           </fieldset>
@@ -49,7 +49,7 @@ class SignIn extends Component {
               name="password"
               label="Password"
               type="password"
-              id="password"
+              id="Password"
               component={CustomInput}
               placeholder="Your Password" />
           </fieldset>
@@ -59,7 +59,8 @@ class SignIn extends Component {
               {this.props.errorMessage}
             </div> : null}
 
-          <button type="submit" className="btn btn-primary">Sign In</button>
+          {/* <button type="submit" className="btn btn-primary">Sign In</button> */}
+          <button type="submit" className="button" style={{fontSize: "20px", width: "100%"}}>Sign In</button>
         </form>
       </Container>
     )
