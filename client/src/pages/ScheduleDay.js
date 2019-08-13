@@ -176,7 +176,8 @@ class ScheduleDay extends Component {
 }
 function mapStateToProps(state) {
   return {
-      isAuth: state.auth.isAuthenticated
+      isAuth: state.auth.isAuthenticated,
+      auth: state.auth
   }
 }
 export default connect(mapStateToProps, actions)(ScheduleDay);
