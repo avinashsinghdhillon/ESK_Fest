@@ -12,8 +12,8 @@ const artistSeed = [
   {
     artistID: 1,
     artistName: "Adrian Reed Gospel Mass",
-    artistPicture: "https://i.imgur.com/ek1y02a.png",
-    artistYoutube: "https://www.youtube.com/embed/IrcSmpOs-EA"
+    artistPicture: "https://i.imgur.com/PRXh1ZD.jpg",
+    artistYoutube: "https://www.youtube.com/embed/9HZu1rlwBfI"
 
   },
   {
@@ -86,7 +86,7 @@ const artistSeed = [
   {
     artistID: 9,
     artistName: "Blues Jazz Plus",
-    artistPicture: "https://i.imgur.com/mm1PNsG.png",
+    artistPicture: "",
     artistAbout: "",
     artistSite: "https://www.newschoolofmusic.org/",
     artistSpotify: "",
@@ -235,7 +235,7 @@ const artistSeed = [
   {
     artistID: 25,
     artistName: "Jason Moeller",
-    artistPicture: "https://i.imgur.com/oNe3IjM.jpg",
+    artistPicture: "https://i.imgur.com/M4Gr5Vz.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -245,7 +245,7 @@ const artistSeed = [
   {
     artistID: 26,
     artistName: "Jewel Brown",
-    artistPicture: "https://i.imgur.com/Ozy0eVx.jpg",
+    artistPicture: "https://i.imgur.com/Wx8zt3Z.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "https://open.spotify.com/embed/track/1ZZ4xYTORrkU9gY0isK6OR",
@@ -264,7 +264,7 @@ const artistSeed = [
   {
     artistID: 28,
     artistName: "Johnny Moeller",
-    artistPicture: "https://i.imgur.com/0BcNj2e.jpg",
+    artistPicture: "https://i.imgur.com/w6JlGa0.jpg",
     artistAbout: "",
     artistSite: "",
     artistSpotify: "",
@@ -439,7 +439,7 @@ const artistSeed = [
   {
     artistID: 46,
     artistName: "Pierre Pelegrin",
-    artistPicture: "https://i.imgur.com/2eesK9g.jpg",
+    artistPicture: "https://i.imgur.com/gr6rVs3.jpg",
     artistAbout: "Pierre and his wife Justine are the owners of Justine's Brasserie, a generous supporter of the Eastside Kings Festival. He is also a member of the Eastside Kings Foundation board of directors.",
     artistSite: "https://www.justines1937.com/",
     artistSpotify: "",
@@ -533,7 +533,7 @@ const artistSeed = [
   },
   {
     artistID: 56,
-    artistName: "Tamara Mack & The Mack Daddies",
+    artistName: "Ms. Mack & The Daddies",
     artistPicture: "https://i.imgur.com/Wt1copK.jpg",
     artistAbout: "",
     artistSite: "https://www.facebook.com/mackdaddymusic/videos/1033365060177569/",
