@@ -101,7 +101,7 @@ class ScheduleDay extends Component {
                   <h4>{tempEventList[e].locationName} | {tempEventList[e].startTime} - {tempEventList[e].endTime}</h4>
                   <h6>Artists: {tempEventList[e].artistNames}</h6>
                   <button style={{fontSize: "20px"}} className="button bdButton"><FontAwesomeIcon icon="id-badge" /> More Info</button>
-
+                
                 </div>
               )
             }
