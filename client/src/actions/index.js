@@ -8,10 +8,11 @@ export const signUp = data => {
         //use form data to make call to server
         try {
             console.log("action sign up was called")
-            await axios.post('http://localhost:3001/users/signup', data);
+            const response = await axios.post('http://localhost:3001/users/signup', data);
             console.log("action dispatch was called")
             dispatch({
                 type: AUTH_SIGN_UP,
+                payload: {email: response.data.email, id: response.data._id}
             });
         } catch (err) {
             dispatch({
@@ -26,10 +27,11 @@ export const signIn = data => {
     return async dispatch => {
       try {
         console.log("action sign in was called")
-        await axios.post('http://localhost:3001/users/signin', data);
+        const response = await axios.post('http://localhost:3001/users/signin', data);
         console.log("action signin dispatch was called")
         dispatch({
-          type: AUTH_SIGN_IN
+          type: AUTH_SIGN_IN,
+          payload: {email: response.data.email, id: response.data._id}
         });
       } catch(err) {
         dispatch({
@@ -43,12 +45,12 @@ export const checkAuth = () => {
     return async dispatch => {
       try {
         console.log("checking auth status")
-        await axios.get('http://localhost:3001/users/status');
+        const response = await axios.get('http://localhost:3001/users/status');
         console.log("checking auth dispatch")
         dispatch({
-          type: AUTH_SIGN_IN
+          type: AUTH_SIGN_IN,
+          payload: {email: response.data.email, id: response.data._id}
         });
-  
         
       } catch(err) {
         console.log('error', err)
@@ -64,7 +66,7 @@ export const getItinerary= () => {
         console.log("action get itinerary dispatch")
         dispatch({
           type: ITINERARY_GET_DATA,
-          payload: res.data
+          payload: {email: res.data.email, id: res.data._id}
         })
   
       } catch(err) {
