@@ -1,0 +1,41 @@
+
+.list-overflow-container {
+    border-bottom: 1px darkgray solid;
+    border-top: 1px darkgray solid;
+    border-radius: 4px;
+}
+  
+.list-overflow-container ul {
+    margin: 0;
+}
+  
+.list-overflow-container li {
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+}
+  
+.list-overflow-container li a {
+    color: darkblue;
+}
+  
+.list-overflow-container li:first-child {
+    border-top: none;
+}
+  
+.list-overflow-container li:last-child {
+    border-bottom: none;
+}
+  
+.date-div {
+    display: inline-block;
+    padding-left: 50px;
+    width: 85%
+}
+  
+.article-btn-div {
+    display: inline-block;
+    width: 9%;
+    vertical-align: top;
+    padding-top: 10px;
+}

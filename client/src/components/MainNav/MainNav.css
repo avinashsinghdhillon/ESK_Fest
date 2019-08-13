@@ -4,7 +4,7 @@
 .nav {
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     width: 100%;
     background-color: #184097;
     top: 0;
@@ -48,6 +48,7 @@ li a {
 li a:hover {
   background-color: #137ad6;
   color: white;
+  margin: auto;
 }
 
 .active {
