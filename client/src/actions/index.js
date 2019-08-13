@@ -8,7 +8,8 @@ export const signUp = data => {
         //use form data to make call to server
         try {
             console.log("action sign up was called")
-            const response = await axios.post('http://localhost:3001/users/signup', data);
+            await axios.post('/users/signup', data);
+            const response = await axios.post('/users/signup', data);
             console.log("action dispatch was called")
             dispatch({
                 type: AUTH_SIGN_UP,
@@ -27,7 +28,8 @@ export const signIn = data => {
     return async dispatch => {
       try {
         console.log("action sign in was called")
-        const response = await axios.post('http://localhost:3001/users/signin', data);
+        await axios.post('/users/signin', data);
+        const response = await axios.post('/users/signin', data);
         console.log("action signin dispatch was called")
         dispatch({
           type: AUTH_SIGN_IN,
@@ -45,7 +47,8 @@ export const checkAuth = () => {
     return async dispatch => {
       try {
         console.log("checking auth status")
-        const response = await axios.get('http://localhost:3001/users/status');
+        await axios.get('/users/status');
+        const response = await axios.get('/users/status');
         console.log("checking auth dispatch")
         dispatch({
           type: AUTH_SIGN_IN,
@@ -62,7 +65,7 @@ export const getItinerary= () => {
     return async dispatch => {
       try {
         console.log("action get itinerary called")
-        const res = await axios.get('http://localhost:3001/itinerary')
+        const res = await axios.get('/itinerary')
         console.log("action get itinerary dispatch")
         dispatch({
           type: ITINERARY_GET_DATA,
@@ -78,7 +81,7 @@ export const getItinerary= () => {
 export const signOut = () => {
     return async dispatch => {
         console.log("action signout got called")
-      await axios.get('http://localhost:3001/users/signout');
+      await axios.get('/users/signout');
         console.log("action signout dispatch")
       dispatch({
         type: AUTH_SIGN_OUT
