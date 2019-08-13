@@ -9,7 +9,7 @@ const itinerarySchema = new Schema({
             ref: "Event"
          }
         ]
-});
+}); 
 
 const Itinerary = mongoose.model("Itinerary", itinerarySchema);
 

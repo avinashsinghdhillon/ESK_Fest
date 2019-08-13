@@ -1268,7 +1268,7 @@ db.Itinerary
   .deleteMany()
   .then(() => db.Itinerary.collection.insertMany(itinerarySeed))
   .then(data => {
-    console.log(data.result.n + " itinerary records inserted!");
+    console.log(data.result.n + " itinerary records inserted!!");
   })
   .catch(err => {
     console.error(err);
