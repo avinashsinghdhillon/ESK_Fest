@@ -23,7 +23,7 @@ module.exports = {
       .find({})
       .then(dbModel => res.json(dbModel))
       .catch(err => { console.log(err); res.status(422).json(err) });
-  },
+},
 findAllVenues: function(req, res) {
   db.Location
     .find({})
