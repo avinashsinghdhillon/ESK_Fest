@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import "./style.css";
+import "../../pages/ScheduleDay.css";
 
 class ScheduleByDayCard extends Component {
 
