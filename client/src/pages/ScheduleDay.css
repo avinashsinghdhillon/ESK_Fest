@@ -34,6 +34,9 @@
     width: 100%;
 }
 
+.bdButton {
+    width: 150px;
+}
 .dateTag {
     font-size: 1.5rem;
 }
