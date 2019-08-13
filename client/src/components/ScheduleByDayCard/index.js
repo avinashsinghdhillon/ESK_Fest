@@ -8,7 +8,7 @@ class ScheduleByDayCard extends Component {
       <div>
         <div className="card scheduleByDay">
           <h5>
-            <span className="dateTag">Date: {this.props.startDate}</span> | 
+            <span className="dateTag">Date: {this.props.eventDate}</span> | 
             Times: {this.props.startTime}-{this.props.endTime} |
             Artists: {this.props.artists} | 
             Location: {this.props.location}
