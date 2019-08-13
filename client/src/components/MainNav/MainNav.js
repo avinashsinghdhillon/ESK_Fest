@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './MainNav.css';
 import { connect } from 'react-redux';
+// import { Link } from 'react-router-dom';
 import * as actions from '../../actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -18,11 +19,11 @@ class MainNav extends Component {
     render() {
         return (
             <ul className="nav" id="mainNav">
-                <li key="eskmain">
+                <li>
                     <a href="/">ESK Festival</a>
                     {/* <Link to="/">ESK Festival</Link> */}
                 </li>
-                <li key="schedule">
+                <li>
                     <a href="/schedule" onClick={() => this.props.handlePageChange("Schedule")}><FontAwesomeIcon icon="calendar-alt" /> Schedule</a>
                     {/* <Link to="/schedule" ><FontAwesomeIcon icon="calendar-alt" /> Schedule</Link> */}
 
@@ -33,17 +34,17 @@ class MainNav extends Component {
                 </li>
                 <div className="account-links">
                 {!this.props.isAuth ?
-                    [<li key="signin">
+                    [<li>
                         <a href="/users/signin" onClick={() => this.props.handlePageChange("SignIn")}><FontAwesomeIcon icon="sign-in-alt" /> Sign In</a>
                         {/* <Link to="/users/signin" ><FontAwesomeIcon icon="sign-in-alt" /> Sign In</Link> */}
                     </li>,
-                    <li key="signup">
+                    <li>
                         <a href="/users/signup" onClick={() => this.props.handlePageChange("SignUp")}>Sign Up</a>
                         {/* <Link to="/users/signup">Sign Up</Link> */}
                     </li>] : null
                 }
                 {this.props.isAuth ?
-                    [<li key="itinerary">
+                    [<li>
                         <a href="/itinerary" onClick={() => this.props.handlePageChange("Itinerary")}><FontAwesomeIcon icon="clipboard-list" /> Itinerary</a>
                         {/* <Link to="/itinerary" ><FontAwesomeIcon icon="clipboard-list" /> Itinerary</Link> */}
 

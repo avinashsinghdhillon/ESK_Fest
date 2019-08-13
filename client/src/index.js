@@ -53,7 +53,7 @@ ReactDOM.render(
           <Route exact path="/itinerary" component={authGuard(Itinerary)} />
           <Route exact path="/contact" component={Contact} />
           {/* <Route exact path="/signout" component={SignIn}/> */}
-=          {/* <Route component={NoMatch} /> */}
+          {/* <Route component={NoMatch} /> */}
         </Switch>
         <Footer />
       </App>
