@@ -23,10 +23,17 @@ module.exports = {
       .find({})
       .then(dbModel => res.json(dbModel))
       .catch(err => { console.log(err); res.status(422).json(err) });
-  },
+},
 findAllVenues: function(req, res) {
   db.Location
     .find({})
+    .then(dbModel => res.json(dbModel))
+    .catch(err => res.status(422).json(err));
+},
+//check this logic...
+saveEventsListItem: function(req, res) {
+  db.Event
+    .findById({id: req._id})
     .then(dbModel => res.json(dbModel))
     .catch(err => res.status(422).json(err));
 }
