@@ -10,12 +10,12 @@ export default class MoreInfo extends React.Component {
   state = {
     events: []
   }
-  componentDidMount(){
-    API.getEvents().then((res)=>{
-      console.log("in moreinfo line 15",res)
-      this.setState({events:res.data})
-    })
-  }
+  // componentDidMount(){
+  //   API.getEvents().then((res)=>{
+  //     console.log("in moreinfo line 15",res)
+  //     this.setState({events:res.data})
+  //   })
+  // }
   render(){
     return(
     <div className="cardInfo">
@@ -26,7 +26,7 @@ export default class MoreInfo extends React.Component {
             <div className="moreEventInfo">
             <Container>
           <h2>Events Results</h2>
-          <EventsList>
+          {/* <EventsList>
             {this.state.events.map((event, index) => (
               <EventsListItem key={event.id}>
                 <div className="events-div">
@@ -47,12 +47,12 @@ export default class MoreInfo extends React.Component {
                       _id: event.id
                     })}
                   >
-                    SAVE
+                    Save Event
                   </EventsBtn>
                 </div>
               </EventsListItem>
             ))}
-          </EventsList>
+          </EventsList> */}
         </Container>
             </div>
         </div>

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const itinerarySchema = new Schema({
-    userID: { type: Number, required: true, unique: true },
+    userID: { type: Schema.Types.ObjectId, required: true, unique: true },
     events: [
         {
             type: Schema.Types.ObjectId,

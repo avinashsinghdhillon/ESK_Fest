@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import reduxThunk from 'redux-thunk';
@@ -38,7 +38,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Provider store={createStore(reducers, {}, applyMiddleware(reduxThunk))}>
       <App>
-        {/* <Switch> */}
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/users/signup" component={SignUp} />
@@ -53,11 +53,11 @@ ReactDOM.render(
           <Route exact path="/itinerary" component={authGuard(Itinerary)} />
           <Route exact path="/contact" component={Contact} />
           {/* <Route exact path="/signout" component={SignIn}/> */}
-=          {/* <Route component={NoMatch} /> */}
-        {/* </Switch>  */}
+          {/* <Route component={NoMatch} /> */}
+        </Switch>
       </App>
-    <Footer />
-  </Provider>
+      <Footer />
+      </Provider>
   </BrowserRouter>,
   document.querySelector('#root'));
 // // If you want your app to work offline and load faster, you can change

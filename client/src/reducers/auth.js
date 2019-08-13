@@ -14,10 +14,10 @@ export default (state = DEFAULT_STATE, action) => {
     switch (action.type){
         case AUTH_SIGN_UP: 
             console.log("auth reducer got an auth signup action")
-            return { ...state, token: action.payload, isAuthenticated: true, errorMessage: ''}
+            return { ...state, token: action.payload, isAuthenticated: true, errorMessage: '', email: action.payload.email, id: action.payload.id}
         case AUTH_SIGN_IN:
             console.log("auth reducer got an auth signin action")
-            return { ...state, isAuthenticated: true, errorMessage: '' }
+            return { ...state, isAuthenticated: true, errorMessage: '', email: action.payload.email, id: action.payload.id }
         case AUTH_SIGN_OUT:
             console.log("auth reducer got an auth signout action")
             return { ...state, isAuthenticated: false, errorMessage: '' }

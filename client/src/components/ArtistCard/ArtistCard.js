@@ -40,13 +40,6 @@ class ArtistCard extends Component {
                     <div className="container">
                         <h4>{this.props.name}</h4>
                         <button style={{fontSize: "20px"}} className="button" onClick={this._show.bind(null, true) || this._show.bind(null, false)}><FontAwesomeIcon icon="id-badge" /> More Info</button>
-                        <a className="saved">
-                            {/* IF EVENT IS SAVED, SHOW THIS */}
-                            {/* <FontAwesomeIcon icon={["fas", "bookmark"]} /> */}
-
-                            {/* IF EVENT IS NOT SAVED, SHOW THIS */}
-                            <FontAwesomeIcon icon={["far", "bookmark"]} />
-                        </a>
                         {/* <button className="button" onClick={this._show.bind(null, false)}>Less Info</button> */}
                         {/* <button href="/eventpage" className="button" onClick={() => props.handlePageChange("EventPage")}>Event Info</button> */}
                     </div>
@@ -54,8 +47,8 @@ class ArtistCard extends Component {
                 {this.state.show 
                 ? <MoreInfo 
                     name={this.state.artistName}
-                    spotify={this.props.spotify || ""} // https://open.spotify.com/embed/track/1zs2cc3xtGpXtcrqTbBlnc
-                    youtube={this.props.youtube || ""}/> //https://www.youtube.com/embed/pDyXZuvMaFc
+                    spotify={this.props.spotify || ""}
+                    youtube={this.props.youtube || ""}/> 
                 : null}
             </div>
             )

@@ -65,7 +65,7 @@
 
   img.artistImage:hover {
       transform: scale(1.1);
-      transition: 0.5s;
+      transition: 1s;
   }
 
   .button {
@@ -81,21 +81,6 @@
     font-size: 12px;
     width: 48%;
     border-radius: 5px;
-  }
-
-  .saved {
-    border: none;
-    color: white;
-    padding: 10px 28px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-  }
-
-  .saved:hover {
-    background-color: lightgray;
-    transition: 0.5s;
   }
 
   .button:hover {
