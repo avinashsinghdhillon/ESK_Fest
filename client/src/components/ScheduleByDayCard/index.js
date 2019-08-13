@@ -12,6 +12,9 @@ class ScheduleByDayCard extends Component {
             <h4>Times: {this.props.startTime} - {this.props.endTime}</h4>
             <h4>Artists: {this.props.artists}</h4>
             <h4>Location: {this.props.location}</h4>
+            <div className="map">
+              <img src={this.props.map} alt="venue location"/>
+            </div>
           {/* </h5> */}
           <button className="button" style={{margin: "auto", fontSize:"20px"}}>More Info</button>
         </div>

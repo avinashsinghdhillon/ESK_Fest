@@ -7,6 +7,10 @@
     text-align: left;
 }
 
+.map {
+    margin-right: 0;
+}
+
 .dateTag {
     font-size: 1.5rem;
 }

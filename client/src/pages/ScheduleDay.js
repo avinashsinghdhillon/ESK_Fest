@@ -54,6 +54,9 @@ debugger;
           //add the location name to the dataset
           eventsByDay[i].locationName = venues.filter(row => row.locationID === eventsByDay[i].locationID)[0].locationName;
 
+          //add the location map to the dataset
+          eventsByDay[i].locationMap = venues.filter(row => row.locationID === eventsByDay[i].locationID)[0].locationMap;
+
           //add the artists
           eventsByDay[i].artistNames = "";
           for (var a = 0; a < eventsByDay[i].artists.length; a++){
@@ -78,6 +81,7 @@ debugger;
               startTime={event.startTime}
               endTime={event.endTime}
               artists={event.artistNames}
+              map={event.locationMap}
             />)
           })}
         </Container>
