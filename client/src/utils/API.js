@@ -25,23 +25,13 @@ export default {
     return axios.post("/users/checkEmail", { email: query });
   },
 
-  // createUserAccount: function (query) {
-  //   console.log("In API.js/createUser. query: ", query);
-  //   return axios.post(
-  //     "/signup",
-  //       {
-  //         userType: query.userType,
-  //         email: query.email,
-  //         password: query.password,
-  //         firstName: query.fname,
-  //         lastName: query.lname
-  //       }
-  //     );
+  // signInUser: function (req) {
+  //     console.log("signin user: ", req);
+  //     return axios.post ( "/users/signin", req[0], req[1])
   // },
-
-  signInUser: function (req) {
-      console.log("signin user: ", req);
-      return axios.post ( "/users/signin", req[0], req[1])
-  }
+  // signOut: function (req) {
+  //   console.log("signout: ", req);
+  //   return axios.post ( "/users/signout", req)
+// }
   
 };

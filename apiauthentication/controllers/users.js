@@ -12,7 +12,6 @@ signToken = user => {
 
 }
 
-
 module.exports = {
   signUp: async (req, res, next) => {
     //email & password validation needed
@@ -53,14 +52,16 @@ module.exports = {
   },
 
   itinerary: async (req, res, next) => {
-    console.log('I managed to get here');
+    console.log("req.user",);
     res.json({ secret: "resource",
       userType: req.userType
   })
   },
 
   signOut: async (req, res, next) => {
+    console.log(req.user);
     res.clearCookie('access_token');
+    console.log("token", signToken);
     // console.log('I managed to get here!');
     res.json({ success: true });
   },
@@ -69,21 +70,4 @@ module.exports = {
     console.log('I managed to get here!');
     res.json({ success: true });
   }
-  // findByEmail: function (req, res) {
-  //   console.log("In users controller");
-  //   User
-  //     .findOne({ email: req.body.email })
-  //     .then(dbModel => res.json(dbModel))
-  //     .catch(err => res.status(422).json(err));
-  // },
-
-//   findAll: function(req, res){
-//     User
-//         .find({})
-//         // .populate("artists")
-//         // console.log("artists populated")
-//         // console.log(res.data)
-//         .then(dbModel => res.json(dbModel))
-//         .catch(err => res.status(422).json(err));
-// }
 }
