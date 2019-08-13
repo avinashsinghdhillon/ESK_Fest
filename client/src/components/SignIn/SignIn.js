@@ -7,8 +7,6 @@ import * as actions from '../../actions'
 import { Container } from '../Grid';
 import CustomInput from '../CustomInput'
 import './SignIn.css';
-import API from "../../utils/API";
-import googleSignInButton from "../../images/btn_google_signin_dark_normal_web.png";
 
 class SignIn extends Component {
   //allows us to use the this.props.signUp for our axios call

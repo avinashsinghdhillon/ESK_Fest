@@ -9,8 +9,8 @@ const itinerarySchema = new Schema({
             ref: "Event"
          }
         ]
-});
+}); 
 
-const Itinerary = mongoose.model("User Itinerary", itinerarySchema);
+const Itinerary = mongoose.model("Itinerary", itinerarySchema);
 
 module.exports = Itinerary;

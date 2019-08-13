@@ -28,9 +28,20 @@ app.use(express.static("public"));
 
 //add whitelist for cors for development
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000','https://boiling-river-85007.herokuapp.com', 'https://esk-fest.herokuapp.com/'],
   credentials: true
 }));
+
+// var whitelist = ['http://localhost:3000', 'https://boiling-river-85007.herokuapp.com', 'https://esk-fest.herokuapp.com/']
+// app.use(cors({
+//   origin: function (origin, callback) {
+//     if (whitelist.indexOf(origin) !== -1) {
+//       callback(null, true)
+//     } else {
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   }
+// }));
 
 app.use(cookieParser());
 
@@ -58,8 +69,8 @@ if(process.env.NODE_ENV === "production"){
 
 // Routes///////////////////////////does it need any more routes listed?
 app.use('/users', require('./apiauthentication/routes/users'));
-app.use('/api', require('./apiauthentication/routes/api/event'));
-app.use('/itinerary', require('./apiauthentication/routes/users'));
+app.use(require('./apiauthentication/routes/api/event'));
+app.use(require('./apiauthentication/routes/users'));
 
 var syncOptions = { force: false };
 
