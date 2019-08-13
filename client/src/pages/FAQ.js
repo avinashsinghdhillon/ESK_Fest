@@ -28,7 +28,7 @@ class Faq extends Component {
                             This recording was one of many in which Stout captured the talent of Austin's largely unknown but incredibly talented African American blues musicians such as Clarence Pierce, Willie Sampson, and Donald 'Duck' Jennings.
                             The name Eastside Kings stuck and the musicians began to use it for their gigs.  Naming the festival Eastside Kings seemed only appropriate as a tribute to those artists and to the East Austin post-war blues circuit where the festival takes place.
                         </p>
-                        <img src="https://i.imgur.com/IUZcJOa.jpg" alt="Willie, Clarence, and Little Joe"/>
+                        <img src="https://i.imgur.com/IUZcJOa.jpg" alt="Willie, Clarence and Little Joe"/>
                         <p>Willie Sampson, Clarence Pierce, and Little Joe Washington a few of the original Eastside Kings!</p>
                 </div>
             </Container>
