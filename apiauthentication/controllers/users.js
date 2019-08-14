@@ -68,6 +68,6 @@ module.exports = {
 
   checkAuth: async (req, res, next) => {
     console.log('I managed to get here!');
-    res.json({ success: true });
+    res.json(req.user);
   }
 }

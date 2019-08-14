@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import reduxThunk from 'redux-thunk';
 import axios from 'axios';
@@ -34,9 +34,10 @@ import authGuard from './components/HOCs/authGuard';
 axios.defaults.withCredentials = true;
 
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 ReactDOM.render(
   <BrowserRouter>
-    <Provider store={createStore(reducers, {}, applyMiddleware(reduxThunk))}>
+    <Provider store={createStore(reducers, {}, composeEnhancers(applyMiddleware(reduxThunk)))}>
       <App>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -50,7 +51,7 @@ ReactDOM.render(
           <Route exact path="/faq" component={Faq} />
           <Route exact path="/privacy" component={Privacy} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/itinerary" component={authGuard(Itinerary)} />
+          <Route exact path="/itinerary" component={Itinerary} /> 
           <Route exact path="/contact" component={Contact} />
           {/* <Route exact path="/signout" component={SignIn}/> */}
           {/* <Route component={NoMatch} /> */}

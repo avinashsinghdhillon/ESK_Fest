@@ -12,7 +12,7 @@ export const signUp = data => {
             console.log("action dispatch was called")
             dispatch({
                 type: AUTH_SIGN_UP,
-                payload: {email: response.data.email, id: response.data._id}
+                payload: {email: response.data.email, id: response.data._id, name: response.data.firstName}
             });
         } catch (err) {
             dispatch({
@@ -31,7 +31,7 @@ export const signIn = data => {
         console.log("action signin dispatch was called")
         dispatch({
           type: AUTH_SIGN_IN,
-          payload: {email: response.data.email, id: response.data._id}
+          payload: {email: response.data.email, id: response.data._id, name: response.data.firstName}
         });
       } catch(err) {
         dispatch({
@@ -49,7 +49,7 @@ export const checkAuth = () => {
         console.log("checking auth dispatch")
         dispatch({
           type: AUTH_SIGN_IN,
-          payload: {email: response.data.email, id: response.data._id}
+          payload: {email: response.data.email, id: response.data._id, name: response.data.firstName}
         });
         
       } catch(err) {
@@ -58,22 +58,22 @@ export const checkAuth = () => {
     };
 }
 
-export const getItinerary= () => {
-    return async dispatch => {
-      try {
-        console.log("action get itinerary called")
-        const res = await axios.get('/itinerary')
-        console.log("action get itinerary dispatch")
-        dispatch({
-          type: ITINERARY_GET_DATA,
-          payload: {email: res.data.email, id: res.data._id}
-        })
+// export const getItinerary= () => {
+//     return async dispatch => {
+//       try {
+//         console.log("action get itinerary called")
+//         const res = await axios.get('/itinerary')
+//         console.log("action get itinerary dispatch")
+//         dispatch({
+//           type: ITINERARY_GET_DATA,
+//           payload: {email: res.data.email, id: res.data._id}
+//         })
   
-      } catch(err) {
-        console.error('err', err)
-      }
-    }
-}
+//       } catch(err) {
+//         console.error('err', err)
+//       }
+//     }
+// }
 
 export const signOut = () => {
     return async dispatch => {

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import ScheduleNavDay from '../components/ScheduleNav/ScheduleNavDay';
 import { Container } from '../components/Grid';
 import API from '../utils/API';
 import moment from 'moment';
 import "./ScheduleDay.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { connect } from 'react-redux';
-import * as actions from '../actions';
+
 
 class ScheduleDay extends Component {
   constructor(props){
@@ -80,29 +80,30 @@ class ScheduleDay extends Component {
       });
   }
 
-  itineraryClick = (bool) => {
-    debugger;
-    if (this.state.clicked === false) {
-      this.setState({
-        clicked: true,
-        // saved: true
-      })
-      //this is where we add the event to the users itinerary
-      API.saveEventToItinerary(function(req, res){
-        // userID: req.user._id,
-        // eventID: this._id
-      })
-      .then(console.log("itenerary saved"))
-      .catch(err => console.log(err));
+  itineraryClick = (eventID) => {
+    //this is where we add the event to the users itinerary
+    API.saveEventToItinerary({
+      userID: this.props.userID,
+      eventID: eventID
+    })
+    .then(console.log("itenerary saved"))
+    .catch(err => console.log(err));
+
+    // if (this.state.clicked === false) {
+    //   this.setState({
+    //     clicked: true,
+    //     // saved: true
+    //   })
 
 
 
-    } else {
-      this.setState({
-        clicked: false,
-        // saved: false
-      })
-    }
+
+    // } else {
+    //   this.setState({
+    //     clicked: false,
+    //     // saved: false
+    //   })
+    // }
     //this is where we DELETE the event from the user's itinerary
 
 
@@ -133,8 +134,9 @@ class ScheduleDay extends Component {
                 <div>
                   <h4>{tempEventList[e].locationName} | {tempEventList[e].startTime} - {tempEventList[e].endTime}</h4>
                   <h6>Artists: {tempEventList[e].artistNames}</h6>
-                  <button style={{ fontSize: "20px" }} className="button bdButton"><FontAwesomeIcon icon="id-badge" /> More Info</button>
-                  <button id={tempEventList[e]._id} className="saved bdIcon" onClick={() => this.itineraryClick()}>
+                  <button style={{ fontSize: "20px" }} className="button bdButton"><FontAwesomeIcon icon="id-badge" />More Info</button>
+                  {this.props.isAuth ?
+                  <button id={tempEventList[e]._id} className="saved bdIcon" onClick={() => this.itineraryClick(tempEventList[e]._id)}>
                     {/* IF EVENT IS SAVED, SHOW THIS */}
                     {/* <FontAwesomeIcon icon={["fas", "bookmark"]} /> */}
                     {/* IF EVENT IS NOT SAVED, SHOW THIS */}
@@ -144,6 +146,7 @@ class ScheduleDay extends Component {
                         : <span><FontAwesomeIcon icon={['far', 'bookmark']} /> Save to Itinerary</span>
                     }
                   </button>
+                  : null}
                 </div>
               )
             }
@@ -177,8 +180,11 @@ class ScheduleDay extends Component {
 function mapStateToProps(state) {
   return {
       isAuth: state.auth.isAuthenticated,
-      auth: state.auth
+      auth: state.auth,
+      name: state.auth.name,
+      email: state.auth.email,
+      userID: state.auth.id
   }
 }
-export default connect(mapStateToProps, actions)(ScheduleDay);
+export default connect(mapStateToProps, {})(ScheduleDay);
 //export default ScheduleDay;
