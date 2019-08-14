@@ -38,11 +38,11 @@ Prior to the creation of our app, festival attendees could only view information
 ![Main Page](client/public/images/main.png)
 
 ### Schedule By Artist
-![ArtistSchedule](client/public/images/main.png)
+![ArtistSchedule](client/public/images/artistsched.png)
 
 ### Schedule By Day
-![DaySchedule](client/public/images/main.png)
+![DaySchedule](client/public/images/schedByDay.png)
 
 ### Itinerary
-![Itinerary](client/public/images/main.png)
+![Itinerary](https://imgur.com/xmDBUEa)
 
