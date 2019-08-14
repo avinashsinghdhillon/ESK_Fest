@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Eastside Kings Festival
+  https://esk-fest.herokuapp.com
 
-## Available Scripts
+## Executive Summary
+  Our goal was to create an app which allows the user to view information about Austin’s Eastside Kings Festival.
+  The app is mobile responsive to allow festival attendees to access the schedule on the fly and create a personalized itinerary.
 
-In the project directory, you can run:
 
-### `npm start`
+## Overview
+### Audience:
+Festival attendees (approx 2000/day) - range in age from teen to adult, varying socioeconomic status, local Austinites as well as travelers from other cities/states/countries.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Problem:
+Having an easily accessible app to view festival information such as schedule, location, and artist info.  On the landing page the user will be able to view the festival schedule (filtering by artist or date), view details about each artist including video or sound clips, and create an account to save their favorite artists/performances to a personal itinerary that can be accessed on the go.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Prior to the creation of our app, festival attendees could only view information about the festival on a facebook page. This required the attendee to scroll through all posts to the content they need, and click to view the information they require.  Alternatively, printed schedules are available at the festival site.  These solutions are not as user-friendly and often lead to numerous calls to the festival director as festival days approach.  The Eastside Kings Festival app allows for a streamlined customer experience with information easily accessible at any time and location with minimal navigation required by our users.  Users of the app will learn more about the artists performing at the festival, and therefore can make informed decisions when planning their itinerary. This app will also free up time for the festival director by limiting calls from the general public.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About
+ This app was developed for the Eastside Kings Foundation/Eastside Kings Festival in Austin, TX by the Endemic Design team.
 
-### `npm run build`
+## Technologies Utilized
+  * React, Redux, Redux-Form
+  * Node, Express
+  * MongoDB, Mongoose
+  * Authentication using Passport, Bcrypt, JSON Web Tokens
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Endemic Design Team
+  * Gabe Alvarez:- https://github.com/spookypants
+  * Juan Baquera:- https://github.com/jebaquera
+  * Sylvia Jonon:- https://github.com/sjonon
+  * Avinash Singh:- https://github.com/avinashsinghdhillon
+  * Brittany Taylor:- https://github.com/britt421
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Main Page
+![Main Page](client/public/images/main.png)
 
-### `npm run eject`
+### Schedule By Artist
+![ArtistSchedule](client/public/images/main.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Schedule By Day
+![DaySchedule](client/public/images/main.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Itinerary
+![Itinerary](client/public/images/main.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
