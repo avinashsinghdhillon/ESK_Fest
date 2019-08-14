@@ -20,8 +20,8 @@ router.route('/signin')
 //  .post(validateBody(schemas.authSchema), passportSignIn, UsersController.signIn);
  .post(passportSignIn, UsersController.signIn);
 
-router.route('/itinerary')
- .get(passportJWT, UsersController.itinerary);
+// router.route('/itinerary')
+//  .get(passportJWT, UsersController.itinerary);
 
  router.route('/status')
     .get(passportJWT, UsersController.checkAuth)
