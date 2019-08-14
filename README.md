@@ -1,32 +1,6 @@
 # Eastside Kings Festival
 https://esk-fest.herokuapp.com
 
-## About
-  This website was developed as a team project to satisfy the course requirements of the Web Development Boot Camp at UT Austin in August 2019. This site will be used by the Eastside Kings Foundation to provide useful information to the attendees of the Eastside Kings Music Festival September 14th & 15th, 2019.
-
-## Technologies Utilized
-  * HTML, CSS, Bootstrap.
-  * Authentication using JavaScript Web Tokens.
-  * React-Bootstrap.
-  * React, Node, Express.
-  * Javascript, jQuery, AJAX.
-  * MongoDB, Mongoose.
-  * Model View Controller (MVC) Design Pattern.
-  * Source Control: Git and GitHub.
-  * Heroku deployment.
-
-## Team Eastside Kings Festival
-  * Gabe Alvarez:- https://github.com/spookypants
-  * Juan Baquera:- https://github.com/jebaquera
-  * Sylvia Jonon:- https://github.com/sjonon
-  * Avinash Singh:- https://github.com/avinashsinghdhillon
-  * Brittany Taylor:- https://github.com/britt421
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-  https://esk-fest.herokuapp.com
-
 ## Executive Summary
   Our goal was to create an app which allows the user to view information about Austin’s Eastside Kings Festival.
   The app is mobile responsive to allow festival attendees to access the schedule on the fly and create a personalized itinerary.
