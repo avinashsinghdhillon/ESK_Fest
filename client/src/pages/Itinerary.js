@@ -10,6 +10,10 @@ import moment from 'moment';
 
 class Itinerary extends Component {
 
+    state = {
+        eventDetails: []
+    }
+
   // state = {
   //   count: 0
   // }
@@ -46,7 +50,8 @@ class Itinerary extends Component {
             </div>
         );
       }
-      console.log(eventsList)
+      console.log(eventsList);
+      this.setState({ eventDetails: eventsList });
       return eventsList
     })
   }
