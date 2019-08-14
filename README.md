@@ -1,3 +1,46 @@
+# Eastside Kings Festival
+https://esk-fest.herokuapp.com
+
+## The best Blues, Gospel, and Jazz in Texas for one amazing weekend in Austin!
+  The Eastside Kings Festival is back September 14th & 15th. Catch the best musicians of this uniquely-American genre in one convient location: East 12th Street in Ausitn, Texas. Some of the muscians performing have been on the scene since their youth, making a name for themselves alongside legends such as Louis Armstrong. The relationships among the community of blues musicians that will be gathered together spans decades. Come be a part of this intimate live music experience.
+
+## Quick Start
+#### 1. Create an account by clicking sign-up (or sign-in if you have an existing account).
+
+<!-- ![Main Page](https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_LandingPage.PNG) -->
+
+#### 2. View the Schedule by Day or Artist:
+  
+<!-- ![Character Creation](https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_CharacterCreation.PNG) -->
+  
+#### 3. Build Your Own Itinerary:
+  * 
+  
+  <!-- ![Game Page](https://github.com/spookypants/endemic/blob/readme_edits/public/images/screenshots/Screenshot_GamePage.PNG) -->
+
+## About
+  This website was developed as a team project to satisfy the course requirements of the Web Development Boot Camp at UT Austin in August 2019. This site will be used by the Eastside Kings Foundation to provide useful information to the attendees of the Eastside Kings Music Festival September 14th & 15th, 2019.
+
+## Technologies Utilized
+  * HTML, CSS, Bootstrap.
+  * Authentication using JavaScript Web Tokens.
+  * React-Bootstrap.
+  * React, Node, Express.
+  * Javascript, jQuery, AJAX.
+  * MongoDB, Mongoose.
+  * Model View Controller (MVC) Design Pattern.
+  * Source Control: Git and GitHub.
+  * Heroku deployment.
+
+## Team Eastside Kings Festival
+  * Gabe Alvarez:- https://github.com/spookypants
+  * Juan Baquera:- https://github.com/jebaquera
+  * Sylvia Jonon:- https://github.com/sjonon
+  * Avinash Singh:- https://github.com/avinashsinghdhillon
+  * Brittany Taylor:- https://github.com/britt421
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
