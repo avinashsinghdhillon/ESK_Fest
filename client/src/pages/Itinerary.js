@@ -14,7 +14,7 @@ class Itinerary extends Component {
     render() {
         return (
             <Container>
-            <h1>Welcome back, USER NAME.</h1>
+            <h1>Welcome back, {this.props.name}!</h1>
             <h3>Here are the events you were interested in.</h3>
             <div>
             {this.state.events.map((events, index) => {
@@ -34,10 +34,10 @@ class Itinerary extends Component {
 function mapStateToProps(state) {
     console.log('state', state)
     return {
-      secret: state.itin.secret,
-      dashboard: state.itin,
-      auth: state.auth
+      isAuth: state.auth.isAuthenticated,
+        email: state.auth.email,
+        name: state.auth.name
     }
   }
 
-export default connect(mapStateToProps, actions)(Itinerary);
+export default connect(mapStateToProps, {})(Itinerary);

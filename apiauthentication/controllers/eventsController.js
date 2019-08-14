@@ -39,10 +39,11 @@ module.exports = {
   },
 
   saveEventToItinerary: function (req, res) {
+    console.log("In itinerary save. Req.body.userid " , req.body)
     db.Itinerary
       .create({ 
-        userID: req.userID,
-        events: req.eventID
+        userID: req.body.userID,
+        events: req.body.eventID
       })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));

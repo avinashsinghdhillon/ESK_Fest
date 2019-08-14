@@ -31,7 +31,8 @@ export default {
   },
 
   saveEventToItinerary: function(req, res){
-    return axios.post("/saveEventToItinerary", {userId: req.user})
+    console.log("API req: ", req);
+    return axios.post("/saveEventToItinerary", {userID: req.userID, eventID: req.eventID})
   },
 
   deleteItinerary: function(req, res){

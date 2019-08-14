@@ -12,7 +12,7 @@ export const signUp = data => {
             console.log("action dispatch was called")
             dispatch({
                 type: AUTH_SIGN_UP,
-                payload: {email: response.data.email, id: response.data._id}
+                payload: {email: response.data.email, id: response.data._id, name: response.data.firstName}
             });
         } catch (err) {
             dispatch({
@@ -31,7 +31,7 @@ export const signIn = data => {
         console.log("action signin dispatch was called")
         dispatch({
           type: AUTH_SIGN_IN,
-          payload: {email: response.data.email, id: response.data._id}
+          payload: {email: response.data.email, id: response.data._id, name: response.data.firstName}
         });
       } catch(err) {
         dispatch({
@@ -49,7 +49,7 @@ export const checkAuth = () => {
         console.log("checking auth dispatch")
         dispatch({
           type: AUTH_SIGN_IN,
-          payload: {email: response.data.email, id: response.data._id}
+          payload: {email: response.data.email, id: response.data._id, name: response.data.firstName}
         });
         
       } catch(err) {
