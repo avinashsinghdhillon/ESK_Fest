@@ -51,7 +51,7 @@ ReactDOM.render(
           <Route exact path="/faq" component={Faq} />
           <Route exact path="/privacy" component={Privacy} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/itinerary" component={authGuard(Itinerary)} />
+          <Route exact path="/itinerary" component={Itinerary} /> 
           <Route exact path="/contact" component={Contact} />
           {/* <Route exact path="/signout" component={SignIn}/> */}
           {/* <Route component={NoMatch} /> */}

@@ -81,7 +81,6 @@ class ScheduleDay extends Component {
   }
 
   itineraryClick = (eventID) => {
-    debugger;
     //this is where we add the event to the users itinerary
     API.saveEventToItinerary({
       userID: this.props.userID,
@@ -182,6 +181,7 @@ function mapStateToProps(state) {
   return {
       isAuth: state.auth.isAuthenticated,
       auth: state.auth,
+      name: state.auth.name,
       email: state.auth.email,
       userID: state.auth.id
   }

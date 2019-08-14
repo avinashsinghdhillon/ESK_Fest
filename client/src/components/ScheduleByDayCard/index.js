@@ -10,34 +10,13 @@ class ScheduleByDayCard extends Component {
     // saved: "",
   }
 
-  itineraryClick = (bool) => {
-    if (this.state.clicked === false) {
-      this.setState({
-        clicked: true,
-        // saved: true
-      })
-    } else {
-      this.setState({
-        clicked: false,
-        // saved: false
-      })
-    }
+  deleteClick = (bool) => {
   }
 
   render(props) {
     return (
       <div>
         <div className="card scheduleByDay">
-        <button className="saved" onClick={() => this.itineraryClick()}>
-            {/* IF EVENT IS SAVED, SHOW THIS */}
-            {/* <FontAwesomeIcon icon={["fas", "bookmark"]} /> */}
-            {/* IF EVENT IS NOT SAVED, SHOW THIS */}
-              {
-                this.state.clicked 
-                  ? <span><FontAwesomeIcon icon={['fas', 'bookmark']} /> Saved to Itinerary</span>
-                  : <span><FontAwesomeIcon icon={['far', 'bookmark']} /> Save to Itinerary</span>
-              }
-        </button>
               <h4 style={{textAlign:"center"}}><span className="dateTag">Date: {this.props.startDate}</span></h4><hr/>
             <div className="box">
               <div className="eventText">

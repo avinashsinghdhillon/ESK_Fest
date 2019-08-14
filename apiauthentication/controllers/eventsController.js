@@ -31,15 +31,14 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   //check this logic...
-  saveEventsListItem: function (req, res) {
-    db.Event
-      .findById({ id: req._id })
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  },
+  // saveEventsListItem: function (req, res) {
+  //   db.Event
+  //     .findById({ id: req._id })
+  //     .then(dbModel => res.json(dbModel))
+  //     .catch(err => res.status(422).json(err));
+  // },
 
   saveEventToItinerary: function (req, res) {
-    console.log("In itinerary save. Req.body.userid " , req.body)
     db.Itinerary
       .create({ 
         userID: req.body.userID,
@@ -55,10 +54,20 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   getUserItineraries: function (req, res) {
+    console.log("In get itinerary. Req.body " , req.body)
     db.Itinerary
-      .findAll({ userID: req.userID})
-      .then(dbModel => res.json(dbModel))
+      .find({})
+      .populate({path:"events", populate:{path: "artists"}})
+      .then(function(results){
+        console.log(results)
+        res.json(results);
+      })
       .catch(err => res.status(422).json(err));
   },
-
+  findEventById: function (req, res){
+    db.Event
+      .findById({ id: req._id })
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  }
 };

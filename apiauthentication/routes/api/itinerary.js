@@ -9,6 +9,6 @@ router.route("/deleteItinerary")
   .post(eventsController.deleteItinerary);
 
 router.route("/getUserItineraries")
-.post(eventsController.getUserItineraries);
+  .get(eventsController.getUserItineraries);
 
 module.exports = router;

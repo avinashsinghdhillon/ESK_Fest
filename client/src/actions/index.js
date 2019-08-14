@@ -58,22 +58,22 @@ export const checkAuth = () => {
     };
 }
 
-export const getItinerary= () => {
-    return async dispatch => {
-      try {
-        console.log("action get itinerary called")
-        const res = await axios.get('/itinerary')
-        console.log("action get itinerary dispatch")
-        dispatch({
-          type: ITINERARY_GET_DATA,
-          payload: {email: res.data.email, id: res.data._id}
-        })
+// export const getItinerary= () => {
+//     return async dispatch => {
+//       try {
+//         console.log("action get itinerary called")
+//         const res = await axios.get('/itinerary')
+//         console.log("action get itinerary dispatch")
+//         dispatch({
+//           type: ITINERARY_GET_DATA,
+//           payload: {email: res.data.email, id: res.data._id}
+//         })
   
-      } catch(err) {
-        console.error('err', err)
-      }
-    }
-}
+//       } catch(err) {
+//         console.error('err', err)
+//       }
+//     }
+// }
 
 export const signOut = () => {
     return async dispatch => {
