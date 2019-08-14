@@ -60,7 +60,8 @@ class Itinerary extends Component {
     console.log("In render: ", this.getItinerary())
     return (
       <Container className="under-nav">
-        <h1>Welcome back, {this.props.name}!</h1>
+        {/* <h1>Welcome back, {this.props.name}!</h1> */}
+        <h1>Welcome back!</h1>
         <h3>Here are the events you were interested in.</h3>
           {
             this.getItinerary()
