@@ -28,7 +28,7 @@ import Contact from './pages/Contact';
 // import NoMatch from './pages/NoMatch';
 // import './App.css';
 
-import authGuard from './components/HOCs/authGuard';
+// import authGuard from './components/HOCs/authGuard';
 // import * as actions from './actions'
 
 axios.defaults.withCredentials = true;

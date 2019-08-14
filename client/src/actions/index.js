@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { AUTH_SIGN_UP, AUTH_ERROR, AUTH_SIGN_OUT, 
-    AUTH_SIGN_IN, ITINERARY_GET_DATA } from './types';
+    AUTH_SIGN_IN} from './types';
 
 //ActionCreators -> create/reaturn actions ({}) -> dispatched -> middleware -> reducers
 export const signUp = data => {

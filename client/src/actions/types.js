@@ -3,4 +3,4 @@ export const AUTH_ERROR = 'AUTH_ERROR';
 export const AUTH_SIGN_IN = 'AUTH_SIGN_IN';
 export const AUTH_SIGN_OUT = 'AUTH_SIGN_OUT';
 
-export const ITINERARY_GET_DATA = 'ITINERARY_GET_DATA';
+// export const ITINERARY_GET_DATA = 'ITINERARY_GET_DATA';
