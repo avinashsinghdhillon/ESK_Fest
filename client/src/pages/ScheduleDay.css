@@ -35,8 +35,9 @@
 }
 
 .bdButton {
-    width: 150px;
+    width: 20%;
 }
+
 .dateTag {
     font-size: 1.5rem;
 }
@@ -44,7 +45,7 @@
 .saved {
     border: none;
     color: white;
-    padding: 10px 28px;
+    padding: 12px 28px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -64,6 +65,9 @@
     .saved {
       width: 40%;
     }
+    .bdButton {
+        width: 30%;
+    }
   }
 
 @media (max-width: 768px) {
@@ -81,6 +85,9 @@
     .box {
         display: block;
     }
+    .bdButton {
+        width: 50%;
+    }
   }
 
 @media (max-width: 576px) {
@@ -97,5 +104,8 @@
     }
     .box {
         display: block;
+    }
+    .bdButton {
+        width: 100%;
     }
   }

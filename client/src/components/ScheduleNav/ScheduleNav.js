@@ -6,10 +6,10 @@ function ScheduleNav(props) {
     return (
         <ul className="nav-tabs">
             <li className="tab">
-                <a href="/scheduleday" onClick={() => props.handlePageChange("ScheduleDay")}>By Day</a>
+                <a href="/schedule" onClick={() => props.handlePageChange("Schedule")} className="active">By Artist</a>
             </li>
             <li className="tab">
-                <a href="/schedule" onClick={() => props.handlePageChange("Schedule")} className="active">By Artist</a>
+                <a href="/scheduleday" onClick={() => props.handlePageChange("ScheduleDay")}>By Day</a>
             </li>
             {/* <li className="tab">
                 <a href="/schedulevenue" onClick={() => props.handlePageChange("ScheduleVenue")}>By Venue</a>
