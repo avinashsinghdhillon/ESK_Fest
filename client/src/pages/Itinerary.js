@@ -10,9 +10,9 @@ import moment from 'moment';
 
 class Itinerary extends Component {
 
-    state = {
-        eventDetails: []
-    }
+    // state = {
+    //     eventDetails: []
+    // }
 
   // state = {
   //   count: 0
@@ -51,7 +51,7 @@ class Itinerary extends Component {
         );
       }
       console.log(eventsList);
-      this.setState({ eventDetails: eventsList });
+    //   this.setState({ eventDetails: eventsList });
       return eventsList
     })
   }
@@ -63,9 +63,9 @@ class Itinerary extends Component {
         {/* <h1>Welcome back, {this.props.name}!</h1> */}
         <h1>Welcome back!</h1>
         <h3>Here are the events you were interested in.</h3>
-          {
+          {/* {
             this.getItinerary()
-          }
+          } */}
           <ScheduleByDayCard
             startDate={"09/14/2019"}
             startTime={"17:20"}
@@ -84,7 +84,7 @@ class Itinerary extends Component {
           />
       </Container>
     )
-    console.log("Exiting render: ")
+
   }
 }
 
