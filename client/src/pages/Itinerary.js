@@ -71,7 +71,7 @@ class Itinerary extends Component {
             endTime={"18:30"}
             artists={"TuTu Jones Band"}
             location={"Mission Possible Parking Lot"}
-            // map={} 
+            map={"https://i.imgur.com/XLWKIjB.png"} 
           />
           <ScheduleByDayCard
             startDate={"09/15/2019"}
@@ -79,7 +79,7 @@ class Itinerary extends Component {
             endTime={"18:00"}
             artists={"Mel Davis and The Blues Specialists"}
             location={"Dozen Street Bar"}
-            // map={} 
+            map={"https://i.imgur.com/HZwzzyg.png"} 
           />
       </Container>
     )
