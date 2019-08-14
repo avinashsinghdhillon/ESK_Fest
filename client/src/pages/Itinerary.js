@@ -10,6 +10,10 @@ import moment from 'moment';
 
 class Itinerary extends Component {
 
+    state = {
+        eventDetails: []
+    }
+
   // state = {
   //   count: 0
   // }
@@ -46,7 +50,8 @@ class Itinerary extends Component {
             </div>
         );
       }
-      console.log(eventsList)
+      console.log(eventsList);
+      this.setState({ eventDetails: eventsList });
       return eventsList
     })
   }
@@ -60,6 +65,22 @@ class Itinerary extends Component {
           {
             this.getItinerary()
           }
+          <ScheduleByDayCard
+            startDate={"09/14/2019"}
+            startTime={"17:20"}
+            endTime={"18:30"}
+            artists={"TuTu Jones Band"}
+            location={"Mission Possible Parking Lot"}
+            // map={} 
+          />
+          <ScheduleByDayCard
+            startDate={"09/15/2019"}
+            startTime={"17:00"}
+            endTime={"18:00"}
+            artists={"Mel Davis and The Blues Specialists"}
+            location={"Dozen Street Bar"}
+            // map={} 
+          />
       </Container>
     )
     console.log("Exiting render: ")
