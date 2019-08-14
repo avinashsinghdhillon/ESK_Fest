@@ -133,7 +133,7 @@ class ScheduleDay extends Component {
                 <div>
                   <h4>{tempEventList[e].locationName} | {tempEventList[e].startTime} - {tempEventList[e].endTime}</h4>
                   <h6>Artists: {tempEventList[e].artistNames}</h6>
-                  <button style={{ fontSize: "20px" }} className="button bdButton"><FontAwesomeIcon icon="id-badge" />More Info</button>
+                  <button style={{ fontSize: "20px" }} className="button bdButton"><FontAwesomeIcon icon="id-badge" /> More Info</button>
                   <button id={tempEventList[e]._id} className="saved bdIcon" onClick={() => this.itineraryClick()}>
                     {/* IF EVENT IS SAVED, SHOW THIS */}
                     {/* <FontAwesomeIcon icon={["fas", "bookmark"]} /> */}
