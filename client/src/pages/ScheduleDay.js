@@ -89,21 +89,21 @@ class ScheduleDay extends Component {
     .then(console.log("itenerary saved"))
     .catch(err => console.log(err));
 
-    // if (this.state.clicked === false) {
-    //   this.setState({
-    //     clicked: true,
-    //     // saved: true
-    //   })
+    if (this.state.clicked === false) {
+      this.setState({
+        clicked: true,
+        // saved: true
+      })
 
 
 
 
-    // } else {
-    //   this.setState({
-    //     clicked: false,
-    //     // saved: false
-    //   })
-    // }
+    } else {
+      this.setState({
+        clicked: false,
+        // saved: false
+      })
+    }
     //this is where we DELETE the event from the user's itinerary
 
 
