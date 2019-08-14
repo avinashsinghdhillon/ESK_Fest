@@ -654,7 +654,8 @@ const locationSeed = [
     locationAddress: "305 E 5th St, Austin, TX 78701",
     locationPhone: "(512) 814-0361",
     locationSite: "https://www.antonesnightclub.com/",
-    locationNote: ""
+    locationNote: "",
+    locationMap: "https://i.imgur.com/TPRVZnh.png"
   },
 
   {
@@ -663,7 +664,8 @@ const locationSeed = [
     locationAddress: "4306 Red River, Austin, TX 78751",
     locationPhone: "(512) 428-9100",
     locationSite: "https://www.austinvintageguitars.com/",
-    locationNote: ""
+    locationNote: "",
+    locationMap: "https://i.imgur.com/h2RtvuJ.png"
   },
 
   {
@@ -672,7 +674,8 @@ const locationSeed = [
     locationAddress: "1806 East 12th Street, Ausitn, TX 78702",
     locationPhone: "(512) 406-9237",
     locationSite: "https://www.theoriginalneworleanspoboygumboshop.com/",
-    locationNote: ""
+    locationNote: "",
+    locationMap: "https://i.imgur.com/hcw9oqb.png"
   },
 
   {
@@ -681,7 +684,8 @@ const locationSeed = [
     locationAddress: "1808 East 12th Street, Austin, TX 78702",
     locationPhone: "(512) 236-1770",
     locationSite: "https://do512.com/venues/dozen-street",
-    locationNote: ""
+    locationNote: "",
+    locationMap: "https://i.imgur.com/HZwzzyg.png"
   },
 
   {
@@ -690,7 +694,8 @@ const locationSeed = [
     locationAddress: "1810 East 12th Street, Austin, TX 78702",
     locationPhone: "(512) 814-0211",
     locationSite: "http://www.fullcirclebar.com/austin",
-    locationNote: ""
+    locationNote: "",
+    locationMap: "https://i.imgur.com/f93bMWO.png"
   },
 
   {
@@ -699,7 +704,8 @@ const locationSeed = [
     locationAddress: "4710 E 5th St, Austin, TX 78702",
     locationPhone: "(512) 385-2900",
     locationSite: "https://www.justines1937.com/",
-    locationNote: ""
+    locationNote: "",
+    locationMap: "https://i.imgur.com/UUeYfsS.png"
   },
 
   {
@@ -708,7 +714,8 @@ const locationSeed = [
     locationAddress: "1818 East 12th Street, Austin, TX 78702",
     locationPhone: "(512) 494-0953",
     locationSite: "https://mpaustin.org/",
-    locationNote: ""
+    locationNote: "",
+    locationMap: "https://i.imgur.com/XLWKIjB.png"
   },
 
   {
@@ -717,7 +724,8 @@ const locationSeed = [
     locationAddress: "1100 Chicon, Austin, TX 78702",
     locationPhone: "(512) 494-0953",
     locationSite: "https://mpaustin.org/",
-    locationNote: ""
+    locationNote: "",
+    locationMap: "https://i.imgur.com/XLWKIjB.png"
   },
 
   {
@@ -1201,17 +1209,6 @@ const eventSeed = [
 
 ]
 
-const itinerarySeed=[
-  {
-    userID: 1,
-    events: [42, 12, 4, 6]
-  },
-  {
-    userID: 2,
-    events: [4, 1, 7, 11]
-  }
-]
-
 
 
 db.Artist
@@ -1221,7 +1218,7 @@ db.Artist
     console.log(data.result.n + " artist records inserted!");
     const updatedEventSeed = eventSeed.map(event => {
       event.artists = event.artistIdArr.map(artistIndex => {
-        return data.insertedIds[artistIndex]
+        return data.insertedIds[artistIndex-1]
       })
       return event;
     });

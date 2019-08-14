@@ -1,6 +1,7 @@
-const itineraryRouter = require("express").Router();
-const db = require("../../../models")
+const router = require('express-promise-router')();
+const eventsController = require('../../controllers/eventsController');
 
+<<<<<<< HEAD
 itineraryRouter.route("/newItinerary")
     .post((req,res)=>{
         db.Event.findById(req.body.eventId).then((event)=>{
@@ -41,5 +42,16 @@ itineraryRouter.route("/getItinerary")
             }
         })
     })
+=======
+>>>>>>> master
 
-module.exports = itineraryRouter;
+router.route("/saveEventToItinerary")
+  .post(eventsController.saveEventToItinerary);
+
+router.route("/deleteItinerary")
+  .post(eventsController.deleteItinerary);
+
+router.route("/getUserItineraries")
+  .get(eventsController.getUserItineraries);
+
+module.exports = router;

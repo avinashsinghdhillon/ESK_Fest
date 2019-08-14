@@ -51,23 +51,20 @@ module.exports = {
     res.status(200).json({ success: true });
   },
 
-  itinerary: async (req, res, next) => {
-    console.log("req.user",);
-    res.json({ secret: "resource",
-      userType: req.userType
-  })
-  },
+
 
   signOut: async (req, res, next) => {
     console.log(req.user);
     res.clearCookie('access_token');
     console.log("token", signToken);
     // console.log('I managed to get here!');
-    res.json({ success: true });
+    res.redirect('/');
   },
 
   checkAuth: async (req, res, next) => {
-    console.log('I managed to get here!');
-    res.json({ success: true });
+    console.log("req", req.user);
+    console.log("--------");
+    // console.log("res", res)
+    res.json(req.user);
   }
 }

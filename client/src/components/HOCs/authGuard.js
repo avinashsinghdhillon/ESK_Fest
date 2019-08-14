@@ -1,36 +1,36 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+// import React, { Component } from 'react';
+// import { connect } from 'react-redux';
 
-export default (OriginalComponent) => {
-  class MixedComponent extends Component {
+// export default (OriginalComponent) => {
+//   class MixedComponent extends Component {
 
-    checkAuth() {
-      if (!this.props.isAuth && !this.props.jwtToken) {
-        this.props.history.push('/');
-      }
-    }
+//     checkAuth() {
+//       if (!this.props.isAuth && !this.props.jwtToken) {
+//         this.props.history.push('/');
+//       }
+//     }
 
-    componentDidMount() {
-      this.checkAuth();
-    }
+//     componentDidMount() {
+//       this.checkAuth();
+//     }
 
-    componentDidUpdate() {
-      this.checkAuth();
-    }
+//     componentDidUpdate() {
+//       this.checkAuth();
+//     }
 
-    render() {
-      return <OriginalComponent {...this.props} />;
-    }
-  }
+//     render() {
+//       return <OriginalComponent {...this.props} />;
+//     }
+//   }
 
-  function mapStateToProps(state) {
-    return {
-      isAuth: state.auth.isAuthenticated,
-      jwtToken: state.auth.token
-    }
-  }
+//   function mapStateToProps(state) {
+//     return {
+//       isAuth: state.auth.isAuthenticated,
+//       jwtToken: state.auth.token
+//     }
+//   }
 
-  return connect(mapStateToProps)(MixedComponent);
-};
+//   return connect(mapStateToProps)(MixedComponent);
+// };
 
 

@@ -25,6 +25,27 @@ export default {
     return axios.post("/users/checkEmail", { email: query });
   },
 
+  // //check this logic....I think it might be totally wrong
+  // saveEventsListItem: function (req, res){
+  //   return axios.put("/save", {userID: req.user})
+  // },
+
+  saveEventToItinerary: function(req, res){
+    return axios.post("/saveEventToItinerary", {userID: req.userID, eventID: req.eventID})
+  },
+
+  findEventById: function(req, res){
+    return axios.get("/findEventById", {userID: req.userID})
+  },
+
+  deleteItinerary: function(req, res){
+    return axios.post("/deleteItinerary", {userID: req.userID})
+  },
+
+  getUserItineraries: function(req, res){
+    return axios.get("/getUserItineraries", {userID: req.userID})
+  }
+
   // signInUser: function (req) {
   //     console.log("signin user: ", req);
   //     return axios.post ( "/users/signin", req[0], req[1])
