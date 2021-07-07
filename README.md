@@ -1,5 +1,5 @@
 # Eastside Kings Festival
-  https://esk-fest.herokuapp.com
+https://esk-fest.herokuapp.com
 
 ## Executive Summary
   Our goal was to create an app which allows the user to view information about Austin’s Eastside Kings Festival.
